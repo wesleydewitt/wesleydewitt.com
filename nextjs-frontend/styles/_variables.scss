@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$sans-font                     : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",Inter, sans-serif;
+$sans-font-size                : 16px;
+$small-sans-font-size          : 14px;
+$smaller-sans-font-size        : 12px;
+$smallest-sans-font-size       : 10px;
+$sans-line-height              : 1.5;
+
+$serif-font                    : Times New Roman, serif;
+$serif-font-size               : 18px;
+$serif-line-height             : 1.5;
+
+$base-unit                     : 24px;
+$outer-width                   : 1440px;
+
+$break-0                       : 1080px;
+$break-1                       : 900px;
+$break-2                       : 720px;
+$break-3                       : 540px;
+
+$favicon-color                 : orangered;
+
+$background-color-light-mode   : #ffffff;
+$body-text-color-light-mode    : #555555;
+$heading-text-color-light-mode : #000000;
+$gray-text-color-light-mode    : #bbbbbb;
+$link-text-color-light-mode    : blue;
+$gray-line-color-light-mode    : #dddddd;
+
+$background-color-dark-mode    : #000000;
+$body-text-color-dark-mode     : #bbbbbb;
+$heading-text-color-dark-mode  : #ffffff;
+$gray-text-color-dark-mode     : #888888;
+$link-text-color-dark-mode     : blue;
+$gray-line-color-dark-mode     : #444444;

@@ -4,3 +4,22 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+
+module.exports = {
+  cssModules: true,
+    cssLoaderOptions: {
+  importLoaders: 1,
+ localIdentName: "[]",
+},
+};
+
+module.exports = {
+  async rewrites() {
+    return [
+      {
+        source: '/:any*',
+        destination: '/',
+      },
+    ];
+  },
+};
