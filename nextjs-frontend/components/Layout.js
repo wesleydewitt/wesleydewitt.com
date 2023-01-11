@@ -9,9 +9,9 @@ export default function Layout({children}) {
                 <title>Wesley De Witt</title>
             </Head>
             <Header />
-                <main className='main'>
-                    {children}
-                </main>
+            <main className='main'>
+                {children}
+            </main>
             <Footer />
         </>
     )

@@ -9,14 +9,19 @@ export default function Header() {
     return (
         <>
             <header className="header">
-                <h1 className="header__site-title"><NavLink className="header__site-title" href="/">Wesley De&nbsp;Witt</NavLink></h1>
+                <NavLink className="header__site-title" href="/">Wesley De&nbsp;Witt</NavLink>
 
-                <NavLink className={currentRoute === "/" ? "header__nav-link--selected" : "header__nav-link"} href="/">Home</NavLink>
-                <NavLink className={currentRoute === "/code" ? "header__nav-link--selected" : "header__nav-link"} href="/code/">Code</NavLink>
-                <NavLink className={currentRoute === "/essays" ? "header__nav-link--selected" : "header__nav-link"} href="/essays/">Essays</NavLink>
-                <NavLink className={currentRoute === "/photos" ? "header__nav-link--selected" : "header__nav-link"} href="/photos/">Photos</NavLink>
-                <NavLink className={currentRoute === "/about" ? "header__nav-link--selected" : "header__nav-link"} href="/about/">About</NavLink>
-                <NavLink className={currentRoute === "/archive" ? "header__nav-link--selected" : "header__nav-link"} href="/archive/">Archive</NavLink>
+                <NavLink className={currentRoute === "/" ? "header__nav-link header__nav-link--selected" : "header__nav-link"} href="/">Home</NavLink>
+                <NavLink className={currentRoute === "/code" ? "header__nav-link header__nav-link--selected" : "header__nav-link"} href="/code/">Code</NavLink>
+                <NavLink className={currentRoute === "/essays" ? "header__nav-link header__nav-link--selected" : "header__nav-link"} href="/essays/">Essays</NavLink>
+                <NavLink className={currentRoute === "/photos" ? "header__nav-link header__nav-link--selected" : "header__nav-link"} href="/photos/">Photos</NavLink>
+                {/*
+                <a className='header__nav-link' href="https://github.com/wesleydewitt">GitHub&#x00A0;&#x2197;</a>
+                <a className='header__nav-link' href="https://twitter.com/wesleydewitt">Twitter&#x00A0;&#x2197;</a>
+                <a className='header__nav-link' href="https://twitter.com/wesleydewitt">Newsletter&#x00A0;&#x2197;</a>
+                */}
+                <NavLink className={currentRoute === "/about" ? "header__nav-link header__nav-link--selected" : "header__nav-link"} href="/about/">About</NavLink>
+                <NavLink className={currentRoute === "/archive" ? "header__nav-link header__nav-link--selected" : "header__nav-link"} href="/archive/">Archive</NavLink>
 
                 <button id="header__theme-button" className="header__theme-button">
                     <svg height="16" width="16">

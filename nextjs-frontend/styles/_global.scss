@@ -1,7 +1,7 @@
 @import './_resets.scss';
 @import './_variables.scss';
 
-// elements ————————————————————————————————————————————————————————————————————————————————————————
+// elements & utility classes ——————————————————————————————————————————————————————————————————————
 
 body {
     background-color: $background-color-light-mode;
@@ -41,9 +41,7 @@ svg {
     fill: none;
     margin: auto;
     stroke: $heading-text-color-light-mode;
-    //stroke: $link-color-light-mode;
-    stroke-width: 1.25;
-    //stroke: rgba(255,255,255,1);
+    stroke-width: 1.5;
 }
 
 .show {
@@ -94,24 +92,59 @@ svg {
     color: $heading-text-color-light-mode;
     display: flex;
     flex-direction: row;
+    //font-size: $smaller-sans-font-size;
+    //font-weight: 500;
     justify-content: space-between;
+    //line-height: $base-unit;
 }
 
 .header__site-title {
     font-weight: inherit;
 }
 
-.header__theme-button {
-    overflow: hidden;
-    .overlay-circle {
-        fill: $background-color-light-mode;
-    }
+.header__nav-link {
+
 }
 
 .header__nav-link--selected {
     border-bottom: 1.5px solid;
 }
 
-@media screen and ( max-width: $break-0 ) {
+.header__theme-button {
+    display: none;
+    overflow: hidden;
 
+    .overlay-circle {
+        fill: $background-color-light-mode;
+    }
+}
+
+.header__menu-button,
+.header__search-button {
+    display: none;
+}
+
+// break 2 —————————————————————————————————————————————————————————————————————————————————————————
+
+@media screen and ( max-width: $break-2 ) {
+    .header {
+        border-bottom: 1px solid $gray-line-color-light-mode;
+        padding-bottom: 1*$base-unit;
+    }
+
+    .header__site-title {
+        flex-grow: 1;
+    }
+
+    .header__nav-link {
+        display: none;
+    }
+
+    .header button {
+        margin: 0 1*$base-unit;
+    }
+
+    .header__menu-button {
+        display: block;
+    }
 }

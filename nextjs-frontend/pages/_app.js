@@ -6,10 +6,10 @@ import '../styles/_global.scss'
 
 export default function App({ Component, pageProps }) {
     return (
-        <div suppressHydrationWarning>
+        <>
             <Layout>
                 {typeof window === 'undefined' ? null : <Component {...pageProps} />}
             </Layout>
-        </div>
+        </>
     );
 }
