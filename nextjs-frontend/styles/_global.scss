@@ -19,6 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     color: inherit;
+    display: inline-block;
     text-decoration: none;
     margin-bottom: -1.5px;
 }
@@ -71,19 +72,11 @@ svg {
 }
 
 @media screen and ( max-width: $break-0 ) {
-    .header,
-    .main,
-    .footer {
-        padding: 0 3*$base-unit;
-    }
+    
 }
 
 @media screen and ( max-width: $break-1 ) {
-    .header,
-    .main,
-    .footer {
-        padding: 0 1*$base-unit;
-    }
+    
 }
 
 // header ——————————————————————————————————————————————————————————————————————————————————————————
@@ -119,9 +112,28 @@ svg {
     }
 }
 
-.header__menu-button,
-.header__search-button {
-    display: none;
+.header__menu-button {
+    //display: none;
+}
+
+// break 0 —————————————————————————————————————————————————————————————————————————————————————————
+
+@media screen and ( max-width: $break-0 ) {
+    .header,
+    .main,
+    .footer {
+        padding: 0 3*$base-unit;
+    }
+}
+
+// break 1 —————————————————————————————————————————————————————————————————————————————————————————
+
+@media screen and ( max-width: $break-1 ) {
+    .header,
+    .main,
+    .footer {
+        padding: 0 1*$base-unit;
+    }
 }
 
 // break 2 —————————————————————————————————————————————————————————————————————————————————————————
@@ -133,7 +145,8 @@ svg {
     }
 
     .header__site-title {
-        flex-grow: 1;
+        order: 2;
+        text-align: center;
     }
 
     .header__nav-link {
@@ -141,10 +154,10 @@ svg {
     }
 
     .header button {
-        margin: 0 1*$base-unit;
     }
 
     .header__menu-button {
-        display: block;
+        //display: block;
+        order: 2
     }
 }
