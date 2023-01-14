@@ -18,14 +18,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
+    border-bottom: 1.5px solid transparent;
     color: inherit;
-    display: inline-block;
     text-decoration: none;
-    margin-bottom: -1.5px;
+    margin-bottom: -1.5px !important;
 }
 
 a:hover {
     border-bottom: 1.5px solid;
+    margin-bottom: -1.5px;
 }
 
 button {
@@ -71,14 +72,6 @@ svg {
     margin: 3*$base-unit auto;
 }
 
-@media screen and ( max-width: $break-0 ) {
-    
-}
-
-@media screen and ( max-width: $break-1 ) {
-    
-}
-
 // header ——————————————————————————————————————————————————————————————————————————————————————————
 
 .header {
@@ -91,7 +84,7 @@ svg {
     //line-height: $base-unit;
 }
 
-.header__site-title {
+.header__site-title a {
     font-weight: inherit;
 }
 
@@ -104,16 +97,16 @@ svg {
 }
 
 .header__theme-button {
-    display: none;
-    overflow: hidden;
+    //display: none;
+    //overflow: hidden;
+}
 
-    .overlay-circle {
-        fill: $background-color-light-mode;
-    }
+.header__search-button {
+    //display: none;
 }
 
 .header__menu-button {
-    //display: none;
+    display: none;
 }
 
 // break 0 —————————————————————————————————————————————————————————————————————————————————————————
@@ -145,19 +138,20 @@ svg {
     }
 
     .header__site-title {
-        order: 2;
+        order: 3;
         text-align: center;
     }
 
     .header__nav-link {
         display: none;
     }
-
-    .header button {
+    
+    .header__search-button {
+        order: 4;
     }
 
     .header__menu-button {
-        //display: block;
-        order: 2
+        display: block;
+        order: 5;
     }
 }

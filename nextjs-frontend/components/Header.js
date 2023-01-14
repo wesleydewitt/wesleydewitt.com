@@ -23,10 +23,15 @@ export default function Header() {
                 <NavLink className={currentRoute === "/about" ? "header__nav-link header__nav-link--selected" : "header__nav-link"} href="/about/">About</NavLink>
                 <NavLink className={currentRoute === "/archive" ? "header__nav-link header__nav-link--selected" : "header__nav-link"} href="/archive/">Archive</NavLink>
 
+                <button id="header__other-button" className="header__other-button">
+                    <svg height="16" width="16">
+                        <circle className="crescent" cx="8" cy="8" r="7"/>
+                    </svg> 
+                </button>
+
                 <button id="header__theme-button" className="header__theme-button">
                     <svg height="16" width="16">
                         <circle className="crescent" cx="8" cy="8" r="7"/>
-                        <circle className="overlay-circle" cx="11" cy="4" r="7"/>
                     </svg> 
                 </button>
 
