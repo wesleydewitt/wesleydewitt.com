@@ -96,15 +96,6 @@ svg {
     border-bottom: 1.5px solid;
 }
 
-.header__theme-button {
-    //display: none;
-    //overflow: hidden;
-}
-
-.header__search-button {
-    //display: none;
-}
-
 .header__menu-button {
     display: none;
 }
@@ -138,7 +129,7 @@ svg {
     }
 
     .header__site-title {
-        order: 3;
+        order: 2;
         text-align: center;
     }
 
@@ -147,11 +138,11 @@ svg {
     }
     
     .header__search-button {
-        order: 4;
+        order: 1;
     }
 
     .header__menu-button {
         display: block;
-        order: 5;
+        order: 3;
     }
 }

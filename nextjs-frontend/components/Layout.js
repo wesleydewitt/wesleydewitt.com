@@ -7,6 +7,7 @@ export default function Layout({children}) {
         <>
             <Head>
                 <title>Wesley De Witt</title>
+                <link rel='icon' type='image/x-icon' href='/favicon.png' />
             </Head>
             <Header />
             <main className='main'>

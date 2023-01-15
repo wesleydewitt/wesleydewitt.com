@@ -23,18 +23,6 @@ export default function Header() {
                 <NavLink className={currentRoute === "/about" ? "header__nav-link header__nav-link--selected" : "header__nav-link"} href="/about/">About</NavLink>
                 <NavLink className={currentRoute === "/archive" ? "header__nav-link header__nav-link--selected" : "header__nav-link"} href="/archive/">Archive</NavLink>
 
-                <button id="header__other-button" className="header__other-button">
-                    <svg height="16" width="16">
-                        <circle className="crescent" cx="8" cy="8" r="7"/>
-                    </svg> 
-                </button>
-
-                <button id="header__theme-button" className="header__theme-button">
-                    <svg height="16" width="16">
-                        <circle className="crescent" cx="8" cy="8" r="7"/>
-                    </svg> 
-                </button>
-
                 <button id="header__search-button" className="header__search-button">
                     <svg height="16" width="16">
                         <circle cx="6" cy="6" r="5" />
