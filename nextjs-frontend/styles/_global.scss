@@ -17,6 +17,10 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 
+p + p {
+    margin-top: 1*$base-unit;
+}
+
 a {
     border-bottom: 1.5px solid transparent;
     color: inherit;
@@ -88,16 +92,66 @@ svg {
     font-weight: inherit;
 }
 
-.header__nav-link {
+.header__nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
 
+.header__nav-link {
+    color: $gray-text-color-light-mode;
 }
 
 .header__nav-link--selected {
-    border-bottom: 1.5px solid;
+    //border-bottom: 1.5px solid;
+    color: $heading-text-color-light-mode;
+}
+
+.header__search-button,
+.header__menu-button {
+    svg {
+        stroke: $gray-text-color-light-mode;
+    }
 }
 
 .header__menu-button {
     display: none;
+}
+
+// greeting ————————————————————————————————————————————————————————————————————————————————————————
+
+.greeting__grid {
+    column-gap: 3*$base-unit;
+    display: grid;
+    grid-template-areas: 
+        'title cover-photo'
+        'body  cover-photo';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    row-gap: 1*$base-unit;
+}
+
+.greeting__title {
+    font-size: 72px;
+    line-height: 1;
+}
+
+.greeting__cover-photo {
+    border-radius: $border-radius;
+    grid-area: cover-photo;
+    overflow: hidden;
+
+    img {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+// footer ——————————————————————————————————————————————————————————————————————————————————————————
+
+footer {
+
 }
 
 // break 0 —————————————————————————————————————————————————————————————————————————————————————————
@@ -118,11 +172,7 @@ svg {
     .footer {
         padding: 0 1*$base-unit;
     }
-}
 
-// break 2 —————————————————————————————————————————————————————————————————————————————————————————
-
-@media screen and ( max-width: $break-2 ) {
     .header {
         border-bottom: 1px solid $gray-line-color-light-mode;
         padding-bottom: 1*$base-unit;
@@ -133,7 +183,7 @@ svg {
         text-align: center;
     }
 
-    .header__nav-link {
+    .header__nav {
         display: none;
     }
     
@@ -145,4 +195,14 @@ svg {
         display: block;
         order: 3;
     }
+
+    .greeting__grid {
+        column-gap: 1*$base-unit;
+    }
+}
+
+// break 2 —————————————————————————————————————————————————————————————————————————————————————————
+
+@media screen and ( max-width: $break-2 ) {
+    
 }

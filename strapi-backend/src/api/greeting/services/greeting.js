@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * essay service
+ * greeting service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::essay.essay');
+module.exports = createCoreService('api::greeting.greeting');

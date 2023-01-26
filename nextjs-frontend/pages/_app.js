@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }) {
     return (
         <>
             <Layout>
-                {typeof window === 'undefined' ? null : <Component {...pageProps} />}
+                <Component {...pageProps} />
             </Layout>
         </>
     );

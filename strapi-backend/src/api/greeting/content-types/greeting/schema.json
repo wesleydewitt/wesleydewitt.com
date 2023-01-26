@@ -1,30 +1,31 @@
 {
-  "kind": "collectionType",
-  "collectionName": "projects",
+  "kind": "singleType",
+  "collectionName": "greetings",
   "info": {
-    "singularName": "project",
-    "pluralName": "projects",
-    "displayName": "Project"
+    "singularName": "greeting",
+    "pluralName": "greetings",
+    "displayName": "Greeting"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "Greeting": {
       "type": "string",
       "required": true
     },
-    "Body": {
+    "GreetingBody": {
       "type": "richtext",
       "required": true
     },
-    "Icon": {
+    "GreetingCoverImage": {
       "allowedTypes": [
         "images"
       ],
       "type": "media",
-      "multiple": false
+      "multiple": false,
+      "required": true
     }
   }
 }

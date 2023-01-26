@@ -7,10 +7,10 @@ module.exports = nextConfig
 
 module.exports = {
   cssModules: true,
-    cssLoaderOptions: {
-  importLoaders: 1,
- localIdentName: "[]",
-},
+  cssLoaderOptions: {
+    importLoaders: 1,
+    localIdentName: "[]",
+  },
 };
 
 module.exports = {
@@ -25,9 +25,7 @@ module.exports = {
 };
 
 module.exports = {
-  reactStrictMode: true,
-  images: {
-    loader: "default",
-    domains: ["localhost"],
-  },
-};
+  devIndicators: {
+      buildActivity: false
+  }
+}
