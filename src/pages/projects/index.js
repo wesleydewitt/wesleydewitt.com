@@ -32,7 +32,7 @@ export const Head = () => (
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { frontmatter: { date: DESC }}) {
+    allMarkdownRemark(filter: { frontmatter: { type: { eq: "project" } } }, sort: { frontmatter: { date: DESC }}) {
       edges {
         node {
           id

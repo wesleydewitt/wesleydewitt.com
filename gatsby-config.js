@@ -12,7 +12,6 @@ module.exports = {
       options: {
         name: 'pages',
         path: './src/pages/',
-        __key: 'pages'
       },
     },
     {
