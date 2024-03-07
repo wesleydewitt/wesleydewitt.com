@@ -259,7 +259,7 @@ svg {
 
 .essay-title {
     font-size: 24px;
-    font-weight: inherit;
+    // font-weight: inherit;
     margin: .25*$base-unit 0 0;
 }
 
@@ -281,8 +281,6 @@ svg {
 }
 
 .essay-body {
-    // font-family: $serif-font;
-    // font-size: 18px;
     margin: 2*$base-unit 0 0;
 
     hr {
@@ -296,7 +294,7 @@ svg {
         float: left;
         font-family: $sans-font;
         font-size: 2*$base-font-size*1.5;
-        font-weight: 100;
+        font-weight: 300;
         line-height: 1;
         margin: 0 4px 0 0;
     }

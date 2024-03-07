@@ -4,7 +4,7 @@ import Layout from "../../layouts/Layout"
 import Essay from "../../components/Essay"
 import Project from "../../components/Project"
 
-export default function BlogPostTemplate({ data }) {
+export default function EssayAndProjectPageTemplate({ data }) {
     const { markdownRemark } = data
     const { frontmatter, html } = markdownRemark
 
