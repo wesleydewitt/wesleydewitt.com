@@ -16,6 +16,6 @@ export default ContactPage
 
 export const Head = () => (
     <>
-        <title>Wesley De Witt</title>
+        <title>Contact Wesley De Witt</title>
     </>
 )

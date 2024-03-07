@@ -5,17 +5,16 @@ import Essay from "../../components/Essay"
 import Project from "../../components/Project"
 
 export default function EssayAndProjectPageTemplate({ data }) {
-    const { markdownRemark } = data
-    const { frontmatter, html } = markdownRemark
+    const { frontmatter, html } = data.markdownRemark
 
 
-    if (frontmatter.type == 'essay') {
+    if (frontmatter.type === 'essay') {
         return (
             <Layout>
                 <Essay frontmatter={frontmatter} html={html}/>
             </Layout>
         )
-    } else if (frontmatter.type == 'project') {
+    } else if (frontmatter.type === 'project') {
         return (
             <Layout>
                 <Project frontmatter={frontmatter} html={html}/>
@@ -27,8 +26,7 @@ export default function EssayAndProjectPageTemplate({ data }) {
 }
 
 export const Head = ({ data }) => {
-    const { markdownRemark } = data
-    const { frontmatter } = markdownRemark
+    const { frontmatter } = data.markdownRemark
 
     return (
         <>

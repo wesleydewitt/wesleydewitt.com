@@ -16,6 +16,6 @@ export default AboutPage
 
 export const Head = () => (
     <>
-        <title>Wesley De Witt</title>
+        <title>About Wesley De Witt</title>
     </>
 )

@@ -26,7 +26,7 @@ export default ProjectsPage
 
 export const Head = () => (
     <>
-        <title>Wesley De Witt</title>
+        <title>Projects by Wesley De Witt</title>
     </>
 )
 
@@ -38,7 +38,7 @@ export const pageQuery = graphql`
           id
           excerpt(pruneLength: 250)
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "D MMMM YYYY")
             slug
             title
           }

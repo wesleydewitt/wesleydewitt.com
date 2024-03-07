@@ -5,8 +5,6 @@ import projects from '../images/projects.svg'
 import essays from '../images/essays.svg'
 import about from '../images/about.svg'
 import contact from '../images/contact.svg'
-import theme from '../images/theme.svg'
-import moon from '../images/moon.svg'
 
 const Header = () => {
     return (
@@ -16,11 +14,25 @@ const Header = () => {
                 <h2 className='site-subtitle'>Code & Words</h2>
             </div>
             <nav className='nav'>
-                <Link className='nav-link' activeClassName='nav-link--active' to='/'>/&nbsp;&nbsp;Home</Link>
-                <Link className='nav-link' activeClassName='nav-link--active' to='/projects'><img className='nav-link__icon' src={projects} />&nbsp;&nbsp;Projects</Link>
-                <Link className='nav-link' activeClassName='nav-link--active' to='/essays'><img className='nav-link__icon' src={essays} />&nbsp;&nbsp;Essays</Link>
-                <Link className='nav-link' activeClassName='nav-link--active' to='/about'><img className='nav-link__icon' src={about} />&nbsp;&nbsp;About</Link>
-                <Link className='nav-link' activeClassName='nav-link--active' to='/contact'><img className='nav-link__icon' src={contact} />&nbsp;&nbsp;Contact</Link>
+                <Link className='nav-link' activeClassName='nav-link--active' to='/'>
+                    <img className='nav-link__icon' src={home} alt='home-icon' />&nbsp;&nbsp;Home
+                </Link>
+
+                <Link className='nav-link' activeClassName='nav-link--active' to='/projects'>
+                    <img className='nav-link__icon' src={projects} alt='projects-icon' />&nbsp;&nbsp;Projects
+                </Link>
+
+                <Link className='nav-link' activeClassName='nav-link--active' to='/essays'>
+                    <img className='nav-link__icon' src={essays} alt='essays-icon' />&nbsp;&nbsp;Essays
+                </Link>
+
+                <Link className='nav-link' activeClassName='nav-link--active' to='/about'>
+                    <img className='nav-link__icon' src={about} alt='about-icon' />&nbsp;&nbsp;About
+                </Link>
+                
+                <Link className='nav-link' activeClassName='nav-link--active' to='/contact'>
+                    <img className='nav-link__icon' src={contact} alt='contact-icon' />&nbsp;&nbsp;Contact
+                </Link>
             </nav>
         </header>
     )

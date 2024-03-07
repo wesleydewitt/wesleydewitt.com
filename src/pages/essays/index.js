@@ -27,7 +27,7 @@ export default EssaysPage
 
 export const Head = () => (
     <>
-        <title>Wesley De Witt</title>
+        <title>Essays by Wesley De Witt</title>
     </>
 )
 
@@ -39,7 +39,7 @@ export const pageQuery = graphql`
           id
           excerpt(pruneLength: 250)
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "D MMMM YYYY")
             slug
             title
           }
