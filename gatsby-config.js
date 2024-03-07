@@ -19,14 +19,14 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'projects',
-        path: './src/projects/',
+        path: './src/_projects/',
       },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'essays',
-        path: './src/essays/',
+        path: './src/_essays/',
       },
     },
   ]

@@ -258,26 +258,26 @@ svg {
 }
 
 .essay-title {
-    // color: inherit;
-    // font-family: $serif-font;
-    font-size: 30px;
-    // font-weight: 500;
-    margin: .5*$base-unit 0;
+    font-size: 24px;
+    font-weight: inherit;
+    margin: .25*$base-unit 0 0;
 }
 
 .essay-subtitle {
     color: inherit;
+    font-size: inherit;
     font-weight: inherit;
-    margin: .5*$base-unit 0;
+    margin: .25*$base-unit 0 0;
 }
 
 .essay-date {
+    display: none;
     color: $heading-color;
     font-family: $sans-font;
     font-size: 10px;
     font-weight: 600;
     letter-spacing: .125em;
-    margin: 0 0 .5*$base-unit;
+    margin: 0 0 0*$base-unit;
     text-transform: uppercase;
 }
 
@@ -297,7 +297,7 @@ svg {
         float: left;
         font-family: $sans-font;
         font-size: 2*$base-font-size*1.5;
-        font-weight: 300;
+        font-weight: 100;
         line-height: 1;
         margin: 0 4px 0 0;
     }

@@ -3,8 +3,10 @@ type: 'essay'
 slug: '/hello-to-all-that/'
 date: '2024-02-25'
 title: 'Hello to All That'
-subtitle: 'Nulla fugiat labore excepteur sunt aliquip voluptate sint enim ullamco mollit magna mollit dolore voluptate culpa commodo qui irure velit'
+subtitle: 'On the future of myself in Muncie'
 ---
+Few come here for the first time. You have been in a place exactly like it before. You will not marvel at the architecture, nor the culture, nor the sophistication of the people. But, if you were born here, and so were your parents, and so were your grandparents, it feels like home. If you went to school here, and you learned to ride a bike here, and you felt your first heartbreak here, it feels like home.
+
 Nostrud est culpa esse cillum velit officia et aliqua minim cillum ea aliquip. Qui officia velit amet sit officia elit do labore magna deserunt dolor eiusmod culpa. Laboris excepteur laborum minim eu. Duis veniam anim qui exercitation consectetur sit cupidatat esse cillum do. Elit laborum labore ex laboris. Ex adipisicing sint adipisicing aliquip adipisicing voluptate est commodo commodo consectetur minim.
 
 Exercitation elit ipsum cillum laboris deserunt. Proident voluptate id nisi laborum sint id Lorem. Consectetur pariatur officia esse tempor eiusmod eiusmod proident commodo ut. Quis id esse esse irure in Lorem ad laboris dolore eiusmod cupidatat. Velit dolore adipisicing aliqua sit cupidatat eu quis irure. In minim Lorem fugiat veniam occaecat fugiat. Ex pariatur reprehenderit anim mollit proident elit aliqua.

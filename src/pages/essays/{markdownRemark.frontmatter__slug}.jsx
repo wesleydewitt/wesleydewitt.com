@@ -9,7 +9,7 @@ export default function BlogPostTemplate({ data }) {
     return (
         <Layout>
             <article className='essay'>
-                <h4 className='essay-date'>Essay&nbsp;&nbsp;|&nbsp;&nbsp;{frontmatter.date}</h4>
+                <p className='essay-date'>Essay&nbsp;&nbsp;|&nbsp;&nbsp;{frontmatter.date}</p>
                 <h3 className='essay-title'>{frontmatter.title}</h3>
                 <h4 className='essay-subtitle'>{frontmatter.subtitle}</h4>
                 <div className='essay-body'
