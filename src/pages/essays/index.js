@@ -1,8 +1,8 @@
-import * as React from "react"
-import { graphql } from "gatsby"
-import Layout from "../../layouts/Layout"
+import * as React from 'react'
+import { graphql } from 'gatsby'
+import Layout from '../../layouts/Layout'
 import '../../styles/styles.scss'
-import EssayLink from "../../components/EssayLink"
+import EssayLink from '../../components/EssayLink'
 
 const EssaysPage = ({
     data: {
@@ -16,7 +16,7 @@ const EssaysPage = ({
 
     return (
         <Layout>
-            <div className="index-grid">
+            <div className='essays-grid'>
                 {Essays}
             </div>
         </Layout>

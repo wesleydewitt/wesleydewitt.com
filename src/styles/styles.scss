@@ -13,7 +13,7 @@ $sans-font: -apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', sans-s
 $serif-font: 'Heldane', serif;
 
 $border-radius: 6px;
-$page-width: 30*$base-unit;
+$page-width: 35*$base-unit;
 
 $link-color: blue;
 $link-color-dark-mode : #c0c0c0;
@@ -33,11 +33,11 @@ $gray-line-color-dark-mode : #303030;
 $background-color : #ffffff;
 $background-color-dark-mode : #000000;
 
-$menu-bg-color : #f0f0f0;
-$menu-bg-color-dark-mode : #171717;
+$nav-link-active-bg : #f0f0f0;
+$nav-link-active-bg-dark-mode : #181818;
 
 $article-bg-color : #fbfbfb;
-$article-bg-color-dark-mode : #171717;
+$article-bg-color-dark-mode : #181818;
 
 * {
     box-sizing: border-box;
@@ -144,9 +144,9 @@ svg {
 
 .header {
     align-items: end;
-    // border-bottom: 1px solid $body-color;
+    // border-bottom: 1px solid $gray-line-color;
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr auto 1fr;
     margin: $base-unit 0;
     // padding: 0 0 $base-unit;
 }
@@ -157,10 +157,10 @@ svg {
 
 .site-title {
     color: inherit;
-    // font-family: $serif-font;
-    // font-size: $serif-font-size;
+    font-family: $serif-font;
+    font-size: $serif-font-size;
     font-weight: inherit;
-    // line-height: $serif-line-height;
+    line-height: $serif-line-height;
     margin: 0;
 }
 
@@ -182,27 +182,27 @@ svg {
     display: flex;
     font-size: 12px;
     line-height: 1;
-    padding: 6px 0*.5*$base-unit;
+    padding: 6px .5*$base-unit;
 
     +.nav-link {
-        margin: 0 0 0 1.5*$base-unit;
-    }
-
-    span {
-        color: $gray-color;
+        margin: 0 0 0 .5*$base-unit;
     }
 }
 
 .nav-link--active {
-    // background-color: $menu-bg-color;
-    border-bottom: 1px solid $body-color;
-    padding-bottom: 5px;
-    // border-radius: $border-radius;
+    // background-color: $nav-link-active-bg;
+    border: 1px solid $gray-line-color;
+    padding: 5px (.5*$base-unit - 1);
+    border-radius: 12px;
 }
 
 .nav-link__icon {
     max-height: 12px;
     max-width: 12px;
+}
+
+.nav-link__item-count {
+    color: $gray-color;
 }
 
 .buttons {
@@ -215,7 +215,7 @@ svg {
     display: flex;
     font-size: 12px;
     line-height: 1;
-    padding: 6px;
+    padding: 6px 0;
     border: 0;
 }
 
@@ -226,6 +226,22 @@ svg {
 
 .main {
     margin: 4*$base-unit 0;
+}
+
+.hero-label {
+    color: $gray-color;
+    // font-family: $serif-font;
+    font-size: $small-font-size;
+    // font-style: oblique;
+    // line-height: $serif-line-height;
+    margin: 2*$base-unit 0 .25*$base-unit;
+}
+
+.hero-text {
+    font-family: $serif-font;
+    font-size: 30px;
+    font-weight: inherit;
+    margin: 0;
 }
 
 .index-grid {
@@ -254,33 +270,49 @@ svg {
 
 .index-link__description {
     font-family: $serif-font;
-    // font-size: $small-font-size;
+}
+
+.essays-grid {
+    display: grid;
+    gap: $base-unit;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.essay-link {
+    display: block;
+    border: 1px solid $gray-line-color;
+    border-radius: $border-radius;
+    padding: $base-unit;
 }
 
 .essay-title {
-    font-size: 24px;
-    // font-weight: inherit;
-    margin: .25*$base-unit 0 0;
+    color: inherit;
+    font-family: $serif-font;
+    font-size: 30px;
+    font-weight: inherit;
+    margin: .5*$base-unit 0 0;
 }
 
 .essay-subtitle {
     color: inherit;
     font-size: inherit;
     font-weight: inherit;
-    margin: .25*$base-unit 0 0;
+    margin: .5*$base-unit 0 0;
 }
 
 .essay-date {
     color: $heading-color;
     font-family: $sans-font;
     font-size: 10px;
-    font-weight: 600;
+    // font-weight: 600;
     letter-spacing: .125em;
-    margin: 0 0 0*$base-unit;
+    margin: 0;
     text-transform: uppercase;
 }
 
 .essay-body {
+    font-family: $serif-font;
+    font-size: $serif-font-size;
     margin: 2*$base-unit 0 0;
 
     hr {
@@ -293,8 +325,8 @@ svg {
         color: $heading-color;
         float: left;
         font-family: $sans-font;
-        font-size: 2*$base-font-size*1.5;
-        font-weight: 300;
+        font-size: 2*$serif-font-size*1.5;
+        font-weight: 100;
         line-height: 1;
         margin: 0 4px 0 0;
     }
