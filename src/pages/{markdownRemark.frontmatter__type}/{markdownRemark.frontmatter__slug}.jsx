@@ -1,36 +1,24 @@
 import * as React from "react"
 import { graphql } from "gatsby"
-import Layout from "../../components/Layout"
+import Layout from "../../layouts/Layout"
+import Essay from "../../components/Essay"
+import Project from "../../components/Project"
 
 export default function BlogPostTemplate({ data }) {
-    const { markdownRemark } = data // data.markdownRemark holds your post data
+    const { markdownRemark } = data
     const { frontmatter, html } = markdownRemark
 
 
     if (frontmatter.type == 'essay') {
         return (
             <Layout>
-                <article className='essay'>
-                    <p className='essay-date'>Essay&nbsp;&nbsp;|&nbsp;&nbsp;{frontmatter.date}</p>
-                    <h3 className='essay-title'>{frontmatter.title}</h3>
-                    <h4 className='essay-subtitle'>{frontmatter.subtitle}</h4>
-                    <div className='essay-body'
-                        dangerouslySetInnerHTML={{ __html: html }}
-                    />
-                </article>
+                <Essay frontmatter={frontmatter} html={html}/>
             </Layout>
         )
     } else if (frontmatter.type == 'project') {
         return (
             <Layout>
-                <article className='project'>
-                    <p className='project-date'>Project</p>
-                    <h3 className='project-title'>{frontmatter.title}</h3>
-                    <h4 className='project-subtitle'>{frontmatter.subtitle}</h4>
-                    <div className='project-body'
-                        dangerouslySetInnerHTML={{ __html: html }}
-                    />
-                </article>
+                <Project frontmatter={frontmatter} html={html}/>
             </Layout>
         )
     } else {
@@ -39,8 +27,8 @@ export default function BlogPostTemplate({ data }) {
 }
 
 export const Head = ({ data }) => {
-    const { markdownRemark } = data // data.markdownRemark holds your post data
-    const { frontmatter, html } = markdownRemark
+    const { markdownRemark } = data
+    const { frontmatter } = markdownRemark
 
     return (
         <>

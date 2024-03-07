@@ -1,6 +1,6 @@
 import * as React from "react"
 import { graphql } from "gatsby"
-import Layout from "../../components/Layout"
+import Layout from "../../layouts/Layout"
 import '../../styles/styles.scss'
 import EssayLink from "../../components/EssayLink"
 
@@ -9,6 +9,7 @@ const EssaysPage = ({
         allMarkdownRemark: { edges },
     },
 }) => {
+
     const Essays = edges
         .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
         .map(edge => <EssayLink key={edge.node.id} project={edge.node} />)
