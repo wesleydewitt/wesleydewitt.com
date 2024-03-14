@@ -155,11 +155,11 @@ svg {
     align-items: start;
     display: grid;
     gap: 4 * $base-unit;
-    grid-template-columns: auto 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
-    max-width: $page-width + 4 * $base-unit;
+    max-width: $page-width + (8 * $base-unit);
     // overflow: hidden;
-    padding: 2 * $base-unit;
+    padding: (2 * $base-unit) (4 * $base-unit);
     position: relative;
 }
 
@@ -180,7 +180,7 @@ svg {
     // font-size: $serif-font-size;
     font-weight: inherit;
     // line-height: $serif-line-height;
-    margin: 0 (0.5 * $base-unit) 0 0;
+    margin: 0 (0 * $base-unit) (0.5 * $base-unit) 0;
 }
 
 .site-subtitle {
@@ -190,7 +190,7 @@ svg {
     // font-size: $small-font-size;
     // font-style: oblique;
     // line-height: 1;
-    margin: (0 * $base-unit) 0 0;
+    margin: (0 * $base-unit) 0 (0.5 * $base-unit);
     // padding: 6px 0;
 }
 
@@ -354,6 +354,7 @@ svg {
 }
 
 .essay-link__date {
+    display: none;
     font-size: $small-font-size;
     line-height: 2;
     margin: 0;
@@ -364,7 +365,7 @@ svg {
     // font-family: $serif-font;
     // font-size: $serif-font-size;
     // font-weight: inherit;
-    margin: 0.5 * $base-unit 0;
+    margin: 0 0 (0.5 * $base-unit) 0;
 }
 
 .essay {
@@ -424,7 +425,8 @@ svg {
 
 @media (max-width: 766px) {
     .page {
-        padding: 0 $base-unit;
+        gap: 2 * $base-unit;
+        padding: (2 * $base-unit) $base-unit;
     }
 }
 
