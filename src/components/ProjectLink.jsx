@@ -1,12 +1,10 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
 
 const ProjectLink = ({ project }) => (
-    <div>
-        <Link to={'/project' + project.frontmatter.slug}>
-            {project.frontmatter.title} ({project.frontmatter.date})
-        </Link>
-    </div>
-)
+    <Link to={'/project' + project.frontmatter.slug}>
+        {project.frontmatter.title} ({project.frontmatter.date})
+    </Link>
+);
 
-export default ProjectLink
+export default ProjectLink;

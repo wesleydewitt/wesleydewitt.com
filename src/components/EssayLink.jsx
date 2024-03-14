@@ -1,12 +1,12 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import { Link } from 'gatsby';
 
-const EssayLink = ({ project }) => (
-    <div>
-        <Link className='essay-link' to={'/essay' + project.frontmatter.slug}>
-            {project.frontmatter.title} ({project.frontmatter.date})
-        </Link>
-    </div>
-)
+const EssayLink = ({ essay }) => (
+    <Link className="essay-link" to={'/essay' + essay.frontmatter.slug}>
+        <p className="essay-link__date">{essay.frontmatter.date}</p>
+        <h2 className="essay-link__title">{essay.frontmatter.title}</h2>
+        <div>{essay.excerpt}</div>
+    </Link>
+);
 
-export default EssayLink
+export default EssayLink;

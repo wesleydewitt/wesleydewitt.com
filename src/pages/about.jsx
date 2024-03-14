@@ -1,21 +1,20 @@
-import * as React from "react"
-import Layout from "../layouts/Layout"
-import '../styles/styles.scss'
+import * as React from 'react';
+import Layout from '../layouts/Layout';
+import Nav from '../components/Nav';
+import '../styles/styles.scss';
 
 const AboutPage = () => {
     return (
         <Layout>
-            <div className="index-grid">
-
-            </div>
+            <div className="index-grid"></div>
         </Layout>
-    )
-}
+    );
+};
 
-export default AboutPage
+export default AboutPage;
 
 export const Head = () => (
     <>
         <title>About Wesley De Witt</title>
     </>
-)
+);
