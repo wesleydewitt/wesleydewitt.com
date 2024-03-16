@@ -3,6 +3,7 @@ type: 'project'
 slug: '/open-source-food-delivery'
 date: '2024-03-03'
 title: 'Open Source Food Delivery'
+featured: true
 ---
 
 An open source competitor to DoorDash, GrubHub, etc. Et sint deserunt mollit minim ad reprehenderit eiusmod qui ipsum fugiat esse non laborum. Nulla dolore laboris irure fugiat aliquip officia do occaecat mollit aliqua non labore incididunt. Proident veniam ea amet laboris ut ea fugiat qui dolor eu. Aliquip ad sint duis nisi do reprehenderit pariatur officia tempor et. Enim ex deserunt id aliquip do ex culpa.

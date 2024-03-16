@@ -15,6 +15,7 @@ $serif-font: 'Heldane', serif;
 
 $border-radius: 6px;
 $page-width: 40 * $base-unit;
+$essay-width: 30 * $base-unit;
 
 $link-color: blue;
 $link-color-dark-mode: #c0c0c0;
@@ -65,6 +66,12 @@ h6 {
     color: $heading-color;
     font-weight: 600;
     margin: (2 * $base-unit) 0 $base-unit;
+}
+
+.index-label {
+    color: inherit;
+    font-weight: inherit;
+    margin: (2 * $base-unit) 0 (1 * $base-unit);
 }
 
 p + p {
@@ -165,9 +172,9 @@ svg {
 .header {
     // border-bottom: 1px solid $gray-line-color;
     display: flex;
-    grid-template-areas:
-        'site-titles nav'
-        'buttons     nav';
+    // grid-template-areas:
+    //     'site-titles nav'
+    //     'buttons     nav';
     grid-template-columns: 1fr auto;
     grid-template-rows: 1fr auto;
     margin: 0 0 (2 * $base-unit);
@@ -220,7 +227,7 @@ svg {
     // padding: 6px (0 * $base-unit);
 
     + .nav-link {
-        margin: 0 0 0 (1 * $base-unit);
+        margin: 0 0 0 (3 * $base-unit);
     }
 }
 
@@ -288,12 +295,13 @@ svg {
 }
 
 .hero {
+    // display: none;
     // background-color: $article-bg-color;
     // border: 1px solid $gray-line-color;
     // border-radius: $border-radius;
     margin: (4 * $base-unit) 0;
     // padding: 2 * $base-unit;
-    // text-align: center;
+    text-align: center;
 }
 
 .hero-label {
@@ -307,15 +315,15 @@ svg {
 
 .hero-text {
     // font-family: $serif-font;
-    font-size: 30px;
+    font-size: 32px;
     // font-weight: inherit;
     margin: 0;
 }
 
 .hero__subscribe-field {
     display: flex;
-    display: none;
-    // justify-content: center;
+    // display: none;
+    justify-content: center;
     margin: (2 * $base-unit) 0 0;
 
     button {
@@ -353,7 +361,7 @@ svg {
 
 .essays-grid {
     display: grid;
-    gap: 0.5 * $base-unit;
+    gap: 1 * $base-unit;
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -362,27 +370,56 @@ svg {
     // display: block;
     border: 1px solid $gray-line-color;
     border-radius: $border-radius;
-    padding: 2 * $base-unit;
+    padding: 1 * $base-unit;
 }
 
 .essay-link__date {
-    display: none;
+    // display: none;
     font-size: $small-font-size;
-    line-height: 2;
-    margin: 0;
+    // line-height: 2;
+    margin: 0 0 (0.5 * $base-unit);
 }
 
 .essay-link__title {
     // color: inherit;
     // font-family: $serif-font;
-    // font-size: $serif-font-size;
+    font-size: 24px;
     // font-weight: inherit;
-    margin: 0 0 (1 * $base-unit) 0;
+    margin: 0 0 (0.5 * $base-unit) 0;
+}
+
+.projects-grid {
+    display: grid;
+    gap: 1 * $base-unit;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.project-link {
+    // aspect-ratio: 3/4;
+    // display: block;
+    border: 1px solid $gray-line-color;
+    border-radius: $border-radius;
+    padding: 1 * $base-unit;
+}
+
+.project-link__date {
+    // display: none;
+    font-size: $small-font-size;
+    // line-height: 2;
+    margin: 0 0 (0.5 * $base-unit);
+}
+
+.project-link__title {
+    // color: inherit;
+    // font-family: $serif-font;
+    font-size: 24px;
+    // font-weight: inherit;
+    margin: 0 0 (0.5 * $base-unit) 0;
 }
 
 .essay {
     margin: (6 * $base-unit) auto;
-    max-width: 600px;
+    max-width: $essay-width;
 }
 
 .essay-title {
@@ -448,14 +485,18 @@ svg {
     // }
 }
 
-@media (max-width: 500px) {
-    .nav {
-        flex-direction: column;
-    }
+@media (max-width: 600px) {
+    // .header {
+    //     display: block;
+    // }
+
+    // .nav {
+    //     margin: (2 * $base-unit) 0 0;
+    // }
 
     .nav-link {
         + .nav-link {
-            margin: $base-unit 0 0;
+            margin: 0 0 0 $base-unit;
         }
     }
 }

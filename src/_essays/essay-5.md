@@ -4,6 +4,7 @@ slug: '/essay-5/'
 date: '2024-02-27'
 title: 'Another Essay'
 subtitle: 'Nulla fugiat labore excepteur sunt aliquip voluptate sint enim ullamco mollit magna mollit dolore voluptate culpa commodo qui irure velit'
+featured: false
 ---
 
 In magna eu adipisicing deserunt sunt ut eu magna. Esse elit elit culpa in quis laboris eiusmod culpa et velit nostrud et est et. Ad nisi cillum reprehenderit aute deserunt eiusmod aliqua proident occaecat ipsum incididunt proident quis. Occaecat ullamco ipsum pariatur aute quis incididunt consequat velit sit id dolor adipisicing esse.

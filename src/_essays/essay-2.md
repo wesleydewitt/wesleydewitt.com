@@ -1,9 +1,10 @@
 ---
 type: 'essay'
 slug: '/essay-2/'
-date: '2024-02-27'
-title: 'Another Essay'
+date: '2024-03-15'
+title: 'Ipsum pariatur enim voluptate tempor'
 subtitle: 'Nulla fugiat labore excepteur sunt aliquip voluptate sint enim ullamco mollit magna mollit dolore voluptate culpa commodo qui irure velit'
+featured: true
 ---
 
 Aliquip irure velit non aute sunt sit tempor excepteur ut. Nulla culpa sunt pariatur adipisicing sit elit. Excepteur proident qui aliqua dolore labore sint. Minim Lorem incididunt eu occaecat laborum cupidatat cillum veniam ad aliquip cillum id aliquip. Labore ipsum elit excepteur consectetur aliqua nostrud. Velit ex veniam eiusmod culpa voluptate qui quis dolor exercitation id aliquip.
