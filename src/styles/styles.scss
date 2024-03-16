@@ -313,7 +313,7 @@ svg {
 
 .index-grid {
     display: grid;
-    gap: 2 * $base-unit 4 * $base-unit;
+    gap: (2 * $base-unit) (4 * $base-unit);
     grid-template-columns: repeat(1, 1fr);
 }
 
