@@ -8,14 +8,13 @@ $small-font-size: 12px;
 $serif-font-size: 18px;
 $serif-line-height: 1.333;
 
-$sans-font: -apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue',
-    sans-serif;
+$sans-font: -apple-system, BlinkMacSystemFont, 'Inter', 'Helvetica Neue', sans-serif;
 
 $serif-font: 'Heldane', serif;
 //$serif-font: serif;
 
 $border-radius: 6px;
-$page-width: 45 * $base-unit;
+$page-width: 40 * $base-unit;
 
 $link-color: blue;
 $link-color-dark-mode: #c0c0c0;
@@ -30,7 +29,7 @@ $gray-color: #b0b0b0;
 $gray-color-dark-mode: #606060;
 
 $gray-line-color: #d0d0d0;
-$gray-line-color-dark-mode: #303030;
+$gray-line-color-dark-mode: #404040;
 
 $background-color: #ffffff;
 $background-color-dark-mode: #000000;
@@ -153,24 +152,33 @@ svg {
 
 .page {
     align-items: start;
-    display: grid;
-    gap: 4 * $base-unit;
+    // display: grid;
+    gap: 1 * $base-unit;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
-    max-width: $page-width + (8 * $base-unit);
+    max-width: $page-width + (2 * $base-unit);
     // overflow: hidden;
-    padding: (2 * $base-unit) (4 * $base-unit);
+    padding: (0 * $base-unit) (1 * $base-unit);
     position: relative;
 }
 
 .header {
-    position: sticky;
-    top: 2 * $base-unit;
+    // border-bottom: 1px solid $gray-line-color;
+    display: flex;
+    grid-template-areas:
+        'site-titles nav'
+        'buttons     nav';
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr auto;
+    margin: 0 0 (2 * $base-unit);
+    padding: (2 * $base-unit) 0 0;
 }
 
 .site-titles {
-    //display: flex;
-    // align-items: baseline;
+    display: flex;
+    align-items: baseline;
+    flex-grow: 1;
+    grid-area: site-titles;
     // justify-content: center;
 }
 
@@ -180,38 +188,39 @@ svg {
     // font-size: $serif-font-size;
     font-weight: inherit;
     // line-height: $serif-line-height;
-    margin: 0 (0 * $base-unit) (0.5 * $base-unit) 0;
+    margin: 0 (0 * $base-unit) (0 * $base-unit) 0;
 }
 
 .site-subtitle {
     color: $gray-color;
-    // display: none;
+    display: none;
     font-weight: inherit;
     // font-size: $small-font-size;
     // font-style: oblique;
     // line-height: 1;
-    margin: (0 * $base-unit) 0 (0.5 * $base-unit);
+    margin: (0 * $base-unit) 0 (0 * $base-unit);
     // padding: 6px 0;
 }
 
 .nav {
     align-items: end;
-    // display: flex;
+    display: flex;
     // display: none;
-    flex-direction: column;
+    // flex-direction: column;
+    grid-area: nav;
     // justify-content: space-between;
-    margin: (2 * $base-unit) (0 * $base-unit) (0 * $base-unit) (0 * $base-unit);
+    margin: (0 * $base-unit) (0 * $base-unit) (0 * $base-unit) (0 * $base-unit);
 }
 
 .nav-link {
-    align-items: center;
-    display: flex;
-    font-size: 12px;
-    line-height: 1;
-    padding: 6px (0 * $base-unit);
+    // align-items: center;
+    // display: flex;
+    // font-size: 12px;
+    // line-height: 1;
+    // padding: 6px (0 * $base-unit);
 
     + .nav-link {
-        margin: (0.5 * $base-unit) 0 0 0;
+        margin: 0 0 0 (1 * $base-unit);
     }
 }
 
@@ -223,22 +232,24 @@ svg {
 }
 
 .nav-link__icon {
-    // display: none;
-    margin: 0 (0.5 * $base-unit) 0 0;
-    max-height: 12px;
-    max-width: 12px;
+    display: none;
+    margin: 0 (0.25 * $base-unit) 0 0;
+    max-height: 10px;
+    max-width: 10px;
 }
 
 .nav-link__item-count {
     color: $gray-color;
+    // display: none;
     margin: 0 0 0 (0.25 * $base-unit);
 }
 
 .buttons {
     display: flex;
     display: none;
-    justify-content: end;
-    margin-top: -2px;
+    grid-area: buttons;
+    // justify-content: end;
+    margin: (0 * $base-unit) 0 0;
 }
 
 .theme-button {
@@ -273,13 +284,14 @@ svg {
 .main {
     grid-column: span 2;
     // background-color: pink;
-    // margin: (4 * $base-unit) 0;
+    margin: (2 * $base-unit) 0;
 }
 
 .hero {
     // background-color: $article-bg-color;
     // border: 1px solid $gray-line-color;
     // border-radius: $border-radius;
+    margin: (4 * $base-unit) 0;
     // padding: 2 * $base-unit;
     // text-align: center;
 }
@@ -290,21 +302,21 @@ svg {
     font-size: $small-font-size;
     // font-style: oblique;
     // line-height: $serif-line-height;
-    margin: 2 * $base-unit 0 0.25 * $base-unit;
+    margin: (2 * $base-unit) 0 (0.25 * $base-unit);
 }
 
 .hero-text {
     // font-family: $serif-font;
     font-size: 30px;
-    // font-weight: 400;
-    margin: 0 0 $base-unit;
+    // font-weight: inherit;
+    margin: 0;
 }
 
 .hero__subscribe-field {
     display: flex;
-    // display: none;
+    display: none;
     // justify-content: center;
-    margin: $base-unit 0 0;
+    margin: (2 * $base-unit) 0 0;
 
     button {
         margin: 0 0 0 (0.25 * $base-unit);
@@ -313,8 +325,8 @@ svg {
 
 .index-grid {
     display: grid;
-    gap: (2 * $base-unit) (4 * $base-unit);
-    grid-template-columns: repeat(1, 1fr);
+    gap: (1 * $base-unit) (1 * $base-unit);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .index-link__icon {
@@ -348,9 +360,9 @@ svg {
 .essay-link {
     // aspect-ratio: 3/4;
     // display: block;
-    // border: 1px solid $gray-line-color;
-    // border-radius: $border-radius;
-    // padding: $base-unit;
+    border: 1px solid $gray-line-color;
+    border-radius: $border-radius;
+    padding: 2 * $base-unit;
 }
 
 .essay-link__date {
@@ -365,11 +377,12 @@ svg {
     // font-family: $serif-font;
     // font-size: $serif-font-size;
     // font-weight: inherit;
-    margin: 0 0 (0.5 * $base-unit) 0;
+    margin: 0 0 (1 * $base-unit) 0;
 }
 
 .essay {
-    margin: (0 * $base-unit) 0;
+    margin: (6 * $base-unit) auto;
+    max-width: 600px;
 }
 
 .essay-title {
@@ -424,9 +437,26 @@ svg {
 }
 
 @media (max-width: 766px) {
-    .page {
-        gap: 2 * $base-unit;
-        padding: (2 * $base-unit) $base-unit;
+    // .nav {
+    //     flex-direction: column;
+    // }
+
+    // .nav-link {
+    //     + .nav-link {
+    //         margin: $base-unit 0 0;
+    //     }
+    // }
+}
+
+@media (max-width: 500px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        + .nav-link {
+            margin: $base-unit 0 0;
+        }
     }
 }
 
@@ -434,5 +464,34 @@ svg {
     body {
         background-color: $background-color-dark-mode;
         color: $body-color-dark-mode;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $heading-color-dark-mode;
+    }
+
+    button {
+        border-color: $gray-line-color-dark-mode;
+    }
+
+    input[type='text'] {
+        border-color: $gray-line-color-dark-mode;
+    }
+
+    .nav-link__item-count {
+        color: $gray-color-dark-mode;
+    }
+
+    .hero {
+        border-color: $gray-line-color-dark-mode;
+    }
+
+    .essay-link {
+        border-color: $gray-line-color-dark-mode;
     }
 }

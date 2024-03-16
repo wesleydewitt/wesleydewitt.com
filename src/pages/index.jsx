@@ -20,19 +20,16 @@ const IndexPage = ({
 
     return (
         <Layout>
-            {/* <div className="hero">
+            <div className="hero">
                 <h2 className="hero-text">
-                    Code & prose out of Muncie, Indiana
-                </h2>
-                <p>
                     A developer and writer obsessed with the process of making
                     beautiful, intuitive websites and applications
-                </p>
+                </h2>
                 <div className="hero__subscribe-field">
                     <input type="text"></input>
                     <button>Subscribe</button>
                 </div>
-            </div> */}
+            </div>
             <div className="index-grid">
                 {Essays}
                 {Essays}
