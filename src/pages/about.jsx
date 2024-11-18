@@ -1,20 +1,22 @@
-import * as React from 'react';
-import Layout from '../layouts/Layout';
-import Nav from '../components/Nav';
-import '../styles/styles.scss';
+import * as React from "react";
+import Layout from "../layouts/Layout";
+import "../styles/styles.scss";
+import selfie from "../images/selfie.png";
 
 const AboutPage = () => {
-    return (
-        <Layout>
-            <div className="index-grid"></div>
-        </Layout>
-    );
+	return (
+		<Layout>
+			<div className="index-grid">
+				<img className="selfie" src={selfie} />
+			</div>
+		</Layout>
+	);
 };
 
 export default AboutPage;
 
 export const Head = () => (
-    <>
-        <title>About Wesley De Witt</title>
-    </>
+	<>
+		<title>Wesley De Witt</title>
+	</>
 );
