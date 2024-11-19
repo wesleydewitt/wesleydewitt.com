@@ -1,10 +1,10 @@
 ---
 type: "long-form"
-slug: "/why-i-am-a-christian/"
-date: "2024-10-11"
-title: "The Nothing"
-description: "On Mindfulness and Prayer"
-image: 32.jpg
+slug: "/should-humanity-settle-mars/"
+date: "2024-07-09"
+title: "Should Humanity Settle Mars?"
+description: "On whether the red planet should be settled"
+image: 41.png
 color: yellow
 ---
 

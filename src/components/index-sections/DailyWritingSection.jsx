@@ -11,7 +11,7 @@ const DailyWriting = () => {
 						id
 						excerpt(pruneLength: 250)
 						frontmatter {
-							date(formatString: "MMM. D, 'YY")
+							date(formatString: "MMMM D, YYYY")
 							slug
 							title
 							type

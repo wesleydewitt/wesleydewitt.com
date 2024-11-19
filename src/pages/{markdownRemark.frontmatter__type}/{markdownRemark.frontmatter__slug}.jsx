@@ -20,6 +20,7 @@ export default function EssayAndProjectPageTemplate({ data }) {
 	const { frontmatter, html } = data.markdownRemark;
 	const wordCount = CountWords(html);
 	const readTime = calculateReadTime(wordCount);
+	const imageUrl = "../../photos/" + frontmatter.image;
 
 	if (frontmatter.type === "daily") {
 		return (
@@ -40,11 +41,12 @@ export default function EssayAndProjectPageTemplate({ data }) {
 					html={html}
 					wordCount={wordCount}
 					readTime={readTime}
+					imageUrl={imageUrl}
 				/>
 			</Layout>
 		);
 	} else {
-		return null;
+		return <Layout></Layout>;
 	}
 }
 
@@ -67,6 +69,7 @@ export const pageQuery = graphql`
 				slug
 				title
 				type
+				image
 			}
 		}
 	}

@@ -22,7 +22,7 @@ const DailyWritingLink = ({ dailyWriting }) => {
 				<Link to={"/daily" + dailyWriting.frontmatter.slug}>{dailyWriting.frontmatter.title}</Link>
 			</h4>
 			{/* <div className="daily-writing-link__word-count">{wordCount} words</div> */}
-			<div className="daily-writing-link__read-time">~{readTime} min.</div>
+			<div className="daily-writing-link__read-time">~{readTime} minute read</div>
 			<div className="daily-writing-link__date">{dailyWriting.frontmatter.date}</div>
 		</div>
 	);

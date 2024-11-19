@@ -11,7 +11,7 @@
 $base-unit: 24px;
 $column-width: 720px;
 $piece-width: 600px;
-$border-radius: 6px;
+$border-radius: 3px;
 
 $line-height: $base-unit;
 
@@ -105,9 +105,13 @@ p + p {
 
 // header _________________________________________________________________________________________
 
+.header-wrapper {
+	border-bottom: 1px solid $gray-line-color;
+	overflow: hidden;
+}
+
 .header {
 	align-self: start;
-	// border-bottom: 1px solid $gray-line-color;
 	display: grid;
 	gap: 0 $base-unit;
 	grid-template-areas:
@@ -115,8 +119,9 @@ p + p {
 		"selfie subtitle nav";
 	grid-template-columns: auto 1fr auto;
 	// grid-template-rows: 1fr 1fr 4fr;
-	margin: 2 * $base-unit auto;
-	// padding-bottom: 2 * $base-unit;
+	margin: 1 * $base-unit auto;
+	max-width: $column-width + (2 * $base-unit);
+	padding: 0 1 * $base-unit;
 	// position: sticky;
 	// top: 3 * $base-unit;
 
@@ -149,11 +154,11 @@ p + p {
 	align-self: end;
 	display: flex;
 	grid-template-columns: 12px 1fr;
-	gap: 1 * $base-unit;
+	gap: 1.5 * $base-unit;
 	grid-area: nav;
 	// justify-self: end;
 	// margin-top: $base-unit;
-	display: none;
+	// display: none;
 
 	a {
 		justify-content: center;
@@ -230,7 +235,7 @@ p + p {
 
 .about__site-description {
 	font-family: $serif-font;
-	font-size: 20px;
+	font-size: 24px;
 	line-height: 1.5;
 }
 
@@ -285,7 +290,7 @@ p + p {
 	flex-direction: column;
 	// font-family: $serif-font;
 	// font-size: $serif-size;
-	gap: 0.5 * $base-unit;
+	gap: 0.25 * $base-unit;
 	// grid-column: span 2;
 	// grid-template-areas:
 	// "image title"
@@ -316,10 +321,10 @@ p + p {
 
 .long-form-link__title {
 	grid-area: title;
-	font-size: 20px;
+	font-size: 24px;
 	font-family: $serif-font;
 	line-height: 1.5;
-	font-weight: 500;
+	font-weight: 400;
 	// margin-bottom: $base-unit;
 }
 
@@ -391,7 +396,7 @@ p + p {
 .daily-writing-link__date,
 .daily-writing-link__word-count,
 .daily-writing-link__read-time {
-	color: $gray-color;
+	// color: $gray-color;
 	text-align: right;
 }
 
@@ -421,8 +426,11 @@ p + p {
 }
 
 .long-form-piece__title {
+	font-family: $serif-font;
+	font-size: 24px;
 	grid-area: title;
-	// margin-bottom: $base-unit;
+	line-height: 1.5;
+	margin-bottom: $base-unit;
 }
 
 .long-form-piece__date,

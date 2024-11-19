@@ -3,10 +3,10 @@ import Header from "../components/Header";
 
 const IndexLayout = ({ children }) => {
 	return (
-		<div className="page">
+		<>
 			<Header />
-			{children}
-		</div>
+			<div className="page">{children}</div>
+		</>
 	);
 };
 

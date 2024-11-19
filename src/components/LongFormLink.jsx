@@ -14,12 +14,13 @@ function calculateReadTime(wordCount) {
 const LongFormLink = ({ longForm }) => {
 	const wordCount = countWords(longForm.html);
 	const readTime = calculateReadTime(wordCount);
+	const imageUrl = "./photos/" + longForm.frontmatter.image;
 
 	const styles = {
-		backgroundImage: "url(./photos/" + longForm.frontmatter.image,
+		backgroundImage: "url(" + imageUrl + ")",
 		backgroundSize: "cover",
 		border: "none",
-		borderRadius: "6px",
+		borderRadius: "3px",
 		color: "#ffffff",
 		textShadow: "0 0 3px #000000",
 		// backgroundColor: "white",
@@ -27,8 +28,6 @@ const LongFormLink = ({ longForm }) => {
 		// color: longForm.frontmatter.color,
 		color: "white",
 	};
-
-	const imageUrl = "./photos/" + longForm.frontmatter.image;
 
 	return (
 		<div className="long-form-link" style={styles}>
