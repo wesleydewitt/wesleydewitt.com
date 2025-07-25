@@ -13,6 +13,10 @@
     padding: 3 * $base-unit 3 * $base-unit;
     margin: 3 * $base-unit 0;
 
+    @media (prefers-color-scheme: dark) {
+        background-color: $entry-background-dm;
+    }
+
     @media (max-width: $break-2) {
         padding: 2 * $base-unit 2 * $base-unit;
     }
@@ -27,6 +31,10 @@
 
 .newsletter__subheading {
     color: $gray-color;
+
+    @media (prefers-color-scheme: dark) {
+        color: $gray-color-dm;
+    }
 }
 
 .newsletter__image {
@@ -36,6 +44,10 @@
     svg {
         height: 90px;
         stroke: $newsletter-svg-color;
+
+        @media (prefers-color-scheme: dark) {
+            stroke: $entry-background-darker-dm;
+        }
     }
 }
 
@@ -54,12 +66,15 @@
     line-height: 2;
     padding: 0 12px;
     width: 100%;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: $entry-background-darker-dm;
+    }
 }
 
 .newsletter__signup-button {
     background-color: $link-color;
     border-radius: $border-radius;
-    color: rgba(255, 255, 255, 0.8);
     font-weight: 400;
     padding: 4px 12px;
     // width: min-content;

@@ -29,6 +29,10 @@
     display: grid;
     grid-template-rows: 1fr auto;
     padding: 0.5 * $base-unit 0.75 * $base-unit;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: $entry-background-dm;
+    }
 }
 
 .social-links__link:hover {
@@ -62,13 +66,25 @@
     justify-content: space-between;
     margin-bottom: 1.5 * $base-unit;
 
+    @media (prefers-color-scheme: dark) {
+        color: $body-color-dm;
+    }
+
     svg {
         display: block;
         stroke: $body-color;
+
+        @media (prefers-color-scheme: dark) {
+            stroke: $body-color-dm;
+        }
     }
 }
 
 .social-links__url {
     color: $gray-color;
     font-size: $small-size;
+
+    @media (prefers-color-scheme: dark) {
+        color: $gray-color-dm;
+    }
 }

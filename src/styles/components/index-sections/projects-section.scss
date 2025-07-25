@@ -57,6 +57,10 @@
     display: inline;
     color: $gray-color;
     font-weight: inherit;
+
+    @media (prefers-color-scheme: dark) {
+        color: $gray-color-dm;
+    }
 }
 
 .projects-list__titles {
@@ -76,6 +80,10 @@
     // margin-top: 11.5px;
     min-width: $base-unit;
 
+    @media (prefers-color-scheme: dark) {
+        background-color: $gray-line-color-dm;
+    }
+
     @media (max-width: $break-2) {
         align-self: end;
         margin-bottom: 10.5px;
@@ -86,6 +94,10 @@
     align-self: center;
     color: $gray-color;
     flex-shrink: 0;
+
+    @media (prefers-color-scheme: dark) {
+        color: $gray-color-dm;
+    }
 
     @media (max-width: $break-2) {
         align-self: end;

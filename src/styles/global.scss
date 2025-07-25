@@ -16,6 +16,11 @@ body {
     font-size: $body-size;
     font-weight: 300;
     line-height: $base-unit;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: $background-color-dm;
+        color: $body-color-dm;
+    }
 }
 
 a {
@@ -43,6 +48,7 @@ h4,
 h5,
 h6 {
     color: $heading-color;
+    color: $heading-color-dm;
 
     a {
         color: inherit;
@@ -109,7 +115,9 @@ svg {
     grid-area: subheading;
     margin-bottom: 1.5 * $base-unit;
 
-    // display: none;
+    @media (prefers-color-scheme: dark) {
+        color: $gray-color-dm;
+    }
 }
 
 .index-section__content {
