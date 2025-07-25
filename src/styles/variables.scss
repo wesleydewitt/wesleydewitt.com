@@ -1,7 +1,7 @@
 // variables
 
 $base-unit: 24px;
-$column-width: 840px + (6 * $base-unit);
+$column-width: 720px + (6 * $base-unit);
 $essay-body-width: 600px;
 // $column-width: 840px + (8 * $base-unit);
 $border-radius: 3px;
@@ -21,12 +21,12 @@ $small-size: 10px;
 $heading-size: 18px;
 
 $serif-font: "Heldane Text", serif;
-$serif-font: "Source Serif 4";
-$serif-size: 16px;
+// $serif-font: "Source Serif 4";
+$serif-size: 14px;
 
 $serif-heading-font: "Heldane Display", serif;
 // $serif-heading-font: "Tiempos Fine", serif;
-$serif-heading-size: 24px;
+$serif-heading-size: 20px;
 $serif-heading-size-big: 36px;
 
 $mono-font: "Sohne Mono";
@@ -51,7 +51,7 @@ $new-label-color: rgb(255, 255, 255);
 $background-color: #ffffff;
 $background-color-dm: #000000;
 
-$entry-background: rgba(0, 0, 0, 0.1);
+$entry-background: rgba(0, 0, 0, 0.05);
 $entry-background-darker: rgba(0, 0, 0, 0.2);
 $entry-background-dm: #1a1a1a;
 $entry-background-darker-dm: #333333;
