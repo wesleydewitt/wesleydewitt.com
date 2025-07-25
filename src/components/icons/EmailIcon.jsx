@@ -4,25 +4,25 @@ import React from "react";
 const EmailIcon = () => {
     return (
         <svg
-            width="120"
-            height="100"
-            viewBox="0 0 120 100"
+            width="108"
+            height="90"
+            viewBox="0 0 108 90"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
-            <rect x="3" y="3" width="114" height="94" rx="9" stroke-width="6" />
+            <rect x="3" y="3" width="102" height="84" rx="9" stroke-width="6" />
             <line
                 x1="1.92055"
-                y1="17.6953"
-                x2="61.9206"
-                y2="67.6953"
+                y1="15.6953"
+                x2="55.9206"
+                y2="60.6953"
                 stroke-width="6"
             />
             <line
-                x1="58.0794"
-                y1="67.6953"
-                x2="118.079"
-                y2="17.6953"
+                x1="52.0794"
+                y1="60.6953"
+                x2="106.079"
+                y2="15.6953"
                 stroke-width="6"
             />
         </svg>

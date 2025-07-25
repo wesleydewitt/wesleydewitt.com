@@ -14,10 +14,10 @@ const IndexPage = () => {
     return (
         <IndexLayout>
             <About />
+            <Newsletter />
             <Essays />
             <Projects />
             <Photos />
-            <Newsletter />
         </IndexLayout>
     );
 };
