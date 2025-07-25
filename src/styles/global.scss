@@ -94,6 +94,10 @@ svg {
     padding-top: 3 * $base-unit;
     margin: 3 * $base-unit 0;
 
+    @media (prefers-color-scheme: dark) {
+        border-top: 1px solid $gray-line-color-dm;
+    }
+
     @media (max-width: $break-2) {
         display: block;
     }

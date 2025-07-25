@@ -33,7 +33,7 @@ $mono-font: "IBM Plex Mono";
 $mono-font-size: 12px;
 
 $body-color: rgba(0, 0, 0, 0.666);
-$body-color-dm: rgba(255, 255, 255, 0.666);
+$body-color-dm: rgba(255, 255, 255, 0.8);
 
 $heading-color: rgba(0, 0, 0, 1);
 $heading-color-dm: rgba(255, 255, 255, 1);
@@ -55,8 +55,8 @@ $entry-background-darker: rgba(0, 0, 0, 0.2);
 $entry-background-dm: #1a1a1a;
 $entry-background-darker-dm: #333333;
 
-$gray-line-color: rgba(0, 0, 0, 0.05);
-$gray-line-color-dm: $entry-background-darker-dm;
+$gray-line-color: rgba(0, 0, 0, 0.1);
+$gray-line-color-dm: rgba(255, 255, 255, 0.1);
 
 $newsletter-svg-color: #b7b7b7;
 
