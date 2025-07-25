@@ -1,0 +1,47 @@
+@import "../../variables.scss";
+
+.newsletter {
+    align-items: center;
+    background-color: $entry-background;
+    border-radius: $border-radius;
+    display: flex;
+    flex-direction: column;
+    padding: 2 * $base-unit 5 * $base-unit;
+
+    @media (max-width: $break-2) {
+        padding: 2 * $base-unit 2 * $base-unit;
+    }
+}
+
+.newsletter__heading {
+    font-size: $heading-size;
+    font-weight: 500;
+    text-align: center;
+}
+
+.newsletter__image {
+    margin: 2 * $base-unit 0;
+
+    svg {
+        stroke: $entry-background-darker;
+    }
+}
+
+.newsletter__email-field {
+    background-color: $entry-background-darker;
+    border: none;
+    border-radius: $border-radius;
+    font-size: 16px;
+    line-height: 2;
+    padding: 0 12px;
+    width: 100%;
+}
+
+.newsletter__signup-button {
+    background-color: $link-color;
+    border-radius: $border-radius;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    margin-top: 2 * $base-unit;
+    padding: 4px 12px;
+}

@@ -1,0 +1,48 @@
+@import "../variables.scss";
+
+.header {
+    // display: grid;
+    // gap: 0 0.75 * $base-unit;
+    // grid-template-columns: auto 1fr;
+}
+
+.header__site-title {
+    // font-size: $heading-size;
+    font-weight: 500;
+    // margin-bottom: 0.5 * $base-unit;
+    // text-align: center;
+}
+
+.header__site-subtitle {
+    color: $gray-color;
+    // line-height: 1;
+    // text-align: center;
+}
+
+.header__site-logo {
+    align-self: start;
+    background-color: $entry-background;
+    border-radius: $border-radius;
+    display: block;
+    grid-row: span 2;
+    height: 2 * $base-unit;
+    // margin-top: 6px;
+    overflow: hidden;
+    width: 2 * $base-unit;
+
+    // display: none;
+
+    @media (prefers-color-scheme: dark) {
+        // background-color: $entry-background-dm;
+    }
+
+    img {
+        display: block;
+    }
+}
+
+.header__site-description {
+    margin-top: 0.25 * $base-unit;
+
+    display: none;
+}

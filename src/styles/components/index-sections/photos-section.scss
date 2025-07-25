@@ -1,0 +1,20 @@
+@import "../../variables.scss";
+
+.photos-grid {
+    display: grid;
+    gap: 0.5 * $base-unit;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.photo-link {
+    aspect-ratio: 4/3;
+    background-color: pink;
+    border-radius: $border-radius;
+    overflow: hidden;
+
+    img {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+}

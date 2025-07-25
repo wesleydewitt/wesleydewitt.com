@@ -1,0 +1,74 @@
+@import "../variables.scss";
+
+.social-links {
+    grid-area: links;
+    margin-top: 1.5 * $base-unit;
+}
+
+.social-links__list {
+    display: grid;
+    gap: (0.5 * $base-unit) (0.5 * $base-unit);
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+
+    @media (max-width: $break-2) {
+        grid-template-columns: auto;
+    }
+}
+
+.social-links__entry {
+}
+
+.social-links__link {
+    align-items: start;
+    // aspect-ratio: 16/10;
+    background-color: $entry-background;
+    // border: 1px solid $gray-line-color;
+    border-radius: $border-radius;
+    color: inherit;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    padding: 0.5 * $base-unit 0.75 * $base-unit;
+}
+
+.social-links__link:hover {
+    border-radius: $border-radius;
+    margin: -0.25 * $base-unit -0.25 * $base-unit;
+    padding: 0.75 * $base-unit 1 * $base-unit;
+}
+
+.social-links__link.email {
+    background-color: $link-color;
+    // border: 1px solid $link-color;
+    color: #ffffff;
+
+    svg {
+    }
+
+    .social-links__url {
+    }
+}
+
+.social-links__link:hover {
+    text-decoration: none;
+}
+
+.social-links__heading {
+    align-items: center;
+    color: $body-color;
+    display: flex;
+    // font-size: $heading-size;
+    font-weight: 500;
+    justify-content: space-between;
+    margin-bottom: 1.5 * $base-unit;
+
+    svg {
+        display: block;
+        stroke: $body-color;
+    }
+}
+
+.social-links__url {
+    color: $gray-color;
+    font-size: $small-size;
+}

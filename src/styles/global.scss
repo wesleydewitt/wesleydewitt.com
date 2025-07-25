@@ -1,0 +1,119 @@
+@import "reset";
+@import "variables";
+@import "font-face/heldane-display.scss";
+@import "font-face/sohne-mono.scss";
+@import "font-face/sohne.scss";
+@import "../../static/assets/fonts/inter/inter.css";
+
+* {
+    transition: all 0.125s ease-out;
+}
+
+body {
+    background-color: $background-color;
+    color: $body-color;
+    font-family: $sans-font;
+    font-size: $body-size;
+    font-weight: 300;
+    line-height: $base-unit;
+}
+
+a {
+    color: $link-color;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.all-link {
+    background-color: $link-color;
+    border-radius: $border-radius;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    grid-column: 1/-1;
+    padding: 0.5 * $base-unit;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $heading-color;
+
+    a {
+        color: inherit;
+    }
+}
+
+p + p {
+    margin-top: $base-unit;
+}
+
+img {
+}
+
+svg {
+    display: block;
+    stroke: $body-color;
+    stroke-width: 1px;
+}
+
+.page {
+    margin: (3 * $base-unit) auto;
+    max-width: $column-width;
+    padding: 0 (3 * $base-unit);
+
+    @media (max-width: $break-2) {
+        padding: 0 $base-unit;
+    }
+}
+
+.index-section {
+    align-items: start;
+    // border-top: 1px solid $gray-line-color;
+    // display: grid;
+    gap: 0 (3 * $base-unit);
+    grid-template-areas:
+        "heading content content"
+        "subheading content content";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    // padding-top: 3 * $base-unit;
+    margin: 3 * $base-unit 0;
+
+    @media (max-width: $break-2) {
+        display: block;
+    }
+}
+
+.index-section__heading {
+    align-items: center;
+    display: flex;
+    // font-family: $serif-heading-font;
+    font-size: $heading-size;
+    font-weight: 500;
+    gap: 0 (0.5 * $base-unit);
+    grid-area: heading;
+    // letter-spacing: 0.05em;
+    line-height: 1.5;
+    margin-bottom: 0.25 * $base-unit;
+}
+
+.index-section__subheading {
+    color: $gray-color;
+    font-style: oblique;
+    grid-area: subheading;
+    margin-bottom: 1.5 * $base-unit;
+
+    // display: none;
+}
+
+.index-section__content {
+    // margin-left: $base-unit;
+    grid-area: content;
+    grid-column: span 2;
+}

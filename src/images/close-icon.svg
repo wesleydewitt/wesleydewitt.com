@@ -1,0 +1,13 @@
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        path {
+            stroke: rgb(0, 113, 227);
+            stroke-width: 1.25px
+
+        }
+        @media (prefers-color-scheme: dark) {
+            path { stroke: rgb(103, 179, 255); }
+        }
+    </style>
+    <path d="M0.5 0.5L11.5 11.5M0.5 11.5L11.5 0.5" stroke="black"/>
+</svg>
