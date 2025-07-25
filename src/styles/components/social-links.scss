@@ -44,12 +44,17 @@
 .social-links__link.email {
     background-color: $link-color;
     // border: 1px solid $link-color;
-    color: #ffffff;
+
+    .social-links__heading {
+        color: $body-color-dm;
+    }
 
     svg {
+        stroke: $body-color-dm;
     }
 
     .social-links__url {
+        color: $gray-color-dm;
     }
 }
 

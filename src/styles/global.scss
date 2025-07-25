@@ -34,7 +34,7 @@ a:hover {
 .all-link {
     background-color: $link-color;
     border-radius: $border-radius;
-    color: rgba(255, 255, 255, 0.8);
+    color: $body-color-dm;
     font-weight: 400;
     grid-column: 1/-1;
     padding: 0.5 * $base-unit;
@@ -83,15 +83,15 @@ svg {
 
 .index-section {
     align-items: start;
-    // border-top: 1px solid $gray-line-color;
-    // display: grid;
+    border-top: 1px solid $gray-line-color;
+    display: grid;
     gap: 0 (3 * $base-unit);
     grid-template-areas:
         "heading content content"
         "subheading content content";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 1fr;
-    // padding-top: 3 * $base-unit;
+    padding-top: 3 * $base-unit;
     margin: 3 * $base-unit 0;
 
     @media (max-width: $break-2) {

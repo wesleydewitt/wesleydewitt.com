@@ -10,7 +10,7 @@
         "heading image"
         "subheading image"
         "form form";
-    padding: 3 * $base-unit 3 * $base-unit;
+    padding: 3 * $base-unit 6 * $base-unit;
     margin: 3 * $base-unit 0;
 
     @media (prefers-color-scheme: dark) {
@@ -75,6 +75,7 @@
 .newsletter__signup-button {
     background-color: $link-color;
     border-radius: $border-radius;
+    color: $body-color-dm;
     font-weight: 400;
     padding: 4px 12px;
     // width: min-content;
