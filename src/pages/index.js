@@ -14,10 +14,10 @@ const IndexPage = () => {
     return (
         <IndexLayout>
             <About />
+            <Newsletter />
             <Essays />
             <Projects />
             <Photos />
-            <Newsletter />
         </IndexLayout>
     );
 };
@@ -38,5 +38,3 @@ export const Head = () => (
         />
     </>
 );
-
-// export async function getServerData() {}

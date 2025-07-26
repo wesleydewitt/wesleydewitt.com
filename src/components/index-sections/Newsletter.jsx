@@ -1,5 +1,5 @@
 import React from "react";
-import newsletterStyles from "../../styles/components/index-sections/newsletter.scss";
+import "../../styles/components/index-sections/newsletter.scss";
 import EmailIcon from "../icons/EmailIcon";
 
 const Newsletter = () => {

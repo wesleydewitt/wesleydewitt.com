@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
-import EssayIcon from "../icons/EssayIcon";
+import "../icons/EssayIcon";
 import essaysStyles from "../../styles/components/index-sections/essays-section.scss";
 
 const Essays = () => {

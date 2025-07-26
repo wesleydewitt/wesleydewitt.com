@@ -2,7 +2,7 @@ import React from "react";
 import AboutIcon from "../icons/AboutIcon";
 import AboutPhoto from "../../images/pic.png";
 import { Link } from "gatsby";
-import aboutStyles from "../../styles/components/index-sections/about.scss";
+import "../../styles/components/index-sections/about.scss";
 import SocialLinks from "../SocialLinks";
 import Newsletter from "./Newsletter";
 

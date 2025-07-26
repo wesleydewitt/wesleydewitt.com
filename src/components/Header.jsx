@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { siteMetadata } from "../../gatsby-config";
-import headerStyles from "../styles/components/header.scss";
+import "../styles/components/header.scss";
 import pic from "../images/pic.png";
 import AboutIcon from "./icons/AboutIcon";
 import SocialLinks from "./SocialLinks";

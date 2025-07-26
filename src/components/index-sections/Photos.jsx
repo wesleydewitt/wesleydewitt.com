@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
-import photosStyles from "../../styles/components/index-sections/photos-section.scss";
+import "../../styles/components/index-sections/photos-section.scss";
 
 const Photos = () => {
     const data = useStaticQuery(graphql`

@@ -6,7 +6,7 @@ import favicon from "../images/favicon.png";
 import { Link } from "gatsby";
 import Layout from "../layouts/Layout";
 import essayIcon from "../images/essay.svg";
-import essayStyles from "../styles/templates/essay.scss";
+import "../styles/templates/essay.scss";
 
 const shortcodes = { Link }; // Provide common components here
 
@@ -93,10 +93,6 @@ export const query = graphql`
 
 export const Head = () => (
     <>
-        <title>{siteMetadata.title}</title>
-        {/* <meta name="theme-color" content="#ffffff" /> */}
-        <link rel="icon" href={favicon} />
-
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
