@@ -4,25 +4,24 @@ import React from "react";
 const EmailIcon = () => {
     return (
         <svg
-            width="108"
-            height="90"
-            viewBox="0 0 108 90"
+            width="98"
+            height="81"
+            viewBox="0 0 98 81"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
-            <rect x="3" y="3" width="102" height="84" rx="9" stroke-width="6" />
-            <line
-                x1="1.92055"
-                y1="15.6953"
-                x2="55.9206"
-                y2="60.6953"
-                stroke-width="6"
+            <mask id="path-1-inside-1_5190_2" fill="white">
+                <rect width="97.2" height="81" rx="3" />
+            </mask>
+            <rect
+                width="97.2"
+                height="81"
+                rx="3"
+                stroke-width="12"
+                mask="url(#path-1-inside-1_5190_2)"
             />
-            <line
-                x1="52.0794"
-                y1="60.6953"
-                x2="106.079"
-                y2="15.6953"
+            <path
+                d="M3 8L46.5875 44.8817C47.6948 45.8187 49.3139 45.8292 50.4333 44.9066L94 9"
                 stroke-width="6"
             />
         </svg>

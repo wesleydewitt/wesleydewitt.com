@@ -5,9 +5,9 @@
 @import "font-face/sohne.scss";
 @import "../../static/assets/fonts/inter/inter.css";
 
-* {
-    transition: all 0.125s ease-out;
-}
+// * {
+//     transition: all 0.125s ease-out;
+// }
 
 body {
     background-color: $background-color;
@@ -96,7 +96,6 @@ svg {
 
 .index-section {
     align-items: start;
-    border-top: 2px solid $gray-line-color;
     // display: grid;
     gap: 0 (3 * $base-unit);
     grid-template-areas:
@@ -104,12 +103,7 @@ svg {
         "subheading content content";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 1fr;
-    padding-top: 3 * $base-unit;
     margin: 3 * $base-unit 0;
-
-    @media (prefers-color-scheme: dark) {
-        border-top: 2px solid $gray-line-color-dm;
-    }
 
     @media (max-width: $break-2) {
         display: block;
@@ -131,7 +125,6 @@ svg {
 
 .index-section__subheading {
     color: $gray-color;
-    font-style: oblique;
     grid-area: subheading;
     margin-bottom: 1.5 * $base-unit;
 

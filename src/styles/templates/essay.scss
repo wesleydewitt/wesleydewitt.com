@@ -43,9 +43,15 @@
     // font-size: $serif-size;
     margin-top: 1.5 * $base-unit;
     // padding: 3 * $base-unit;
+
+    hr {
+        border: none;
+        height: 2 * $base-unit;
+    }
 }
 
-.essay__body p:first-of-type::first-letter {
+.essay__body p:first-of-type::first-letter,
+.essay__body hr + p::first-letter {
     color: $heading-color;
     font-family: $sans-font;
     float: left;

@@ -35,6 +35,7 @@
 
 .newsletter__subheading {
     color: $gray-color;
+    margin-bottom: 1.5 * $base-unit;
 
     @media (prefers-color-scheme: dark) {
         color: $gray-color-dm;
@@ -61,7 +62,6 @@
     display: flex;
     gap: $base-unit;
     grid-area: form;
-    margin-top: 1.5 * $base-unit;
     padding: 8px;
 
     @media (prefers-color-scheme: dark) {
@@ -69,14 +69,28 @@
     }
 }
 
+.newsletter__form:focus-within {
+    border: 3px solid $body-color;
+    margin: -3px;
+}
+
 .newsletter__email-field {
     background: none;
     border: none;
     border-radius: $border-radius;
+    color: $body-color;
     font-size: 16px;
     line-height: 2;
     padding: 0 12px;
     width: 100%;
+}
+
+.newsletter__email-field::placeholder {
+    color: $gray-color;
+}
+
+.newsletter__email-field:focus {
+    outline: none;
 }
 
 .newsletter__signup-button {
