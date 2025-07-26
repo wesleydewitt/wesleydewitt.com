@@ -56,6 +56,22 @@
     .social-links__url {
         color: $gray-color-dm;
     }
+
+    @media (prefers-color-scheme: dark) {
+        background-color: $link-color-dm;
+
+        .social-links__heading {
+            color: $body-color;
+        }
+
+        svg {
+            stroke: $body-color;
+        }
+
+        .social-links__url {
+            color: $gray-color;
+        }
+    }
 }
 
 .social-links__link:hover {

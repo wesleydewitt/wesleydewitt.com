@@ -1,16 +1,18 @@
 @import "../../variables.scss";
 
 .newsletter {
-    align-items: center;
+    align-items: start;
     background-color: $entry-background;
     border-radius: $border-radius;
     display: grid;
-    gap: 0 $base-unit;
+    gap: 0 3 * $base-unit;
     grid-template-areas:
         "heading image"
         "subheading image"
         "form form";
-    padding: 3 * $base-unit 6 * $base-unit;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto 1fr auto;
+    padding: 3 * $base-unit;
     margin: 3 * $base-unit 0;
 
     @media (prefers-color-scheme: dark) {
@@ -23,10 +25,10 @@
 }
 
 .newsletter__heading {
-    font-family: $serif-heading-font;
-    font-size: $serif-heading-size;
+    // font-family: $serif-heading-font;
+    font-size: $heading-size;
     font-weight: 500;
-    letter-spacing: 0.05em;
+    // letter-spacing: 0.05em;
     line-height: 1.5;
     margin-bottom: 0.25 * $base-unit;
 }
@@ -48,37 +50,45 @@
         stroke: $newsletter-svg-color;
 
         @media (prefers-color-scheme: dark) {
-            stroke: $entry-background-darker-dm;
+            stroke: $newsletter-svg-color-dm;
         }
     }
 }
 
 .newsletter__form {
+    background-color: $entry-background-darker;
+    border-radius: $border-radius;
     display: flex;
     gap: $base-unit;
     grid-area: form;
     margin-top: 1.5 * $base-unit;
-}
-
-.newsletter__email-field {
-    background-color: $entry-background-darker;
-    border: none;
-    border-radius: $border-radius;
-    font-size: 16px;
-    line-height: 2;
-    padding: 0 12px;
-    width: 100%;
+    padding: 8px;
 
     @media (prefers-color-scheme: dark) {
         background-color: $entry-background-darker-dm;
     }
 }
 
+.newsletter__email-field {
+    background: none;
+    border: none;
+    border-radius: $border-radius;
+    font-size: 16px;
+    line-height: 2;
+    padding: 0 12px;
+    width: 100%;
+}
+
 .newsletter__signup-button {
     background-color: $link-color;
     border-radius: $border-radius;
     color: $body-color-dm;
-    font-weight: 400;
+    font-weight: 500;
     padding: 4px 12px;
     // width: min-content;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: $link-color-dm;
+        color: $body-color;
+    }
 }

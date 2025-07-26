@@ -3,6 +3,7 @@
 .essays-list {
     display: grid;
     gap: 1.5 * $base-unit;
+    // grid-template-columns: 1fr 1fr;
 }
 
 .essays-list__entry {
@@ -114,8 +115,8 @@
 }
 
 .essays-list__excerpt {
-    font-family: $serif-font;
-    font-size: $serif-size;
+    // font-family: $serif-font;
+    // font-size: $serif-size;
     grid-area: excerpt;
     // grid-column: span 2;
     height: 2 * $base-unit;

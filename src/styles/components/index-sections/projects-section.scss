@@ -6,6 +6,7 @@
 .projects-list {
     display: grid;
     gap: 0.5 * $base-unit;
+    // grid-template-columns: 1fr 1fr;
 
     @media (max-width: $break-2) {
         gap: $base-unit;
@@ -36,7 +37,7 @@
     }
 
     .projects-list__leader-line {
-        background-color: $link-color;
+        background: none;
     }
 
     .projects-list__date {
@@ -49,6 +50,7 @@
     flex-shrink: 0;
     font-weight: 500;
     margin-right: 0.5 * $base-unit;
+    margin-bottom: 0.25 * $base-unit;
     // text-decoration: underline;
     // text-decoration-color: $link-color;
 }
@@ -72,12 +74,12 @@
 }
 
 .projects-list__leader-line {
-    align-self: center;
+    align-self: end;
     background-color: $gray-line-color;
     display: block;
     flex-grow: 1;
     height: 1px;
-    // margin-top: 11.5px;
+    margin-bottom: 11.5px;
     min-width: $base-unit;
 
     @media (prefers-color-scheme: dark) {
@@ -91,7 +93,7 @@
 }
 
 .projects-list__date {
-    align-self: center;
+    align-self: end;
     color: $gray-color;
     flex-shrink: 0;
 

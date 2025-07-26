@@ -25,6 +25,10 @@ body {
 
 a {
     color: $link-color;
+
+    @media (prefers-color-scheme: dark) {
+        color: $link-color-dm;
+    }
 }
 
 a:hover {
@@ -35,10 +39,15 @@ a:hover {
     background-color: $link-color;
     border-radius: $border-radius;
     color: $body-color-dm;
-    font-weight: 400;
+    font-weight: 500;
     grid-column: 1/-1;
     padding: 0.5 * $base-unit;
     text-align: center;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: $link-color-dm;
+        color: $body-color;
+    }
 }
 
 h1,
@@ -71,6 +80,10 @@ svg {
     stroke-width: 1px;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 .page {
     margin: (3 * $base-unit) auto;
     max-width: $column-width;
@@ -83,8 +96,8 @@ svg {
 
 .index-section {
     align-items: start;
-    border-top: 1px solid $gray-line-color;
-    display: grid;
+    border-top: 2px solid $gray-line-color;
+    // display: grid;
     gap: 0 (3 * $base-unit);
     grid-template-areas:
         "heading content content"
@@ -95,7 +108,7 @@ svg {
     margin: 3 * $base-unit 0;
 
     @media (prefers-color-scheme: dark) {
-        border-top: 1px solid $gray-line-color-dm;
+        border-top: 2px solid $gray-line-color-dm;
     }
 
     @media (max-width: $break-2) {
@@ -106,7 +119,7 @@ svg {
 .index-section__heading {
     align-items: center;
     display: flex;
-    //font-family: $serif-heading-font;
+    // font-family: $serif-heading-font;
     font-size: $heading-size;
     font-weight: 500;
     gap: 0 (0.5 * $base-unit);

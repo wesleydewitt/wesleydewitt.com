@@ -1,7 +1,7 @@
 // variables
 
 $base-unit: 24px;
-$column-width: 720px + (6 * $base-unit);
+$column-width: 640px + (6 * $base-unit);
 $essay-body-width: 600px;
 // $column-width: 840px + (8 * $base-unit);
 $border-radius: 3px;
@@ -9,8 +9,8 @@ $border-radius-big: 12px;
 
 $sans-font: "Inter", -apple-system, BlinkMacSystemFont, avenir next, avenir,
     helvetica neue, roboto, noto, helvetica, arial, sans-serif;
-$sans-font: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next,
-    avenir, helvetica neue, roboto, noto, helvetica, arial, sans-serif;
+// $sans-font: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, avenir next,
+// avenir, helvetica neue, roboto, noto, helvetica, arial, sans-serif;
 // $sans-font: -apple-system, BlinkMacSystemFont, avenir next, avenir,
 //     helvetica neue, roboto, noto, helvetica, arial, sans-serif;
 // $sans-font: "American Grotesk", serif;
@@ -43,23 +43,26 @@ $gray-color: rgba(0, 0, 0, 0.4);
 $gray-color-dm: rgba(255, 255, 255, 0.4);
 
 $link-color: rgb(0, 113, 227);
+$link-color: $body-color;
 $link-color-dm: rgb(0, 113, 227);
+$link-color-dm: $body-color-dm;
 
 $new-label-bg: $link-color;
 $new-label-color: rgb(255, 255, 255);
 
 $background-color: #f3f1eb;
-$background-color-dm: #000000;
+$background-color-dm: #282621;
 
 $entry-background: rgba(0, 0, 0, 0.05);
 $entry-background-darker: rgba(0, 0, 0, 0.1);
-$entry-background-dm: #1a1a1a;
-$entry-background-darker-dm: #333333;
+$entry-background-dm: rgba(255, 255, 255, 0.05);
+$entry-background-darker-dm: rgba(255, 255, 255, 0.1);
 
 $gray-line-color: rgba(0, 0, 0, 0.1);
 $gray-line-color-dm: rgba(255, 255, 255, 0.1);
 
-$newsletter-svg-color: #b7b7b7;
+$newsletter-svg-color: #cfcec8;
+$newsletter-svg-color-dm: #484642;
 
 $break-1: 768px;
 $break-2: 600px;
