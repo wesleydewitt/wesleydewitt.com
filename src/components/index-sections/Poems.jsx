@@ -52,7 +52,7 @@ const Poems = () => {
                             {poem.frontmatter.title}
                         </h5>
 
-                        <div className="poems-list__excerpt">
+                        <div className="poems-list__body">
                             <ReactMarkdown>{poem.body}</ReactMarkdown>
                         </div>
                     </Link>
