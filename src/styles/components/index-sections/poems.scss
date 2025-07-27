@@ -1,0 +1,29 @@
+@import "../../variables.scss";
+
+.poems-list {
+    display: grid;
+    gap: 0.5 * $base-unit;
+    grid-template-columns: 1fr 1fr;
+}
+
+.poems-list__entry {
+    background-color: $entry-background;
+    border-radius: $border-radius;
+    display: grid;
+    gap: 0.25 * $base-unit;
+    padding: $base-unit;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: $entry-background-dm;
+    }
+
+    p {
+        text-indent: -2em;
+        margin: 0;
+        padding-left: 2em;
+    }
+}
+
+.poems-list__title {
+    font-weight: 500;
+}

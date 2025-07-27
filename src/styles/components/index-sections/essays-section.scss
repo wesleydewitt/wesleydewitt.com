@@ -11,9 +11,9 @@
     display: grid;
     gap: (0.25 * $base-unit) (0.5 * $base-unit);
     grid-template-areas:
-        "cover titles"
-        "cover excerpt";
-    grid-template-columns: min-content 1fr;
+        "date titles cover"
+        "date excerpt cover";
+    grid-template-columns: auto 1fr auto;
 }
 
 .essays-list__entry + .essays-list__entry::before {
@@ -28,11 +28,15 @@
 }
 
 .essays-list__entry:hover {
-    background-color: $link-color;
+    background-color: $entry-background;
     border-radius: $border-radius;
     margin: -0.5 * $base-unit -0.5 * $base-unit;
     padding: 0.5 * $base-unit 0.5 * $base-unit;
     text-decoration: none;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: $entry-background-dm;
+    }
 
     // .essays-list__excerpt::after {
     //     content: "";
@@ -56,7 +60,7 @@
     border-radius: $border-radius;
     grid-area: cover;
     grid-row: span 2;
-    height: (4 * $base-unit) + (0 * 1.5 * $heading-size) + (0.5 * $base-unit);
+    height: (5 * $base-unit) + (0 * 1.5 * $heading-size) + (0.5 * $base-unit);
     overflow: hidden;
     // margin-bottom: 0.666 * $base-unit;
 
@@ -86,7 +90,9 @@
     width: $base-unit + (1.5 * $heading-size);
     text-align: center;
 
-    display: none;
+    @media (prefers-color-scheme: dark) {
+        background-color: $entry-background-dm;
+    }
 }
 
 .essays-list__titles {
@@ -119,7 +125,7 @@
     // font-size: $serif-size;
     grid-area: excerpt;
     // grid-column: span 2;
-    height: 2 * $base-unit;
+    height: 3 * $base-unit;
     overflow: hidden;
     position: relative;
     // background-color: pink;

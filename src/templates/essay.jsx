@@ -7,6 +7,8 @@ import { Link } from "gatsby";
 import Layout from "../layouts/Layout";
 import essayIcon from "../images/essay.svg";
 import "../styles/templates/essay.scss";
+import Newsletter from "../components/index-sections/Newsletter";
+import SocialLinks from "../components/SocialLinks";
 
 const shortcodes = { Link }; // Provide common components here
 
@@ -30,7 +32,7 @@ export default function PageTemplate({ data, children }) {
         const essayBody = document.querySelector("#essay__body");
         const firstChildParagraph = essayBody.querySelector("p");
 
-        addSpanToFirstNWords(firstChildParagraph, 3, "uppercase");
+        addSpanToFirstNWords(firstChildParagraph, 5, "uppercase");
 
         const hrElements = document.querySelectorAll("hr");
 
@@ -38,7 +40,7 @@ export default function PageTemplate({ data, children }) {
             let nextSibling = hr.nextElementSibling;
 
             if (nextSibling && nextSibling.tagName === "P") {
-                addSpanToFirstNWords(nextSibling, 3, "uppercase");
+                addSpanToFirstNWords(nextSibling, 5, "uppercase");
             }
         });
     });
@@ -47,11 +49,13 @@ export default function PageTemplate({ data, children }) {
         <Layout>
             <article className="essay">
                 <div className="essay__head">
-                    <div className="essay__head__titles">
-                        <div className="essay__date">
-                            {data.mdx.frontmatter.date}
-                        </div>
+                    <div className="essay__cover-image">
+                        <img
+                            src={"/assets/photos/" + data.mdx.frontmatter.image}
+                        />
+                    </div>
 
+                    <div className="essay__head__titles">
                         <h1 className="essay__title">
                             {data.mdx.frontmatter.title}
                         </h1>
@@ -59,12 +63,13 @@ export default function PageTemplate({ data, children }) {
                         <h2 className="essay__subtitle">
                             {data.mdx.frontmatter.subtitle}
                         </h2>
-                    </div>
 
-                    <div className="essay__cover-image">
-                        <img
-                            src={"/assets/photos/" + data.mdx.frontmatter.image}
-                        />
+                        <div className="essay__date">
+                            {data.mdx.fields.day}{" "}
+                            {data.mdx.fields.month_abbreviated}
+                            <br />
+                            {data.mdx.fields.year}
+                        </div>
                     </div>
                 </div>
 
@@ -73,6 +78,10 @@ export default function PageTemplate({ data, children }) {
                         {children}
                     </MDXProvider>
                 </div>
+
+                <Newsletter />
+
+                <SocialLinks />
             </article>
         </Layout>
     );
@@ -87,12 +96,18 @@ export const query = graphql`
                 date(formatString: "D MMMM YYYY")
                 image
             }
+            fields {
+                day
+                month_abbreviated
+                year
+            }
         }
     }
 `;
 
-export const Head = () => (
+export const Head = ({ data }) => (
     <>
+        <title>{data.mdx.frontmatter.title}</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link

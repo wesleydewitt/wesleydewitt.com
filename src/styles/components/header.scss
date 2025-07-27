@@ -1,16 +1,15 @@
 @import "../variables.scss";
 
 .header {
-    // display: grid;
-    // gap: 0 0.75 * $base-unit;
-    // grid-template-columns: auto 1fr;
+    // border-bottom: 1px solid $gray-line-color;
+    // padding-bottom: 1.5 * $base-unit;
 }
 
 .header__site-title {
-    // font-size: $heading-size;
+    font-size: $heading-size;
     font-weight: 500;
-    // margin-bottom: 0.5 * $base-unit;
-    // text-align: center;
+    line-height: 1.5;
+    margin-bottom: 0.25 * $base-unit;
 }
 
 .header__site-subtitle {

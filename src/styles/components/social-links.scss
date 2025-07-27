@@ -1,8 +1,15 @@
 @import "../variables.scss";
 
 .social-links {
+    background-color: $entry-background;
+    border-radius: $border-radius;
     grid-area: links;
     margin-top: 1.5 * $base-unit;
+    padding: 1.5 * $base-unit;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: $entry-background-dm;
+    }
 }
 
 .social-links__list {
@@ -89,6 +96,10 @@
 
     @media (prefers-color-scheme: dark) {
         color: $body-color-dm;
+    }
+
+    span {
+        font-weight: 300;
     }
 
     svg {

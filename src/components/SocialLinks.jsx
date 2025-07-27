@@ -6,6 +6,11 @@ import ClipboardIcon from "./icons/ClipboardIcon";
 const SocialLinks = () => {
     return (
         <div className="social-links">
+            <h3 className="index-section__heading">Links</h3>
+            <h4 className="index-section__subheading">
+                Reach out or find me elsewhere on the web
+            </h4>
+
             <ul className="social-links__list">
                 <li className="social-links__entry">
                     <Link className="social-links__link email" to="/">

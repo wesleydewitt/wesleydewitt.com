@@ -46,7 +46,6 @@ const About = () => {
                 Code, photos & prose out of Indianapolis
             </h4>
             <div className="index-section__content">{siteDescription}</div>
-            <SocialLinks />
         </section>
     );
 };

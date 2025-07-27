@@ -5,14 +5,14 @@
     background-color: $entry-background;
     border-radius: $border-radius;
     display: grid;
-    gap: 0 3 * $base-unit;
+    gap: 0 1.5 * $base-unit;
     grid-template-areas:
         "heading image"
         "subheading image"
         "form form";
     grid-template-columns: 1fr auto;
     grid-template-rows: auto 1fr auto;
-    padding: 3 * $base-unit;
+    padding: 1.5 * $base-unit;
     margin: 3 * $base-unit 0;
 
     @media (prefers-color-scheme: dark) {
@@ -44,14 +44,15 @@
 
 .newsletter__image {
     grid-area: image;
-    height: 90px;
+    height: 81px;
 
     svg {
-        height: 90px;
-        stroke: $newsletter-svg-color;
+        height: 81px;
+        fill: $entry-background-darker;
+        stroke-width: 0;
 
         @media (prefers-color-scheme: dark) {
-            stroke: $newsletter-svg-color-dm;
+            fill: $entry-background-darker-dm;
         }
     }
 }
@@ -72,6 +73,10 @@
 .newsletter__form:focus-within {
     border: 3px solid $body-color;
     margin: -3px;
+
+    @media (prefers-color-scheme: dark) {
+        border: 3px solid $body-color-dm;
+    }
 }
 
 .newsletter__email-field {
@@ -83,10 +88,18 @@
     line-height: 2;
     padding: 0 12px;
     width: 100%;
+
+    @media (prefers-color-scheme: dark) {
+        color: $body-color-dm;
+    }
 }
 
 .newsletter__email-field::placeholder {
     color: $gray-color;
+
+    @media (prefers-color-scheme: dark) {
+        color: $gray-color-dm;
+    }
 }
 
 .newsletter__email-field:focus {

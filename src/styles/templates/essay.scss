@@ -2,34 +2,65 @@
 
 // essay page
 
+.essay {
+    margin: 3 * $base-unit 0;
+}
+
+.essay__head__titles {
+    display: grid;
+    gap: 0 0.5 * $base-unit;
+    grid-template-areas:
+        "date title"
+        "date subtitle";
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    margin: 1.5 * $base-unit 0;
+}
+
 .essay__title {
     // font-family: $serif-heading-font;
     font-size: $heading-size;
     font-weight: 500;
+    grid-area: title;
+    line-height: 1.5;
     // letter-spacing: 0.05em;
+    // margin-top: 1.5 * $base-unit;
     margin-bottom: 0.25 * $base-unit;
-    // text-align: center;
 }
 
 .essay__subtitle {
-    color: $body-color;
+    color: $gray-color;
     // font-size: $heading-size;
     font-style: oblique;
-    // text-align: center;
+    grid-area: subtitle;
+
+    @media (prefers-color-scheme: dark) {
+        color: $gray-color-dm;
+    }
 }
 
 .essay__date {
+    aspect-ratio: 1/1;
     background-color: $entry-background;
     border-radius: $border-radius;
-    // color: $gray-color;
-    margin: 1.5 * $base-unit 0;
-    padding: 4px 12px;
+    font-size: $small-size;
+    grid-area: date;
+    height: (1.5 * $heading-size) + (0.25 * $base-unit) + ($base-unit);
+    line-height: 1.5;
+    // margin: 1.5 * $base-unit 0;
+    padding: 14px 0;
+    text-align: center;
     width: fit-content;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: $entry-background-dm;
+    }
 }
 
 .essay__cover-image {
     border-radius: $border-radius;
     margin-top: 1.5 * $base-unit;
+    overflow: hidden;
 
     img {
         height: 100%;
@@ -46,12 +77,40 @@
 
     hr {
         border: none;
-        height: 2 * $base-unit;
+        height: 0;
+        margin: 0 0 3 * $base-unit;
+    }
+
+    .newsletter {
+        margin: 3 * $base-unit 0 0;
+    }
+
+    .newsletter + hr {
+        margin: 0 0 3 * $base-unit;
+    }
+
+    .sidebar {
+        background-color: $entry-background;
+        border-radius: $border-radius;
+        font-size: $heading-size;
+        font-style: oblique;
+        float: right;
+        padding: 1.5 * $base-unit;
+        margin: $base-unit 0 $base-unit $base-unit;
+        width: 33.333%;
+
+        @media (prefers-color-scheme: dark) {
+            background-color: $entry-background-dm;
+        }
+
+        + p {
+            margin-top: $base-unit;
+        }
     }
 }
 
-.essay__body p:first-of-type::first-letter,
-.essay__body hr + p::first-letter {
+.essay__body > p:first-of-type::first-letter,
+.essay__body > hr + p::first-letter {
     color: $heading-color;
     font-family: $sans-font;
     float: left;

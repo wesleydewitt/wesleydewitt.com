@@ -24,11 +24,15 @@
 }
 
 .projects-list__entry:hover {
-    background-color: $link-color;
+    background-color: $entry-background;
     border-radius: $border-radius;
     margin: -0.25 * $base-unit -0.5 * $base-unit;
     padding: 0.25 * $base-unit 0.5 * $base-unit;
     text-decoration: none;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: $entry-background-dm;
+    }
 
     .projects-list__title {
     }

@@ -8,6 +8,7 @@ import About from "../components/index-sections/About";
 import SocialLinks from "../components/SocialLinks";
 import Newsletter from "../components/index-sections/Newsletter";
 import Photos from "../components/index-sections/Photos";
+import Poems from "../components/index-sections/Poems";
 // import Links from "../components/index-sections/Links";
 
 const IndexPage = () => {
@@ -15,9 +16,11 @@ const IndexPage = () => {
         <IndexLayout>
             <About />
             <Newsletter />
-            <Essays />
             <Projects />
             <Photos />
+            <Essays />
+            <Poems />
+            <SocialLinks />
         </IndexLayout>
     );
 };
