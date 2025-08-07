@@ -6,7 +6,7 @@ import Projects from "../components/index-sections/Projects";
 import Essays from "../components/index-sections/Essays";
 import About from "../components/index-sections/About";
 import SocialLinks from "../components/SocialLinks";
-import Newsletter from "../components/index-sections/Newsletter";
+import Newsletter from "../components/Newsletter";
 import Photos from "../components/index-sections/Photos";
 import Poems from "../components/index-sections/Poems";
 // import Links from "../components/index-sections/Links";
@@ -15,12 +15,12 @@ const IndexPage = () => {
     return (
         <IndexLayout>
             <About />
-            <Newsletter />
+            {/* <Newsletter /> */}
             <Projects />
-            <Photos />
             <Essays />
-            <Poems />
-            <SocialLinks />
+            <Photos />
+            {/* <Poems /> */}
+            {/* <SocialLinks /> */}
         </IndexLayout>
     );
 };

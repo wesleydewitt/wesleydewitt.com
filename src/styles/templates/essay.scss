@@ -15,7 +15,7 @@
 }
 
 .essay__head__titles {
-    display: grid;
+    // display: grid;
     gap: 0 0.5 * $base-unit;
     grid-template-areas:
         "date title"
@@ -27,13 +27,13 @@
 
 .essay__title {
     // font-family: $serif-heading-font;
-    font-size: $heading-size;
-    font-weight: 500;
-    grid-area: title;
-    line-height: 1.5;
+    // font-size: $heading-size;
+    // font-weight: 500;
+    // grid-area: title;
+    // line-height: 1.5;
     // letter-spacing: 0.05em;
     // margin-top: 1.5 * $base-unit;
-    margin-bottom: 0.25 * $base-unit;
+    // margin-bottom: 0.25 * $base-unit;
 }
 
 .essay__subtitle {
@@ -42,27 +42,15 @@
     font-style: oblique;
     grid-area: subtitle;
 
+    display: none;
+
     @media (prefers-color-scheme: dark) {
         color: $gray-color-dm;
     }
 }
 
 .essay__date {
-    aspect-ratio: 1/1;
-    background-color: $entry-background;
-    border-radius: $border-radius;
-    font-size: $small-size;
-    grid-area: date;
-    height: (1.5 * $heading-size) + (0.25 * $base-unit) + ($base-unit);
-    line-height: 1.5;
-    // margin: 1.5 * $base-unit 0;
-    padding: 14px 0;
-    text-align: center;
-    width: fit-content;
-
-    @media (prefers-color-scheme: dark) {
-        background-color: $entry-background-dm;
-    }
+    color: $gray-color;
 }
 
 .essay__cover-image {
@@ -80,7 +68,7 @@
 .essay__body {
     // font-family: $serif-font;
     // font-size: $serif-size;
-    margin-top: 1.5 * $base-unit;
+    margin-top: 3 * $base-unit;
     // padding: 3 * $base-unit;
 
     hr {
@@ -98,7 +86,7 @@
     }
 
     .sidebar {
-        background-color: $entry-background;
+        background-color: $gray-background;
         border-radius: $border-radius;
         font-size: $heading-size;
         font-style: oblique;
@@ -108,7 +96,7 @@
         width: 33.333%;
 
         @media (prefers-color-scheme: dark) {
-            background-color: $entry-background-dm;
+            background-color: $gray-background-dm;
         }
 
         + p {

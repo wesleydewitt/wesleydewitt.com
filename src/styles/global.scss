@@ -14,7 +14,7 @@ body {
     color: $body-color;
     font-family: $sans-font;
     font-size: $body-size;
-    font-weight: 400;
+    font-weight: 300;
     line-height: $base-unit;
 
     @media (prefers-color-scheme: dark) {
@@ -36,17 +36,16 @@ a:hover {
 }
 
 .all-link {
-    background-color: $link-color;
+    background-color: $gray-background;
     border-radius: $border-radius;
-    color: $body-color-dm;
-    font-weight: 500;
+    // color: $body-color-dm;
+    // font-weight: 500;
     grid-column: 1/-1;
     padding: 0.5 * $base-unit;
     text-align: center;
 
     @media (prefers-color-scheme: dark) {
-        background-color: $link-color-dm;
-        color: $body-color;
+        background-color: $gray-background-dm;
     }
 }
 
@@ -69,6 +68,7 @@ h6 {
 
 p + p {
     margin-top: $base-unit;
+    // text-indent: 1.5 * $base-unit;
 }
 
 img {
@@ -76,8 +76,12 @@ img {
 
 svg {
     display: block;
-    stroke: $body-color;
+    stroke: $heading-color;
     stroke-width: 1px;
+
+    @media (prefers-color-scheme: dark) {
+        stroke: $heading-color-dm;
+    }
 }
 
 .uppercase {
@@ -85,9 +89,9 @@ svg {
 }
 
 .page {
-    margin: (3 * $base-unit) auto;
+    margin: $base-unit auto;
     max-width: $column-width;
-    padding: 0 (3 * $base-unit);
+    padding: 0 3 * $base-unit;
 
     @media (max-width: $break-2) {
         padding: 0 $base-unit;
@@ -95,46 +99,21 @@ svg {
 }
 
 .index-section {
-    align-items: start;
-    // display: grid;
-    gap: 0 (3 * $base-unit);
-    grid-template-areas:
-        "heading content content"
-        "subheading content content";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto 1fr;
-    margin: 3 * $base-unit 0;
-
-    @media (max-width: $break-2) {
-        display: block;
-    }
+    margin: 4 * $base-unit 0;
 }
 
-.index-section__heading {
-    align-items: center;
-    display: flex;
-    // font-family: $serif-heading-font;
-    font-size: $heading-size;
-    font-weight: 500;
-    gap: 0 (0.5 * $base-unit);
-    grid-area: heading;
-    // letter-spacing: 0.05em;
-    line-height: 1.5;
-    margin-bottom: 0.25 * $base-unit;
+.index-section__head {
+    margin-bottom: $base-unit;
+
+    svg {
+        grid-row: span 2;
+    }
 }
 
 .index-section__subheading {
     color: $gray-color;
-    grid-area: subheading;
-    margin-bottom: 1.5 * $base-unit;
 
     @media (prefers-color-scheme: dark) {
         color: $gray-color-dm;
     }
-}
-
-.index-section__content {
-    // margin-left: $base-unit;
-    grid-area: content;
-    grid-column: span 2;
 }

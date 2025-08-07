@@ -1,14 +1,20 @@
 @import "../variables.scss";
 
 .social-links {
-    background-color: $entry-background;
+    // background-color: $gray-background;
+    border: 1px solid $gray-line-color;
     border-radius: $border-radius;
     grid-area: links;
     margin-top: 1.5 * $base-unit;
     padding: 1.5 * $base-unit;
 
     @media (prefers-color-scheme: dark) {
-        background-color: $entry-background-dm;
+        // background-color: $gray-background-dm;
+        border-color: $gray-line-color-dm;
+    }
+
+    .index-section__heading {
+        font-size: inherit;
     }
 }
 
@@ -29,7 +35,7 @@
 .social-links__link {
     align-items: start;
     // aspect-ratio: 16/10;
-    background-color: $entry-background;
+    background-color: $gray-background;
     // border: 1px solid $gray-line-color;
     border-radius: $border-radius;
     color: inherit;
@@ -38,7 +44,7 @@
     padding: 0.5 * $base-unit 0.75 * $base-unit;
 
     @media (prefers-color-scheme: dark) {
-        background-color: $entry-background-dm;
+        background-color: $gray-background-dm;
     }
 }
 

@@ -7,7 +7,7 @@ import { Link } from "gatsby";
 import Layout from "../layouts/Layout";
 import essayIcon from "../images/essay.svg";
 import "../styles/templates/essay.scss";
-import Newsletter from "../components/index-sections/Newsletter";
+import Newsletter from "../components/Newsletter";
 import SocialLinks from "../components/SocialLinks";
 
 const shortcodes = { Link }; // Provide common components here
@@ -49,11 +49,11 @@ export default function PageTemplate({ data, children }) {
         <Layout>
             <article className="essay">
                 <div className="essay__head">
-                    <div className="essay__cover-image">
+                    {/* <div className="essay__cover-image">
                         <img
                             src={"/assets/photos/" + data.mdx.frontmatter.image}
                         />
-                    </div>
+                    </div> */}
 
                     <div className="essay__head__titles">
                         <h1 className="essay__title">
@@ -65,10 +65,7 @@ export default function PageTemplate({ data, children }) {
                         </h2>
 
                         <div className="essay__date">
-                            {data.mdx.fields.day}{" "}
-                            {data.mdx.fields.month_abbreviated}
-                            <br />
-                            {data.mdx.fields.year}
+                            {data.mdx.frontmatter.date}
                         </div>
                     </div>
                 </div>

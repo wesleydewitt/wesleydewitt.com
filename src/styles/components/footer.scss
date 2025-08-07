@@ -25,7 +25,7 @@
 }
 
 .footer__top-link {
-    background-color: $entry-background;
+    background-color: $gray-background;
     border-radius: $border-radius;
     color: inherit;
     display: flex;
@@ -35,6 +35,6 @@
     padding: 7px 12px;
 
     @media (prefers-color-scheme: dark) {
-        background-color: $entry-background-dm;
+        background-color: $gray-background-dm;
     }
 }

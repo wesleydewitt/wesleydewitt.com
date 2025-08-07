@@ -2,11 +2,13 @@ import React from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import "../icons/EssayIcon";
 import essaysStyles from "../../styles/components/index-sections/essays-section.scss";
+import EssayIcon from "../icons/EssayIcon";
 
 const Essays = () => {
     const data = useStaticQuery(graphql`
         query {
             allMdx(
+                limit: 2
                 filter: { frontmatter: { type: { eq: "essay" } } }
                 sort: { frontmatter: { date: DESC } }
             ) {
@@ -17,7 +19,7 @@ const Essays = () => {
                         title
                         subtitle
                         cover
-                        technologies
+                        tags
                         date(formatString: "MMM YYYY")
                     }
                     fields {
@@ -34,22 +36,21 @@ const Essays = () => {
 
     return (
         <section className="index-section essays">
-            <h3 className="index-section__heading">Essays</h3>
+            <div className="index-section__head">
+                <h3 className="index-section__heading">Featured Essays</h3>
 
-            <h4 className="index-section__subheading">
-                Short- to medium-form pieces on art, culture, literature, and
-                politics
-            </h4>
+                <h4 className="index-section__subheading">
+                    Short- to medium-form pieces on art, culture, literature,
+                    and politics
+                </h4>
+            </div>
 
             <div className="index-section__content essays-list">
-                {data.allMdx.nodes.map((essay) => (
+                {data.allMdx.nodes.map((essay, index) => (
                     <Link
-                        to={
-                            "/" +
-                            essay.frontmatter.type +
-                            essay.frontmatter.slug
-                        }
+                        to={essay.frontmatter.type + essay.frontmatter.slug}
                         className="essays-list__entry"
+                        key={index}
                     >
                         <div className="essays-list__cover">
                             <img
@@ -59,14 +60,11 @@ const Essays = () => {
                             />
                         </div>
 
-                        <div className="essays-list__date">
-                            <div className="month-abbreviated">
-                                {essay.fields.month_abbreviated}
+                        <div className="essays-list__cover-text">
+                            <div className="essays-list__type-label">
+                                <EssayIcon /> Essay
                             </div>
-                            <div className="year">{essay.fields.year}</div>
-                        </div>
 
-                        <div className="essays-list__titles">
                             <h4 className="essays-list__title">
                                 {essay.frontmatter.title}
                             </h4>
@@ -74,24 +72,29 @@ const Essays = () => {
                             <h5 className="essays-list__subtitle">
                                 {essay.frontmatter.subtitle}
                             </h5>
-                        </div>
 
-                        <div className="essays-list__excerpt">
-                            {essay.excerpt}
+                            {essay.frontmatter.tags &&
+                                essay.frontmatter.tags.length > 0 && (
+                                    <div className="essays-list__tags">
+                                        {essay.frontmatter.tags.map(
+                                            (tag, index) => (
+                                                <div
+                                                    className={tag}
+                                                    key={index}
+                                                >
+                                                    {tag}
+                                                </div>
+                                            )
+                                        )}
+                                    </div>
+                                )}
                         </div>
-
-                        {/* <Link
-                            className="essays-list__read-link"
-                            to={
-                                "/" +
-                                essay.frontmatter.type +
-                                essay.frontmatter.slug
-                            }
-                        >
-                            Read&nbsp;&nbsp;&nbsp;&rarr;
-                        </Link> */}
                     </Link>
                 ))}
+
+                <Link to="/" className="all-link">
+                    All Essays
+                </Link>
             </div>
         </section>
     );

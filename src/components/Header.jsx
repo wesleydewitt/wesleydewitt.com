@@ -5,6 +5,7 @@ import "../styles/components/header.scss";
 import pic from "../images/pic.png";
 import AboutIcon from "./icons/AboutIcon";
 import SocialLinks from "./SocialLinks";
+import MenuIcon from "./icons/MenuIcon";
 
 const Header = () => {
     const siteDescription =
@@ -12,19 +13,41 @@ const Header = () => {
 
     return (
         <header className="header">
-            {/* <Link className="header__site-logo" to="/">
+            <Link className="header__site-logo" to="/">
                 <img src={pic} />
-            </Link> */}
+            </Link>
 
-            <h1 className="header__site-title">
-                <Link to="/">{siteMetadata.title}</Link>
-            </h1>
+            <div className="header__titles">
+                <h1 className="header__site-title">
+                    <Link to="/">{siteMetadata.title}</Link>
+                </h1>
 
-            <h2 className="header__site-subtitle">{siteMetadata.subtitle}</h2>
+                <h2 className="header__site-subtitle">
+                    {siteMetadata.subtitle}
+                </h2>
+            </div>
 
             {/* <div className="header__buttons">
                 <button className="theme-toggle"></button>
             </div> */}
+
+            {/* <nav className="header__nav">
+                <Link to="/" activeClassName="active">
+                    Index
+                </Link>
+
+                <Link to="/feed" activeClassName="active">
+                    Feed
+                </Link>
+
+                <Link to="/about" activeClassName="active">
+                    About
+                </Link>
+            </nav> */}
+
+            {/* <nav className="header__nav">
+                Menu <MenuIcon />
+            </nav> */}
         </header>
     );
 };

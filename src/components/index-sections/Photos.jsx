@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import "../../styles/components/index-sections/photos-section.scss";
+import PhotosIcon from "../icons/PhotosIcon";
 
 const Photos = () => {
     const data = useStaticQuery(graphql`
@@ -33,16 +34,18 @@ const Photos = () => {
 
     return (
         <section className="index-section photos">
-            <h3 className="index-section__heading">Photos</h3>
+            <div className="index-section__head">
+                <h3 className="index-section__heading">Photos</h3>
 
-            <h4 className="index-section__subheading">
-                Photo albums from various places
-            </h4>
+                <h4 className="index-section__subheading">
+                    Photo albums from various places
+                </h4>
+            </div>
 
             <div className="index-section__content photos-grid">
                 {Photos}
                 <Link className="all-link" to="/photos">
-                    All Photos &rarr;
+                    All Photos
                 </Link>
             </div>
         </section>

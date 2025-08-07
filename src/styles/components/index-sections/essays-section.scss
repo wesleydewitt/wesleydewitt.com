@@ -1,160 +1,81 @@
 @import "../../variables.scss";
 
+.essays {
+    // background-color: $gray-background;
+    // border: 1px solid $gray-line-color;
+    // border-radius: $border-radius;
+    // padding: $base-unit;
+}
+
 .essays-list {
     display: grid;
-    gap: 1.5 * $base-unit;
-    // grid-template-columns: 1fr 1fr;
+    gap: $base-unit;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .essays-list__entry {
-    color: inherit;
-    display: grid;
-    gap: (0.25 * $base-unit) (0.5 * $base-unit);
-    grid-template-areas:
-        "date titles cover"
-        "date excerpt cover";
-    grid-template-columns: auto 1fr auto;
-}
-
-.essays-list__entry + .essays-list__entry::before {
-    background-color: $gray-line-color;
-    content: "";
-    grid-column: 1/-1;
-    height: 1px;
-    margin-bottom: 1.5 * $base-unit;
-    width: 100%;
-
-    display: none;
-}
-
-.essays-list__entry:hover {
-    background-color: $entry-background;
-    border-radius: $border-radius;
-    margin: -0.5 * $base-unit -0.5 * $base-unit;
-    padding: 0.5 * $base-unit 0.5 * $base-unit;
-    text-decoration: none;
-
-    @media (prefers-color-scheme: dark) {
-        background-color: $entry-background-dm;
-    }
-
-    // .essays-list__excerpt::after {
-    //     content: "";
-    //     background: linear-gradient(
-    //         90deg,
-    //         rgba(0, 113, 227, 0),
-    //         rgba(0, 113, 227, 1)
-    //     );
-    //     display: block;
-    //     height: $base-unit;
-    //     position: absolute;
-    //     top: 2 * $base-unit;
-    //     left: 0;
-    //     width: 100%;
-    //     z-index: +999;
-    // }
+    position: relative;
 }
 
 .essays-list__cover {
     aspect-ratio: 4/3;
+    background-color: #888888;
     border-radius: $border-radius;
-    grid-area: cover;
-    grid-row: span 2;
-    height: (5 * $base-unit) + (0 * 1.5 * $heading-size) + (0.5 * $base-unit);
     overflow: hidden;
-    // margin-bottom: 0.666 * $base-unit;
-
-    // display: none;
 
     img {
         height: 100%;
         object-fit: cover;
+        opacity: 0.5;
         width: 100%;
     }
 }
 
-.essays-list__date {
-    background-color: $entry-background;
-    // border: 1px solid $gray-line-color;
-    border-radius: $border-radius;
-    // color: $gray-color;
-    display: flex;
-    flex-direction: column;
-    font-size: $small-size;
-    gap: 0.25 * $base-unit;
-    grid-area: date;
-    // grid-row: span 3;
-    height: $base-unit + (1.5 * $heading-size);
-    justify-content: center;
-    line-height: 1;
-    width: $base-unit + (1.5 * $heading-size);
-    text-align: center;
-
-    @media (prefers-color-scheme: dark) {
-        background-color: $entry-background-dm;
-    }
+.essays-list__cover-text {
+    color: $heading-color-dm;
+    padding: 0.5 * $base-unit 0.666 * $base-unit;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
-.essays-list__titles {
-    grid-area: titles;
+.essays-list__type-label {
+    align-items: center;
+    display: flex;
+    font-family: $mono-font;
+    font-size: $small-size;
+    gap: 0.25 * $base-unit;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.25 * $base-unit;
+    text-transform: uppercase;
+
+    svg {
+        stroke: $heading-color-dm;
+        stroke-width: 0.75px;
+    }
 }
 
 .essays-list__title {
-    // font-family: $serif-heading-font;
-    // font-size: $heading-size;
-    font-weight: 500;
-    // letter-spacing: 0.05em;
-    // line-height: 1.5;
-    // margin-top: 6px;
-    margin-bottom: 0.25 * $base-unit;
+    color: inherit;
 }
 
 .essays-list__subtitle {
-    color: $gray-color;
-    // font-size: $heading-size;
-    font-style: oblique;
-    // line-height: 2;
+    color: inherit;
 
     @media (prefers-color-scheme: dark) {
-        color: $gray-color-dm;
     }
 }
 
-.essays-list__excerpt {
-    // font-family: $serif-font;
-    // font-size: $serif-size;
-    grid-area: excerpt;
-    // grid-column: span 2;
-    height: 3 * $base-unit;
-    overflow: hidden;
-    position: relative;
-    // background-color: pink;
-
-    // display: none;
-}
-
-// .essays-list__excerpt::after {
-//     content: "";
-//     background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-//     display: block;
-//     height: $base-unit;
-//     position: absolute;
-//     top: 2 * $base-unit;
-//     left: 0;
-//     width: 100%;
-//     z-index: +999;
-// }
-
-.essays-list__read-link {
-    align-self: center;
-    background-color: $link-color;
-    border-radius: $border-radius;
-    color: rgba(255, 255, 255, 0.8);
-    font-weight: 500;
-    height: min-content;
-    // margin-top: 1.5 * $base-unit;
-    padding: 4px 12px;
-    width: min-content;
-
-    // display: none;
+.essays-list__tags {
+    display: flex;
+    font-family: $mono-font;
+    font-size: $small-size;
+    gap: 0.5 * $base-unit;
+    position: absolute;
+    bottom: 0.5 * $base-unit;
 }

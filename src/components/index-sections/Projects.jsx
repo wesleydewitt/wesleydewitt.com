@@ -7,6 +7,7 @@ const Projects = () => {
     const data = useStaticQuery(graphql`
         query {
             allMdx(
+                limit: 4
                 filter: { frontmatter: { type: { eq: "project" } } }
                 sort: { frontmatter: { date: DESC } }
             ) {
@@ -26,37 +27,51 @@ const Projects = () => {
         }
     `);
 
-    return (
-        <section className="index-section projects">
-            <h3 className="index-section__heading">Projects</h3>
+    const Projects = data.allMdx.nodes.map((project, index) => (
+        <Link to="/" className="projects-list__entry" key={index}>
+            <div className="projects-list__type-label">
+                <ProjectIcon /> Project
+            </div>
 
-            <h4 className="index-section__subheading">
-                Apps and websites made with precision and minimalism in mind
+            <div className="projects-list__cover"></div>
+
+            <h4 className="projects-list__title">
+                {project.frontmatter.title}
             </h4>
 
-            <ul className="index-section__content projects-list">
-                {data.allMdx.nodes.map((project) => (
-                    <li>
-                        <Link to="/" className="projects-list__entry">
-                            <div className="projects-list__titles">
-                                <h4 className="projects-list__title">
-                                    {project.frontmatter.title}
-                                </h4>
+            <h5 className="projects-list__subtitle">
+                {project.frontmatter.subtitle}
+            </h5>
 
-                                <h5 className="projects-list__subtitle">
-                                    {project.frontmatter.subtitle}
-                                </h5>
+            {project.frontmatter.technologies &&
+                project.frontmatter.technologies.length > 0 && (
+                    <div className="projects-list__technologies">
+                        {project.frontmatter.technologies.map((tech, index) => (
+                            <div className={tech} key={index}>
+                                {tech}
                             </div>
+                        ))}
+                    </div>
+                )}
+        </Link>
+    ));
 
-                            <div className="projects-list__leader-line"></div>
+    return (
+        <section className="index-section projects">
+            <div className="index-section__head">
+                <h3 className="index-section__heading">Featured Projects</h3>
 
-                            <div className="projects-list__date">
-                                {project.frontmatter.date}
-                            </div>
-                        </Link>
-                    </li>
-                ))}
-            </ul>
+                <h4 className="index-section__subheading">
+                    Apps and websites made with precision and minimalism in mind
+                </h4>
+            </div>
+
+            <div className="index-section__content projects-list">
+                {Projects}
+                <Link to="/" className="all-link">
+                    All Projects
+                </Link>
+            </div>
         </section>
     );
 };

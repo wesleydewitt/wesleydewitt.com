@@ -1,81 +1,46 @@
 @import "../../variables.scss";
 
 .newsletter {
-    align-items: start;
-    background-color: $entry-background;
-    border-radius: $border-radius;
-    display: grid;
-    gap: 0 1.5 * $base-unit;
-    grid-template-areas:
-        "heading image"
-        "subheading image"
-        "form form";
-    grid-template-columns: 1fr auto;
-    grid-template-rows: auto 1fr auto;
-    padding: 1.5 * $base-unit;
-    margin: 3 * $base-unit 0;
-
-    @media (prefers-color-scheme: dark) {
-        background-color: $entry-background-dm;
-    }
-
-    @media (max-width: $break-2) {
-        padding: 2 * $base-unit 2 * $base-unit;
-    }
+    margin-top: $base-unit;
 }
 
 .newsletter__heading {
-    // font-family: $serif-heading-font;
-    font-size: $heading-size;
-    font-weight: 500;
-    // letter-spacing: 0.05em;
-    line-height: 1.5;
-    margin-bottom: 0.25 * $base-unit;
-}
-
-.newsletter__subheading {
-    color: $gray-color;
-    margin-bottom: 1.5 * $base-unit;
-
-    @media (prefers-color-scheme: dark) {
-        color: $gray-color-dm;
-    }
+    margin-bottom: $base-unit;
 }
 
 .newsletter__image {
-    grid-area: image;
-    height: 81px;
+    margin: 3px;
 
     svg {
-        height: 81px;
-        fill: $entry-background-darker;
+        height: $base-unit;
+        display: block;
+        fill: $gray-background-darker;
         stroke-width: 0;
 
         @media (prefers-color-scheme: dark) {
-            fill: $entry-background-darker-dm;
+            fill: $gray-background-darker-dm;
         }
     }
 }
 
 .newsletter__form {
-    background-color: $entry-background-darker;
+    border: 1px solid $gray-line-color;
     border-radius: $border-radius;
     display: flex;
-    gap: $base-unit;
-    grid-area: form;
-    padding: 8px;
+
+    padding: 7px;
+    margin-top: $base-unit;
 
     @media (prefers-color-scheme: dark) {
-        background-color: $entry-background-darker-dm;
+        border-color: $gray-line-color-dm;
     }
 }
 
 .newsletter__form:focus-within {
-    border: 3px solid $body-color;
-    margin: -3px;
+    border: 1px solid $body-color;
 
     @media (prefers-color-scheme: dark) {
-        border: 3px solid $body-color-dm;
+        border-color: $body-color-dm;
     }
 }
 
@@ -85,6 +50,7 @@
     border-radius: $border-radius;
     color: $body-color;
     font-size: 16px;
+    font-weight: 300;
     line-height: 2;
     padding: 0 12px;
     width: 100%;
@@ -107,15 +73,5 @@
 }
 
 .newsletter__signup-button {
-    background-color: $link-color;
-    border-radius: $border-radius;
-    color: $body-color-dm;
-    font-weight: 500;
     padding: 4px 12px;
-    // width: min-content;
-
-    @media (prefers-color-scheme: dark) {
-        background-color: $link-color-dm;
-        color: $body-color;
-    }
 }
