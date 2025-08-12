@@ -1,6 +1,6 @@
 import React from "react";
 
-const EssayIcon = () => {
+const PoemIcon = () => {
     return (
         <svg
             width="11"
@@ -14,4 +14,4 @@ const EssayIcon = () => {
     );
 };
 
-export default EssayIcon;
+export default PoemIcon;
