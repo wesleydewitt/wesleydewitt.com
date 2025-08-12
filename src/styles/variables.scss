@@ -1,10 +1,10 @@
 // variables
 
 $base-unit: 24px;
-$column-width: 600px + (6 * $base-unit);
+$column-width: 640px + (6 * $base-unit);
 // $essay-body-width: 840px;
 // $column-width: 840px + (8 * $base-unit);
-$border-radius: 6px;
+$border-radius: 4px;
 $border-radius-big: 12px;
 
 $sans-font: "Inter", -apple-system, BlinkMacSystemFont, avenir next, avenir,
@@ -16,12 +16,13 @@ $sans-font: "Inter", -apple-system, BlinkMacSystemFont, avenir next, avenir,
 // $sans-font: "American Grotesk", serif;
 // $sans-font: "Untitled Sans", serif;
 // $sans-font: "Sohne";
-$body-size: 14px;
+$body-size: 12px;
 $small-size: 10px;
-$heading-size: 18px;
+$heading-size: 16px;
+$heading-line-height: 2;
 
 $serif-font: "Heldane Text", serif;
-$serif-font: "Source Serif 4";
+// $serif-font: "Source Serif 4";
 $serif-font: "Times New Roman", serif;
 $serif-size: 16px;
 
@@ -34,13 +35,16 @@ $mono-font: "Sohne Mono";
 $mono-font: "IBM Plex Mono";
 $mono-font-size: 12px;
 
-$body-color: rgba(0, 0, 0, 1);
-$body-color-dm: rgba(255, 255, 255, 1);
+$body-color: rgba(0, 0, 0, 0.6);
+$body-color: rgba(255, 255, 255, 0.6);
+$body-color-dm: rgba(255, 255, 255, 0.6);
 
 $heading-color: rgba(0, 0, 0, 1);
+$heading-color: rgba(255, 255, 255, 1);
 $heading-color-dm: rgba(255, 255, 255, 1);
 
-$gray-color: rgba(0, 0, 0, 0.4);
+$gray-color: rgba(0, 0, 0, 0.5);
+// $gray-color: rgba(255, 255, 255, 0.3);
 $gray-color-dm: rgba(255, 255, 255, 0.4);
 
 $link-color: rgb(0, 113, 227);
@@ -51,13 +55,15 @@ $link-color-dm: $body-color-dm;
 $new-label-bg: $link-color;
 $new-label-color: rgb(255, 255, 255);
 
-$background-color: #f3f1eb;
+$background-color: #ebe9e5;
 $background-color: #ffffff;
+$background-color: #7e7264;
+// $background-color: #666666;
 $background-color-dm: #282621;
 $background-color-dm: #080808;
 
-$gray-background: rgba(0, 0, 0, 0.05);
-$gray-background-darker: rgba(0, 0, 0, 0.1);
+$gray-background: rgba(0, 0, 0, 0.1);
+$gray-background-darker: rgba(0, 0, 0, 0.2);
 $gray-background-dm: rgba(255, 255, 255, 0.05);
 $gray-background-darker-dm: rgba(255, 255, 255, 0.1);
 
@@ -67,5 +73,5 @@ $gray-line-color-dm: rgba(255, 255, 255, 0.1);
 $newsletter-svg-color: #cfcec8;
 $newsletter-svg-color-dm: #484642;
 
-$break-1: 768px;
+$break-1: 760px;
 $break-2: 600px;

@@ -11,6 +11,10 @@
     display: grid;
     gap: $base-unit;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    @media (max-width: $break-2) {
+        grid-template-columns: auto;
+    }
 }
 
 .projects-list__entry {
@@ -25,21 +29,6 @@
 
     @media (prefers-color-scheme: dark) {
         background-color: $gray-background-dm;
-    }
-}
-
-.projects-list__type-label {
-    align-items: center;
-    display: flex;
-    font-family: $mono-font;
-    font-size: $small-size;
-    gap: 0.25 * $base-unit;
-    letter-spacing: 0.1em;
-    margin-bottom: 0.25 * $base-unit;
-    text-transform: uppercase;
-
-    svg {
-        stroke-width: 0.75px;
     }
 }
 
@@ -58,22 +47,20 @@
     }
 }
 
-.projects-list__title {
-    // margin-top: 0.5 * $base-unit;
-}
-
 .projects-list__subtitle {
-    color: $gray-color;
+    color: $body-color;
     margin-bottom: 0.25 * $base-unit;
 
     @media (prefers-color-scheme: dark) {
-        color: $gray-color-dm;
+        color: $body-color-dm;
     }
 }
 
 .projects-list__technologies {
+    color: $gray-color;
     display: flex;
     font-family: $mono-font;
     font-size: $small-size;
     gap: 0.5 * $base-unit;
+    line-height: 1.3;
 }

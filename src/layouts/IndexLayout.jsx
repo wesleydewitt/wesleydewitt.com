@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 const IndexLayout = ({ children }) => {
     return (
         <div className="page" id="page">
-            <Header />
+            <Header isIndex={true} />
             <main className="main main--index-page">{children}</main>
             <Footer />
         </div>

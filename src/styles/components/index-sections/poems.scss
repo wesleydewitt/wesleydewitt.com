@@ -2,16 +2,18 @@
 
 .poems-list {
     display: grid;
-    gap: 0.5 * $base-unit;
+    gap: $base-unit;
     grid-template-columns: 1fr 1fr;
+
+    @media (max-width: $break-2) {
+        grid-template-columns: auto;
+    }
 }
 
 .poems-list__entry {
     background-color: $gray-background;
     border-radius: $border-radius;
-    display: grid;
-    gap: 0.25 * $base-unit;
-    padding: $base-unit;
+    padding: 0.5 * $base-unit 0.666 * $base-unit;
 
     @media (prefers-color-scheme: dark) {
         background-color: $gray-background-dm;
@@ -25,10 +27,13 @@
 }
 
 .poems-list__title {
-    font-weight: 500;
+    // font-weight: 500;
+
+    display: none;
 }
 
 .poems-list__body {
-    font-family: $serif-font;
-    font-size: $serif-size;
+    font-family: $mono-font;
+    font-size: $small-size;
+    line-height: 2;
 }

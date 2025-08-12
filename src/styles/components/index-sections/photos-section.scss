@@ -3,7 +3,11 @@
 .photos-grid {
     display: grid;
     gap: $base-unit;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    @media (max-width: $break-2) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 .photo-link {

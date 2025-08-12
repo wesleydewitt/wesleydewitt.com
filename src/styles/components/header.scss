@@ -2,10 +2,21 @@
 
 .header {
     // align-items: center;
-    display: flex;
+    // display: flex;
     gap: 0.5 * $base-unit;
     margin: 3 * $base-unit 0;
     // text-align: center;
+}
+
+.header--index {
+    display: grid;
+    gap: $base-unit;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    .header__titles,
+    .header__site-description {
+        grid-column: span 2;
+    }
 }
 
 .header__titles {
@@ -13,13 +24,12 @@
     flex-grow: 1;
     // gap: $base-unit;
     // justify-content: center;
+    // margin-bottom: $base-unit;
 }
 
 .header__site-title {
-    // font-size: $heading-size;
-    // font-weight: 500;
-    // line-height: 1.5;
-    // margin-bottom: 0.25 * $base-unit;
+    font-size: $heading-size;
+    line-height: $heading-line-height;
 }
 
 .header__site-subtitle {
@@ -35,16 +45,21 @@
     }
 }
 
+.header__site-description {
+    padding-right: 0.5 * $base-unit;
+}
+
 .header__site-logo {
     align-self: start;
     background-color: $gray-background;
-    border-radius: 50%;
+    border-radius: $border-radius;
     display: block;
     grid-row: span 2;
-    height: 2 * $base-unit;
+    // height: 2 * $base-unit;
     // margin-top: 6px;
+    // opacity: 0.8;
     overflow: hidden;
-    width: 2 * $base-unit;
+    // width: 2 * $base-unit;
 
     // display: none;
 
@@ -57,22 +72,27 @@
     }
 }
 
+.site-description__heading {
+    font-size: $heading-size;
+    line-height: $heading-line-height;
+    margin: 1.5 * $base-unit 0 $base-unit;
+}
+
 .header__nav {
+    background-color: $gray-background;
+    border-radius: $border-radius;
+    display: flex;
+    grid-column: span 3;
+    justify-content: space-around;
+    padding: 0.5 * $base-unit 0.666 * $base-unit;
+
+    display: none;
+}
+
+.header__nav-heading {
     align-items: center;
     display: flex;
-    gap: 0.5 * $base-unit;
+    gap: 0.25 * $base-unit;
 
-    // display: none;
-
-    a {
-        color: $gray-color;
-
-        @media (prefers-color-scheme: dark) {
-            color: $gray-color-dm;
-        }
-    }
-
-    a.active {
-        color: inherit;
-    }
+    display: none;
 }

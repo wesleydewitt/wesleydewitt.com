@@ -10,12 +10,12 @@ const About = () => {
     const siteDescription = (
         <div className="about__site-description">
             <p>
-                Hi, I'm a designer, writer, and aspiring front-end developer
-                from Indianapolis. I love exciting ideas, good aesthetics, and
-                clear writing. My days are spent working in the gig economy,
-                while my nights and weekends are devoted to making things
-                &mdash; apps, websites, essays, and photos &mdash; that seek to
-                delight, inform, and entertain.
+                I'm a designer, writer, and aspiring front-end developer from
+                Indianapolis. I love exciting ideas, good aesthetics, and clear
+                writing. My days are spent working in the gig economy, while my
+                nights and weekends are devoted to making things &mdash; apps,
+                websites, essays, and photos &mdash; that seek to delight,
+                inform, and entertain.
             </p>
 
             {/* <p>
@@ -38,10 +38,7 @@ const About = () => {
     );
     return (
         <section className="index-section about">
-            <div className="index-section__content">
-                {siteDescription}
-                <Newsletter />
-            </div>
+            <div className="index-section__content">{siteDescription}</div>
         </section>
     );
 };

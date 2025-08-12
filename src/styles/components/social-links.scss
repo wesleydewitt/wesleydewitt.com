@@ -1,35 +1,35 @@
 @import "../variables.scss";
 
 .social-links {
-    // background-color: $gray-background;
-    border: 1px solid $gray-line-color;
+    background-color: $gray-background;
     border-radius: $border-radius;
-    grid-area: links;
-    margin-top: 1.5 * $base-unit;
-    padding: 1.5 * $base-unit;
+    grid-column: 1/-1;
+    padding: $base-unit;
+}
+
+.social-links__heading {
+    font-size: $heading-size;
+    line-height: $heading-line-height;
+}
+
+.social-links__subheading {
+    color: $gray-color;
+    margin-bottom: $base-unit;
 
     @media (prefers-color-scheme: dark) {
-        // background-color: $gray-background-dm;
-        border-color: $gray-line-color-dm;
-    }
-
-    .index-section__heading {
-        font-size: inherit;
+        color: $gray-color-dm;
     }
 }
 
 .social-links__list {
     display: grid;
-    gap: (0.5 * $base-unit) (0.5 * $base-unit);
+    gap: 0.5 * $base-unit;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0;
 
-    @media (max-width: $break-2) {
+    @media (max-width: $break-1) {
         grid-template-columns: auto;
     }
-}
-
-.social-links__entry {
 }
 
 .social-links__link {
@@ -41,7 +41,7 @@
     color: inherit;
     display: grid;
     grid-template-rows: 1fr auto;
-    padding: 0.5 * $base-unit 0.75 * $base-unit;
+    padding: 0.5 * $base-unit 0.666 * $base-unit;
 
     @media (prefers-color-scheme: dark) {
         background-color: $gray-background-dm;
@@ -51,54 +51,54 @@
 .social-links__link:hover {
     border-radius: $border-radius;
     margin: -0.25 * $base-unit -0.25 * $base-unit;
-    padding: 0.75 * $base-unit 1 * $base-unit;
+    padding: 0.75 * $base-unit 0.916 * $base-unit;
 }
 
-.social-links__link.email {
-    background-color: $link-color;
-    // border: 1px solid $link-color;
+// .social-links__link.email {
+//     background-color: $link-color;
+//     // border: 1px solid $link-color;
 
-    .social-links__heading {
-        color: $body-color-dm;
-    }
+//     .social-links__link-title {
+//         color: $body-color-dm;
+//     }
 
-    svg {
-        stroke: $body-color-dm;
-    }
+//     svg {
+//         stroke: $body-color-dm;
+//     }
 
-    .social-links__url {
-        color: $gray-color-dm;
-    }
+//     .social-links__url {
+//         color: $gray-color-dm;
+//     }
 
-    @media (prefers-color-scheme: dark) {
-        background-color: $link-color-dm;
+//     @media (prefers-color-scheme: dark) {
+//         background-color: $link-color-dm;
 
-        .social-links__heading {
-            color: $body-color;
-        }
+//         .social-links__heading {
+//             color: $body-color;
+//         }
 
-        svg {
-            stroke: $body-color;
-        }
+//         svg {
+//             stroke: $body-color;
+//         }
 
-        .social-links__url {
-            color: $gray-color;
-        }
-    }
-}
+//         .social-links__url {
+//             color: $gray-color;
+//         }
+//     }
+// }
 
 .social-links__link:hover {
     text-decoration: none;
 }
 
-.social-links__heading {
+.social-links__link-title {
     align-items: center;
     color: $body-color;
     display: flex;
     // font-size: $heading-size;
-    font-weight: 500;
+    // font-weight: 500;
     justify-content: space-between;
-    margin-bottom: 1.5 * $base-unit;
+    margin-bottom: 0.25 * $base-unit;
 
     @media (prefers-color-scheme: dark) {
         color: $body-color-dm;
@@ -120,6 +120,7 @@
 
 .social-links__url {
     color: $gray-color;
+    font-family: $mono-font;
     font-size: $small-size;
 
     @media (prefers-color-scheme: dark) {

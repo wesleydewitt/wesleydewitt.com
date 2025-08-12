@@ -9,18 +9,19 @@ import SocialLinks from "../components/SocialLinks";
 import Newsletter from "../components/Newsletter";
 import Photos from "../components/index-sections/Photos";
 import Poems from "../components/index-sections/Poems";
+import Availability from "../components/Availability";
 // import Links from "../components/index-sections/Links";
 
 const IndexPage = () => {
     return (
         <IndexLayout>
-            <About />
-            {/* <Newsletter /> */}
             <Projects />
             <Essays />
+            <Newsletter />
             <Photos />
-            {/* <Poems /> */}
-            {/* <SocialLinks /> */}
+            <Poems />
+            <Availability />
+            <SocialLinks />
         </IndexLayout>
     );
 };
@@ -30,7 +31,6 @@ export default IndexPage;
 export const Head = () => (
     <>
         <title>{siteMetadata.title}</title>
-        <meta name="theme-color" content="#f3f1eb" />
         <link rel="icon" href={favicon} />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />

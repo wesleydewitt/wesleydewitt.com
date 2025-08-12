@@ -2,21 +2,38 @@ import React from "react";
 import { Link } from "gatsby";
 import { siteMetadata } from "../../gatsby-config";
 import "../styles/components/header.scss";
-import pic from "../images/pic.png";
+import pic from "../images/pic2.png";
 import AboutIcon from "./icons/AboutIcon";
 import SocialLinks from "./SocialLinks";
 import MenuIcon from "./icons/MenuIcon";
+import Newsletter from "./Newsletter";
+import Availability from "./Availability";
 
-const Header = () => {
-    const siteDescription =
-        "Born in 1995. Discovered a love for writing, design and front-end web development. Worked ever since to create things that seek to delight and inform.";
+const Header = ({ isIndex }) => {
+    const siteDescription = (
+        <>
+            <p>
+                I'm a coder, designer, writer, and aspiring front-end developer
+                from Indianapolis. I love exciting ideas, good aesthetics, and
+                clear writing. My days are spent working in the gig economy,
+                while my nights and weekends are devoted to making things
+                &mdash; apps, websites, essays, and photos &mdash; that seek to
+                delight, inform, and entertain.
+            </p>
+
+            <p>
+                This is my web journal, a place that serves as a reposiotry of
+                creative output. It is anti-social media, a space to incubate
+                ideas and content semi-privately, in a way that documents
+                creative growth but is not immediately funneled into the
+                systematized and socially corrosive algorithms of our modern
+                social netowrks.
+            </p>
+        </>
+    );
 
     return (
-        <header className="header">
-            <Link className="header__site-logo" to="/">
-                <img src={pic} />
-            </Link>
-
+        <header className={isIndex ? "header header--index" : "header"}>
             <div className="header__titles">
                 <h1 className="header__site-title">
                     <Link to="/">{siteMetadata.title}</Link>
@@ -26,6 +43,18 @@ const Header = () => {
                     {siteMetadata.subtitle}
                 </h2>
             </div>
+
+            {isIndex ? (
+                <>
+                    <div className="header__site-logo">
+                        <img src={pic} />
+                    </div>
+
+                    <div className="header__site-description">
+                        {siteDescription}
+                    </div>
+                </>
+            ) : null}
 
             {/* <div className="header__buttons">
                 <button className="theme-toggle"></button>
@@ -48,6 +77,31 @@ const Header = () => {
             {/* <nav className="header__nav">
                 Menu <MenuIcon />
             </nav> */}
+
+            <nav className="header__nav">
+                <h3 className="header__nav-heading">
+                    <MenuIcon /> Links
+                </h3>
+
+                <Link to="/" activeClassName="active">
+                    Index
+                </Link>
+                <Link to="/bio" activeClassName="active">
+                    Bio
+                </Link>
+                <Link to="/projects" activeClassName="active">
+                    Projects
+                </Link>
+                <Link to="/essays" activeClassName="active">
+                    Essays
+                </Link>
+                <Link to="/photos" activeClassName="active">
+                    Photos
+                </Link>
+                <Link to="/poems" activeClassName="active">
+                    Poems
+                </Link>
+            </nav>
         </header>
     );
 };

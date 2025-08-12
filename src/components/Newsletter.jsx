@@ -5,22 +5,17 @@ import EmailIcon from "./icons/EmailIcon";
 const Newsletter = () => {
     return (
         <div className="newsletter">
-            {/* <h3 className="newsletter__heading">Newsletter</h3> */}
+            <h3 className="newsletter__heading">Newsletter</h3>
 
-            {/* <h4 className="newsletter__subheading">
-                Subscribe to get updates on my projects, new essays, and new
-                photos delivered to your inbox
-            </h4> */}
+            <h4 className="newsletter__subheading">
+                Subscribe to receive updates
+            </h4>
 
-            {/* <div className="newsletter__image">
-                <EmailIcon />
-            </div> */}
-
-            <p>
+            {/* <p>
                 If you're interested in receiving updates on new projects,
                 essays, and photos, then please feel free to subscribe to my
                 newsletter:
-            </p>
+            </p> */}
 
             <form className="newsletter__form">
                 <div className="newsletter__image">

@@ -14,7 +14,7 @@ body {
     color: $body-color;
     font-family: $sans-font;
     font-size: $body-size;
-    font-weight: 300;
+    font-weight: 400;
     line-height: $base-unit;
 
     @media (prefers-color-scheme: dark) {
@@ -76,12 +76,24 @@ img {
 
 svg {
     display: block;
-    stroke: $heading-color;
+    stroke: $body-color;
     stroke-width: 1px;
 
     @media (prefers-color-scheme: dark) {
-        stroke: $heading-color-dm;
+        stroke: $body-color-dm;
     }
+}
+
+.type-label {
+    align-items: center;
+    // color: $heading-color;
+    display: flex;
+    font-family: $mono-font;
+    font-size: $small-size;
+    gap: 0.25 * $base-unit;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.25 * $base-unit;
+    text-transform: uppercase;
 }
 
 .uppercase {
@@ -99,7 +111,11 @@ svg {
 }
 
 .index-section {
-    margin: 4 * $base-unit 0;
+    // border-top: 1px solid $gray-line-color;
+    // display: grid;
+    // gap: $base-unit;
+    // grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin: 3 * $base-unit 0;
 }
 
 .index-section__head {
@@ -110,10 +126,20 @@ svg {
     }
 }
 
+.index-section__heading {
+    font-size: $heading-size;
+    line-height: $heading-line-height;
+}
+
 .index-section__subheading {
     color: $gray-color;
+    text-wrap: balance;
 
     @media (prefers-color-scheme: dark) {
         color: $gray-color-dm;
     }
+}
+
+.index-section__content {
+    // grid-column: span 2;
 }

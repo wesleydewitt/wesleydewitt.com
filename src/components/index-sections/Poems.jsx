@@ -3,6 +3,7 @@ import { graphql, Link, useStaticQuery } from "gatsby";
 import ReactMarkdown from "react-markdown";
 
 import "../../styles/components/index-sections/poems.scss";
+import PoemIcon from "../icons/PoemIcon";
 
 const Poems = () => {
     const data = useStaticQuery(graphql`
@@ -34,29 +35,37 @@ const Poems = () => {
         }
     `);
 
+    const Poems = data.allMdx.nodes.map((poem) => (
+        <Link
+            to={"/" + poem.frontmatter.type + poem.frontmatter.slug}
+            className="poems-list__entry"
+        >
+            <div className="type-label">
+                <PoemIcon /> Poem
+            </div>
+            <h5 className="poems-list__title">{poem.frontmatter.title}</h5>
+
+            <div className="poems-list__body">
+                <ReactMarkdown>{poem.body}</ReactMarkdown>
+            </div>
+        </Link>
+    ));
+
     return (
         <div className="index-section poems">
-            <h3 className="index-section__heading">Poetry</h3>
+            <div className="index-section__head">
+                <h3 className="index-section__heading">Featured Poems</h3>
 
-            <h4 className="index-section__subheading">
-                My best, least-embarrasing poems
-            </h4>
+                <h4 className="index-section__subheading">
+                    My best, least-embarrasing poems
+                </h4>
+            </div>
 
             <div className="index-section__content poems-list">
-                {data.allMdx.nodes.map((poem) => (
-                    <Link
-                        to={"/" + poem.frontmatter.type + poem.frontmatter.slug}
-                        className="poems-list__entry"
-                    >
-                        <h5 className="poems-list__title">
-                            {poem.frontmatter.title}
-                        </h5>
-
-                        <div className="poems-list__body">
-                            <ReactMarkdown>{poem.body}</ReactMarkdown>
-                        </div>
-                    </Link>
-                ))}
+                {Poems}
+                <Link to="/" className="all-link">
+                    All Poems
+                </Link>
             </div>
         </div>
     );

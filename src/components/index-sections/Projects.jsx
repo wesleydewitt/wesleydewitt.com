@@ -29,7 +29,7 @@ const Projects = () => {
 
     const Projects = data.allMdx.nodes.map((project, index) => (
         <Link to="/" className="projects-list__entry" key={index}>
-            <div className="projects-list__type-label">
+            <div className="type-label">
                 <ProjectIcon /> Project
             </div>
 

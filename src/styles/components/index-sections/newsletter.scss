@@ -1,11 +1,28 @@
 @import "../../variables.scss";
 
 .newsletter {
-    margin-top: $base-unit;
+    background-color: $gray-background;
+    // border: 1px solid $gray-line-color;
+    border-radius: $border-radius;
+    grid-column: 1/-1;
+    padding: $base-unit;
+
+    @media (prefers-color-scheme: dark) {
+        // border-color: $gray-line-color-dm;
+    }
 }
 
 .newsletter__heading {
-    margin-bottom: $base-unit;
+    font-size: $heading-size;
+    line-height: $heading-line-height;
+}
+
+.newsletter__subheading {
+    color: $gray-color;
+
+    @media (prefers-color-scheme: dark) {
+        color: $gray-color-dm;
+    }
 }
 
 .newsletter__image {
@@ -16,10 +33,6 @@
         display: block;
         fill: $gray-background-darker;
         stroke-width: 0;
-
-        @media (prefers-color-scheme: dark) {
-            fill: $gray-background-darker-dm;
-        }
     }
 }
 

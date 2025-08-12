@@ -1,0 +1,22 @@
+@import "../variables.scss";
+
+.availability {
+    background-color: $gray-background;
+    border-radius: $border-radius;
+    grid-column: 1/-1;
+    margin: 3 * $base-unit 0;
+    padding: $base-unit;
+}
+
+.availability__heading {
+    font-size: $heading-size;
+    line-height: $heading-line-height;
+}
+
+.availability__subheading {
+    color: $gray-color;
+
+    @media (prefers-color-scheme: dark) {
+        color: $gray-color-dm;
+    }
+}
