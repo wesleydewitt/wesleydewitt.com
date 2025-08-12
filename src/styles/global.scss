@@ -86,7 +86,7 @@ svg {
 
 .type-label {
     align-items: center;
-    // color: $heading-color;
+    color: $gray-color;
     display: flex;
     font-family: $mono-font;
     font-size: $small-size;
@@ -94,6 +94,10 @@ svg {
     letter-spacing: 0.1em;
     margin-bottom: 0.25 * $base-unit;
     text-transform: uppercase;
+
+    svg {
+        stroke: $gray-color;
+    }
 }
 
 .uppercase {

@@ -1,12 +1,5 @@
 @import "../../variables.scss";
 
-.essays {
-    // background-color: $gray-background;
-    // border: 1px solid $gray-line-color;
-    // border-radius: $border-radius;
-    // padding: $base-unit;
-}
-
 .essays-list {
     display: grid;
     gap: $base-unit;
@@ -21,19 +14,21 @@
     position: relative;
 
     .type-label {
+        color: $heading-color;
+
         svg {
-            stroke: $heading-color-dm;
+            stroke: $heading-color;
         }
     }
 }
 
-.essays-list__entry:first-of-type {
-    grid-column: 1/-1;
+// .essays-list__entry:first-of-type {
+//     grid-column: 1/-1;
 
-    .essays-list__cover {
-        aspect-ratio: 8/3 !important;
-    }
-}
+//     .essays-list__cover {
+//         aspect-ratio: 8/3 !important;
+//     }
+// }
 
 .essays-list__cover {
     aspect-ratio: 4/3;

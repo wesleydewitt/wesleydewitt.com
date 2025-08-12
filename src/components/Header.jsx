@@ -12,13 +12,19 @@ import Availability from "./Availability";
 const Header = ({ isIndex }) => {
     const siteDescription = (
         <>
+            {/* <p>
+                B. 1995. Discovered an appreciation for good design and writing.
+                Worked ever since to make things — apps, websites, photos, and
+                sentences — that seek to delight, inform, and entertain.
+            </p> */}
+
             <p>
-                I'm a coder, designer, writer, and aspiring front-end developer
-                from Indianapolis. I love exciting ideas, good aesthetics, and
-                clear writing. My days are spent working in the gig economy,
-                while my nights and weekends are devoted to making things
-                &mdash; apps, websites, essays, and photos &mdash; that seek to
-                delight, inform, and entertain.
+                I'm a designer, writer, and aspiring front-end developer from
+                Indianapolis. I love exciting ideas, good aesthetics, and clear
+                writing. My days are spent working in the gig economy, while my
+                nights and weekends are devoted to making things &mdash; apps,
+                websites, essays, and photos &mdash; that seek to delight,
+                inform, and entertain.
             </p>
 
             <p>
@@ -55,53 +61,6 @@ const Header = ({ isIndex }) => {
                     </div>
                 </>
             ) : null}
-
-            {/* <div className="header__buttons">
-                <button className="theme-toggle"></button>
-            </div> */}
-
-            {/* <nav className="header__nav">
-                <Link to="/" activeClassName="active">
-                    Index
-                </Link>
-
-                <Link to="/feed" activeClassName="active">
-                    Feed
-                </Link>
-
-                <Link to="/about" activeClassName="active">
-                    About
-                </Link>
-            </nav> */}
-
-            {/* <nav className="header__nav">
-                Menu <MenuIcon />
-            </nav> */}
-
-            <nav className="header__nav">
-                <h3 className="header__nav-heading">
-                    <MenuIcon /> Links
-                </h3>
-
-                <Link to="/" activeClassName="active">
-                    Index
-                </Link>
-                <Link to="/bio" activeClassName="active">
-                    Bio
-                </Link>
-                <Link to="/projects" activeClassName="active">
-                    Projects
-                </Link>
-                <Link to="/essays" activeClassName="active">
-                    Essays
-                </Link>
-                <Link to="/photos" activeClassName="active">
-                    Photos
-                </Link>
-                <Link to="/poems" activeClassName="active">
-                    Poems
-                </Link>
-            </nav>
         </header>
     );
 };

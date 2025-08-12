@@ -18,22 +18,14 @@ const About = () => {
                 inform, and entertain.
             </p>
 
-            {/* <p>
+            <p>
                 This is my web journal, a place that serves as a reposiotry of
                 creative output. It is anti-social media, a space to incubate
                 ideas and content semi-privately, in a way that documents
                 creative growth but is not immediately funneled into the
                 systematized and socially corrosive algorithms of our modern
                 social netowrks.
-            </p> */}
-
-            {/* <h3 className="index-section__heading">Available for hire</h3>
-
-            <p>
-                I am currently available for employment as well as freelance
-                work. If you have an opportunity for which you feel he would be
-                a good fit, please feel free to reach out.
-            </p> */}
+            </p>
         </div>
     );
     return (

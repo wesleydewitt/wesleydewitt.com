@@ -62,12 +62,14 @@ const Projects = () => {
                 <h3 className="index-section__heading">Featured Projects</h3>
 
                 <h4 className="index-section__subheading">
-                    Apps and websites made with precision and minimalism in mind
+                    Apps and websites designed with precision and minimalism in
+                    mind
                 </h4>
             </div>
 
             <div className="index-section__content projects-list">
                 {Projects}
+
                 <Link to="/" className="all-link">
                     All Projects
                 </Link>

@@ -8,7 +8,7 @@ const Essays = () => {
     const data = useStaticQuery(graphql`
         query {
             allMdx(
-                limit: 3
+                limit: 2
                 filter: { frontmatter: { type: { eq: "essay" } } }
                 sort: { frontmatter: { date: DESC } }
             ) {
