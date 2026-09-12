@@ -1,0 +1,31 @@
+.section--essays .section__content {
+  display: grid;
+  gap: var(--base-unit);
+}
+
+.essay-link {
+  display: grid;
+  grid-template-areas:
+    "title date"
+    "subtitle date";
+  grid-template-columns: 1fr auto;
+}
+
+.essay-link__title {
+  grid-area: title;
+}
+
+.essay-link__subtitle {
+  color: var(--gray-text-color);
+  grid-area: subtitle;
+  font-weight: inherit;
+}
+
+.essay-link__date {
+  align-items: center;
+  color: var(--gray-text-color);
+  display: flex;
+  grid-area: date;
+  font-size: var(--sans-small-size);
+  font-weight: inherit;
+}

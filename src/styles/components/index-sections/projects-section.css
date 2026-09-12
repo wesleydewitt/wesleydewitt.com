@@ -1,0 +1,23 @@
+.section--projects .section__content {
+  display: grid;
+  gap: calc(1 * var(--base-unit));
+  grid-template-columns: 1fr 1fr;
+}
+
+.project + .project {
+  /* margin-top: calc(2 * var(--base-unit)); */
+}
+
+.project__image {
+  aspect-ratio: 16/9;
+  background-color: #eeeeee;
+  border-radius: 12px;
+}
+
+.project__name {
+  margin-top: calc(0.5 * var(--base-unit));
+}
+
+.project__description {
+  margin: 0;
+}

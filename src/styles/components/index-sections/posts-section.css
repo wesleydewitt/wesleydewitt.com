@@ -1,0 +1,19 @@
+.section--posts .section__heading {
+  grid-column: span 3;
+  margin-bottom: calc(2 * var(--base-unit));
+  /* position: inherit; */
+}
+
+.section--posts .section__content {
+  display: grid;
+  gap: var(--base-unit);
+  grid-column: span 3;
+  grid-template-columns: subgrid;
+}
+
+.post-link {
+  aspect-ratio: 3/4;
+  background-color: #eeeeee;
+  border-radius: 12px;
+  padding: calc(0.25 * var(--base-unit)) calc(0.5 * var(--base-unit));
+}

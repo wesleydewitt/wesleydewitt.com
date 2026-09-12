@@ -1,0 +1,8 @@
+.footer {
+  /* color: var(--heading-text-color); */
+  border-top: 1px solid var(--gray-line-color);
+  /* font-weight: 500; */
+  /* margin-top: var(--base-unit); */
+  padding-top: calc(2 * var(--base-unit));
+  text-align: center;
+}

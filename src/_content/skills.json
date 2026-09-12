@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Frontend design and development",
+    "description": "10+ years experience designing with HTML, CSS, and JavaScript"
+  },
+  {
+    "name": "Responsive web design",
+    "description": "Creating layouts that work across phones, tablets, and desktops"
+  },
+  {
+    "name": "Typography and visual hierarchy",
+    "description": "Using type, spacing, and contrast to make content clear and readable"
+  },
+  {
+    "name": "Writing and editing",
+    "description": "Developing essays, short fiction, and copy for the web"
+  },
+  {
+    "name": "Networking fundamentals",
+    "description": "Building knowledge of routing, switching, and troubleshooting"
+  }
+]

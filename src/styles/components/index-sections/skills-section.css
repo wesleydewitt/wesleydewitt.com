@@ -1,0 +1,13 @@
+.section--skills .section__content {
+  display: grid;
+  gap: var(--base-unit);
+  /* grid-template-columns: 1fr 1fr; */
+}
+
+.section--skills .section__content p {
+  margin: 0;
+}
+
+.skill + .skill {
+  /* margin-top: var(--base-unit); */
+}

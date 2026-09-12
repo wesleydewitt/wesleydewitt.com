@@ -1,0 +1,5 @@
+.section--studio .section__content {
+  background-color: #eeeeee;
+  border-radius: 12px;
+  padding: var(--base-unit);
+}

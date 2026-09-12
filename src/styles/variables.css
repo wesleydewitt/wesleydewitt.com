@@ -1,0 +1,28 @@
+:root {
+  --base-unit: 24px;
+  --page-width: 720px;
+
+  --serif-font-family: "DM Serif Display", serif;
+  --serif-heading-size: 24px;
+  --serif-heading-weight: 400;
+
+  --mono-font-family: "IBM Plex Mono", monospace;
+  --mono-heading-size: 24px;
+  --mono-small-size: 12px;
+  --mono-heading-weight: 500;
+
+  --sans-font-family: "Inter", sans-serif;
+  --sans-body-weight: 300;
+  --sans-heading-weight: 500;
+  --sans-bold-heading-weight: 800;
+  --sans-section-heading-weight: 400;
+  --sans-body-size: 14px;
+  --sans-small-size: 12px;
+  --sans-heading-size: 20px;
+
+  --heading-text-color: #000000;
+  --body-text-color: #303030;
+
+  --background-color: #ffffff;
+  --gray-line-color: #d8d8d8;
+}
