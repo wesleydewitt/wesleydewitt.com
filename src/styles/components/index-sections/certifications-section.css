@@ -1,14 +1,15 @@
 .section--certifications p {
-  margin: 0;
+  /* margin: 0; */
 }
 
 .progress-block {
   background-color: #eee;
+  /* border: 1px solid var(--gray-line-color); */
   border-radius: 12px;
   display: grid;
   gap: 0 calc(0.5 * var(--base-unit));
   grid-template-columns: auto 1fr;
-  margin-top: calc(1 * var(--base-unit));
+  margin-top: calc(0.666 * var(--base-unit));
   padding: calc(0.25 * var(--base-unit)) calc(0.5 * var(--base-unit))
     calc(0.5 * var(--base-unit));
 }
@@ -18,7 +19,7 @@
   font-size: var(--sans-small-size);
   font-weight: inherit;
   grid-column: span 2;
-  margin-bottom: calc(0.333 * var(--base-unit));
+  margin-bottom: calc(0.25 * var(--base-unit));
 }
 
 .progress-block__bar {
@@ -38,5 +39,6 @@
 .progress-block__text {
   display: grid;
   font-size: var(--sans-small-size);
-  gap: calc(0.333 * var(--base-unit));
+  /* gap: calc(0.333 * var(--base-unit)); */
+  /* padding: calc(0.333 * var(--base-unit)) 0; */
 }
