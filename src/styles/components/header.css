@@ -43,12 +43,27 @@
   grid-column: 1 / 4;
   grid-template-columns: repeat(3, 1fr);
   margin-top: calc(1 * var(--base-unit));
+  /* text-align: center; */
 }
 
 .header__link {
   /* aspect-ratio: 16/9; */
   background-color: #eeeeee;
   border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  font-size: var(--sans-small-size);
+  justify-content: space-between;
   padding: calc(0.25 * var(--base-unit)) calc(0.5 * var(--base-unit));
-  text-align: center;
+  /* text-align: center; */
+}
+
+.header__link-label {
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
+
+.header__link-text {
+  /* color: var(--heading-text-color); */
+  /* font-weight: var(--sans-heading-weight); */
 }

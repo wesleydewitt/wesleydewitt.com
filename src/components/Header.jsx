@@ -21,13 +21,16 @@ const Header = ({ isIndexPage }) => {
           </div>
           <div className="header__links">
             <Link className="header__link header__link--email" to="/">
-              <span className="header__link-text">Email</span>
+              <span className="header__link-label">Email</span>
+              <span className="header__link-text">hello@wesleydewitt.com</span>
             </Link>
             <Link className="header__link header__link--github" to="/">
-              <span className="header__link-text">GitHub</span>
+              <span className="header__link-label">GitHub</span>
+              <span className="header__link-text">wesleydewitt</span>
             </Link>
             <Link className="header__link header__link--linkedin" to="/">
-              <span className="header__link-text">LinkedIn</span>
+              <span className="header__link-label">LinkedIn</span>
+              <span className="header__link-text">wesley-dewitt</span>
             </Link>
           </div>
         </>
