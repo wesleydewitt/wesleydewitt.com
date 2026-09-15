@@ -17,9 +17,10 @@ const PostsSection = () => {
             key={`${post.type}/${post.slug}`}
             to={`/${post.type}/${post.slug}`}
           >
-            <div className="post__type">{post.type}</div>
-            <h4 className="post__title">{post.title}</h4>
-            <p className="post__excerpt">{post.excerpt}</p>
+            <div className="post-link__type">{post.type}</div>
+            <h4 className="post-link__title">{post.title}</h4>
+            <h4 className="post-link__subtitle">{post.subtitle}</h4>
+            <p className="post-link__excerpt">{post.excerpt}</p>
           </Link>
         ))}
       </div>

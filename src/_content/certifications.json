@@ -1,10 +1,14 @@
 [
   {
     "name": "Cisco Certified Network Associate",
+    "description": "The Cisco Certified Network Associate (CCNA) certification is an entry-level IT certification that validates knowledge and skills in networking fundamentals, IP connectivity, security fundamentals, and automation and programmability.",
     "issuer": "Cisco",
     "studyMaterial": "Official Cert Guide Library CCNA 200-301",
     "studyMaterialImage": "",
     "totalChapters": 56,
-    "chaptersCompleted": 0
+    "chaptersCompleted": 1,
+    "studyStarted": true,
+    "reviewStarted": false,
+    "examPassed": false
   }
 ]

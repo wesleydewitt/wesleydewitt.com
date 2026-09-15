@@ -1,3 +1,42 @@
 .section--certifications p {
   margin: 0;
 }
+
+.progress-block {
+  background-color: #eee;
+  border-radius: 12px;
+  display: grid;
+  gap: 0 calc(0.5 * var(--base-unit));
+  grid-template-columns: auto 1fr;
+  margin-top: calc(1 * var(--base-unit));
+  padding: calc(0.25 * var(--base-unit)) calc(0.5 * var(--base-unit))
+    calc(0.5 * var(--base-unit));
+}
+
+.progress-block__heading {
+  color: inherit;
+  font-size: var(--sans-small-size);
+  font-weight: inherit;
+  grid-column: span 2;
+  margin-bottom: calc(0.333 * var(--base-unit));
+}
+
+.progress-block__bar {
+  background-color: #ccc;
+  border-radius: 3px;
+  grid-row: span 2;
+  width: 6px;
+}
+
+.progress-block__bar__fill {
+  background-color: #000;
+  border-radius: 3px;
+  /* height: 33.333%; */
+  width: 6px;
+}
+
+.progress-block__text {
+  display: grid;
+  font-size: var(--sans-small-size);
+  gap: calc(0.333 * var(--base-unit));
+}

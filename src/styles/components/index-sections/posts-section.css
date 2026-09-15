@@ -17,3 +17,14 @@
   border-radius: 12px;
   padding: calc(0.25 * var(--base-unit)) calc(0.5 * var(--base-unit));
 }
+
+.post-link__type {
+  font-size: var(--sans-small-size);
+  text-transform: capitalize;
+}
+
+.post-link__subtitle {
+  color: inherit;
+  font-size: var(--sans-small-size);
+  font-weight: inherit;
+}
