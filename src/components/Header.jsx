@@ -1,24 +1,44 @@
 import { Link } from "react-router";
 import "../styles/components/header.css";
-import selfie from "../assets/selfie.png";
+import selfie from "../assets/selfie-grayscale-transparent.png";
 import aboutText from "../_content/about.md?raw";
 import ReactMarkdown from "react-markdown";
+import EssaysIcon from "./svg/EssaysIcon";
+import MenuIcon from "./svg/MenuIcon";
+import Favicon from "./svg/Favicon";
 
 const Header = ({ isIndexPage }) => {
   return (
     <header className="header">
+      <div className="header__favicon">
+        <Favicon />
+      </div>
+
       <h1 className="header__site-title">
-        <Link to="/">Wesley De Witt</Link>
+        <Link to="/">
+          {/* <EssaysIcon /> */}
+          Wesley De Witt
+        </Link>
       </h1>
-      <img className="header__selfie" src={selfie} alt="Wesley De Witt" />
+
+      <div className="header__menu-button">
+        <MenuIcon />
+      </div>
+
+      <div className="header__selfie">
+        <img src={selfie} alt="Wesley De Witt" />
+      </div>
+
       <h2 className="header__site-subtitle">
         Code, Design, Photography & Prose
       </h2>
+
       {isIndexPage ? (
         <>
           <div className="header__about">
             <ReactMarkdown>{aboutText}</ReactMarkdown>
           </div>
+
           <div className="header__links">
             <Link className="header__link header__link--email" to="/">
               <span className="header__link-label">Email</span>

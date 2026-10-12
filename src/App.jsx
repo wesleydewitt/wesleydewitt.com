@@ -17,7 +17,7 @@ export default function App() {
         {/* <Route path="/essays/:slug" element={<EssayPage />} /> */}
       </Routes>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

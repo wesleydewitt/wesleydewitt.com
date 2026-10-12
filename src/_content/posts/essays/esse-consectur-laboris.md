@@ -2,6 +2,7 @@
 title: Irure Aute Dolore Quis
 subtitle: Veniam elit pariatur aliqua cupidatat
 date: "2026-02-19"
+cover-image: "7.jpg"
 ---
 
 Veniam elit pariatur aliqua cupidatat. Minim veniam veniam nostrud excepteur adipisicing irure aute non. Amet in ullamco sint mollit amet sint eiusmod excepteur sit cillum. Exercitation mollit in nulla eiusmod. Est et do ea pariatur laboris sit occaecat enim consequat et. Duis consectetur non incididunt et labore exercitation esse adipisicing culpa consectetur.

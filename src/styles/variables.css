@@ -12,17 +12,19 @@
   --mono-heading-weight: 500;
 
   --sans-font-family: "Inter", sans-serif;
-  --sans-body-weight: 300;
-  --sans-heading-weight: 500;
+  --sans-body-weight: 400;
+  --sans-heading-weight: 700;
   --sans-bold-heading-weight: 800;
   --sans-section-heading-weight: 400;
   --sans-body-size: 14px;
   --sans-small-size: 12px;
-  --sans-heading-size: 20px;
+  --sans-heading-size: 18px;
 
-  --heading-text-color: #000000;
-  --body-text-color: #303030;
+  --heading-text-color: rgba(0, 0, 0, 1);
+  --body-text-color: rgba(0, 0, 0, 1);
+  --gray-text-color: rgba(0, 0, 0, 0.6);
 
-  --background-color: #ffffff;
-  --gray-line-color: #d8d8d8;
+  --background-color: rgba(255, 255, 255, 1);
+  --gray-line-color: rgba(0, 0, 0, 0.1);
+  --gray-background-color: #eee;
 }

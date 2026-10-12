@@ -2,6 +2,8 @@
 title: Oceanic Affects
 subtitle: On addiction, madness, and the light of religion
 date: "2026-07-18"
+excerpt: "Cannabis enjoys a reputation for being a sort of cuddly, easy-to-treat-casually drug among its users and non-users alike. It is indebted to the fact that many go through a phase of vape-hits..."
+cover-image: "37.jpg"
 ---
 
 Cannabis enjoys a reputation for being a sort of cuddly, easy-to-treat-casually drug among its users and non-users alike. It is indebted to the fact that many go through a phase of vape-hits, bong-rips, and chewable gummies throughout their teens and twenties, only to moderate or abandon the drug altogether at the onset of life’s real responsibilities. This is undeserved. For me and many others, it is a substance that is prone to abuse and catastrophic psychological fallout. Its embrace is acidic: warm at first, but damn if it isn’t painful after a while.

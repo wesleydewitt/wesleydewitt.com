@@ -4,10 +4,15 @@
   /* grid-template-columns: 1fr 1fr; */
 }
 
-.section--skills .section__content p {
+.section--skills p {
+  color: var(--gray-text-color);
   margin: 0;
 }
 
-.skill + .skill {
-  /* margin-top: var(--base-unit); */
+.skill h4 {
+  color: inherit;
+  font-weight: inherit;
+}
+
+.skill h5 {
 }

@@ -2,16 +2,26 @@
   /* margin: 0; */
 }
 
+.cert__name {
+  color: inherit;
+  font-weight: inherit;
+}
+
+.cert__description {
+  /* color: var(--gray-text-color); */
+}
+
 .progress-block {
-  background-color: #eee;
+  /* background-color: #eee; */
   /* border: 1px solid var(--gray-line-color); */
-  border-radius: 12px;
+  /* border-radius: 12px; */
+  /* color: var(--gray-text-color); */
   display: grid;
   gap: 0 calc(0.5 * var(--base-unit));
   grid-template-columns: auto 1fr;
-  margin-top: calc(0.666 * var(--base-unit));
-  padding: calc(0.25 * var(--base-unit)) calc(0.5 * var(--base-unit))
-    calc(0.5 * var(--base-unit));
+  margin-top: calc(0.5 * var(--base-unit));
+  /* padding: calc(0.25 * var(--base-unit)) calc(0.5 * var(--base-unit)) */
+  /* calc(0.5 * var(--base-unit)); */
 }
 
 .progress-block__heading {
@@ -23,14 +33,14 @@
 }
 
 .progress-block__bar {
-  background-color: #ccc;
+  background-color: var(--gray-background-color);
   border-radius: 3px;
   grid-row: span 2;
   width: 6px;
 }
 
 .progress-block__bar__fill {
-  background-color: #000;
+  background-color: var(--body-text-color);
   border-radius: 3px;
   /* height: 33.333%; */
   width: 6px;

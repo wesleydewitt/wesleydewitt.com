@@ -2,6 +2,7 @@
 title: Lorem Ipsum
 subtitle: Ad cupidatat consequat nostrud
 date: "2026-01-10"
+cover-image: "3.jpg"
 ---
 
 Ad cupidatat consequat nostrud minim reprehenderit occaecat ea voluptate. Commodo irure non deserunt cillum. Irure consequat excepteur enim sint ipsum eiusmod.

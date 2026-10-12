@@ -21,6 +21,7 @@ export const posts = Object.entries(modules)
       subtitle: attributes.subtitle,
       date: attributes.date,
       excerpt: attributes.excerpt,
+      image: attributes["cover-image"],
       content: body,
     };
   })

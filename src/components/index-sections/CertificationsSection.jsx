@@ -28,14 +28,12 @@ const CertificationsSection = () => {
 
           return (
             <div key={index} className="certs-section__cert">
-              <h4 className="certs-section__cert-name">{cert.name}</h4>
+              <h4 className="cert__name">{cert.name}</h4>
 
-              <p className="certs-section__cert-description">
-                {cert.description}
-              </p>
+              <p className="cert__description">{cert.description}</p>
 
               <div className="progress-block">
-                <h4 className="progress-block__heading">CCNA Study Progress</h4>
+                <h4 className="progress-block__heading">Study Progress</h4>
                 <div className="progress-block__bar">
                   <div
                     className="progress-block__bar__fill"

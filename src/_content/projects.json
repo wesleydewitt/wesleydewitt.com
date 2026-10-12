@@ -8,5 +8,10 @@
     "name": "theinterface.blog",
     "description": "A site for essays and book reviews",
     "url": "https://www.theinterface.blog"
+  },
+  {
+    "name": "gurometer.com",
+    "description": "A podcast companion site for the Decoding the Gurus podcast",
+    "url": "https://www.gurometer.com"
   }
 ]

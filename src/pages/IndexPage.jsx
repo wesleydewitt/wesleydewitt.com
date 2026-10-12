@@ -10,12 +10,12 @@ const IndexPage = () => {
   return (
     <>
       <main className="main main--index-page">
-        {/* <AboutSection /> */}
         <ProjectsSection />
         <SkillsSection />
         <CertificationsSection />
-        {/* <StudioSection /> */}
+        {/* <AboutSection /> */}
         <PostsSection />
+        {/* <StudioSection /> */}
       </main>
     </>
   );
