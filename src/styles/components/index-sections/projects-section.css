@@ -45,6 +45,11 @@
   margin: 0;
 }
 
+.project__links {
+  display: flex;
+  gap: calc(0.5 * var(--base-unit));
+}
+
 .project__link {
   /* align-items: center; */
   background-color: var(--gray-background-color);
