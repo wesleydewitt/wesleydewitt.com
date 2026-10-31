@@ -6,14 +6,15 @@
   display: grid;
   gap: calc(1 * var(--base-unit));
   /* grid-column: span 3; */
-  /* grid-template-columns: 1fr; */
+  grid-template-columns: subgrid;
   /* margin-top: var(--base-unit); */
 }
 
 .project {
   display: grid;
-  gap: calc(0.5 * var(--base-unit));
-  grid-template-columns: 1fr auto;
+  gap: calc(0.5 * var(--base-unit)) var(--base-unit);
+  grid-column: span 2;
+  grid-template-columns: subgrid;
 }
 
 .project + .project {
@@ -25,7 +26,7 @@
   aspect-ratio: 3/4;
   background-color: var(--gray-background-color);
   border-radius: 6px;
-  width: 120px;
+  /* width: 120px; */
 }
 
 .project__text {
@@ -41,8 +42,31 @@
 
 .project__description {
   color: var(--gray-text-color);
-  flex-grow: 1;
   margin: 0;
+}
+
+.project__techs {
+  display: flex;
+  flex-grow: 1;
+  gap: calc(0.5 * var(--base-unit));
+  margin-top: calc(0.5 * var(--base-unit));
+}
+
+.project__tech {
+  background-color: var(--gray-background-color);
+  border-radius: 6px;
+  font-size: var(--sans-small-size);
+  height: min-content;
+  padding: 0 6px;
+}
+
+.project__tech--JavaScript {
+  background-color: #efd81d;
+}
+
+.project__tech--React {
+  background-color: #087ea4;
+  color: var(--background-color);
 }
 
 .project__links {

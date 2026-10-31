@@ -18,6 +18,14 @@ const ProjectsSection = () => {
 
               <p className="project__description">{project.description}</p>
 
+              <div className="project__techs">
+                {project.technologies.map((tech) => (
+                  <span className={`project__tech project__tech--${tech}`}>
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
               <div className="project__links">
                 <Link className="project__link" to={project.url}>
                   View Case Study{" "}

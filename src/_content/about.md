@@ -1,3 +1,1 @@
-Designer, coder, CCNA student, and hobbyist writer from Muncie, Indiana. Born in '95 to a family that instilled love, commitment, and freedom of thought. Jack of all, master of some. Always in pursuit of beauty and meaning. Always on the way to something better.
-
-It's always good to have multiple irons in the fire. With that in mind, I'm educating myself toward a Cisco Certified Network Associate certfication while at the same time pursuing a career as a web designer. Think of it as a hedge against being completely replaced by LLMs. You can view my progress toward the certification farther down on this site.
+Coder, Designer, CCNA student, and hobbyist writer from Muncie, Indiana. Born in '95 to a family that instilled love, commitment, and freedom of thought. Jack of all, master of some. Always in pursuit of beauty and meaning. Always on the way to something better.

@@ -18,9 +18,9 @@ const Header = ({ isIndexPage }) => {
         <img src={selfie} alt="Wesley De Witt" />
       </div>
 
-      <h2 className="header__site-subtitle">
+      {/* <h2 className="header__site-subtitle">
         Code, Design, Photography & Prose
-      </h2>
+      </h2> */}
 
       {isIndexPage ? (
         <>

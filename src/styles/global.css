@@ -84,9 +84,9 @@ ol {
   /* align-items: center; */
   color: inherit;
   /* display: flex; */
-  font-family: var(--serif-font-family);
-  font-size: var(--serif-heading-size);
-  font-weight: var(--serif-heading-weight);
+  /* font-family: var(--serif-font-family); */
+  font-size: var(--sans-heading-size);
+  /* font-weight: var(--serif-heading-weight); */
   /* letter-spacing: 0.05em; */
   line-height: 1.5;
   /* position: sticky; */

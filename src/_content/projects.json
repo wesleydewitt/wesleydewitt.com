@@ -1,17 +1,20 @@
 [
   {
+    "name": "gurometer.com",
+    "description": "A companion site for the Decoding the Gurus podcast",
+    "url": "https://www.gurometer.com",
+    "technologies": ["JavaScript", "React"]
+  },
+  {
     "name": "isoform.gallery",
     "description": "A gallery site for travel photography",
-    "url": "https://www.isoform.gallery"
+    "url": "https://www.isoform.gallery",
+    "technologies": ["JavaScript", "React"]
   },
   {
     "name": "theinterface.blog",
     "description": "A site for essays and book reviews",
-    "url": "https://www.theinterface.blog"
-  },
-  {
-    "name": "gurometer.com",
-    "description": "A podcast companion site for the Decoding the Gurus podcast",
-    "url": "https://www.gurometer.com"
+    "url": "https://www.theinterface.blog",
+    "technologies": ["JavaScript", "React"]
   }
 ]
