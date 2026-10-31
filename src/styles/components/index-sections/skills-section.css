@@ -4,6 +4,11 @@
   /* grid-template-columns: 1fr 1fr; */
 }
 
+.skill + .skill {
+  border-top: 1px solid var(--gray-line-color);
+  padding-top: var(--base-unit);
+}
+
 .section--skills p {
   color: var(--gray-text-color);
   margin: 0;

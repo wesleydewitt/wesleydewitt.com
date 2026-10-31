@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Heldane Text";
+  font-weight: 400;
+  font-style: normal;
+  src: url(../assets/fonts/heldane-text/test-heldane-text-regular.woff2);
+}
+
+@font-face {
+  font-family: "Heldane Text";
+  font-weight: 700;
+  font-style: normal;
+  src: url(../assets/fonts/heldane-text/test-heldane-text-bold.woff2);
+}

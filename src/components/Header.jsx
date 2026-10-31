@@ -10,20 +10,9 @@ import Favicon from "./svg/Favicon";
 const Header = ({ isIndexPage }) => {
   return (
     <header className="header">
-      <div className="header__favicon">
-        <Favicon />
-      </div>
-
       <h1 className="header__site-title">
-        <Link to="/">
-          {/* <EssaysIcon /> */}
-          Wesley De Witt
-        </Link>
+        <Link to="/">Wesley De Witt</Link>
       </h1>
-
-      <div className="header__menu-button">
-        <MenuIcon />
-      </div>
 
       <div className="header__selfie">
         <img src={selfie} alt="Wesley De Witt" />

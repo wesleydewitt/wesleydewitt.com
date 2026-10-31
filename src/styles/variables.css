@@ -1,10 +1,10 @@
 :root {
   --base-unit: 24px;
-  --page-width: 720px;
+  --page-width: 840px;
 
-  --serif-font-family: "DM Serif Display", serif;
+  --serif-font-family: "Heldane Text", serif;
   --serif-heading-size: 24px;
-  --serif-heading-weight: 400;
+  --serif-heading-weight: 700;
 
   --mono-font-family: "IBM Plex Mono", monospace;
   --mono-heading-size: 24px;
@@ -22,9 +22,9 @@
 
   --heading-text-color: rgba(0, 0, 0, 1);
   --body-text-color: rgba(0, 0, 0, 1);
-  --gray-text-color: rgba(0, 0, 0, 0.6);
+  --gray-text-color: rgba(0, 0, 0, 0.5);
 
   --background-color: rgba(255, 255, 255, 1);
-  --gray-line-color: rgba(0, 0, 0, 0.1);
+  --gray-line-color: rgba(3, 3, 3, 0.1);
   --gray-background-color: #eee;
 }

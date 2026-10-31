@@ -61,6 +61,6 @@
 }
 
 .project__link__arrow {
-  font-size: var(--sans-heading-size);
+  /* font-size: var(--sans-heading-size); */
   font-weight: 300;
 }
