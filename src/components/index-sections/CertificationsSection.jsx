@@ -14,20 +14,16 @@ const CertificationsSection = () => {
         {certifications.map((cert, index) => {
           let progressFillHeight = "0%";
 
-          if (cert.studyStarted === true) {
-            progressFillHeight = "33.333%";
+          if (cert.courseStarted === true) {
+            progressFillHeight = "50%";
           }
 
-          if (cert.reviewStarted === true) {
-            progressFillHeight = "66.666%";
-          }
-
-          if (cert.examPassed === true) {
+          if (cert.courseCompleted === true) {
             progressFillHeight = "100%";
           }
 
           return (
-            <div key={index} className="certs-section__cert">
+            <div key={index} className="cert">
               <h4 className="cert__name">{cert.name}</h4>
 
               <p className="cert__description">{cert.description}</p>
@@ -42,11 +38,10 @@ const CertificationsSection = () => {
                 </div>
                 <div className="progress-block__text">
                   <div>
-                    Study ({cert.chaptersCompleted} of {cert.totalChapters}{" "}
-                    chapters completed)
+                    Study ({cert.modulesCompleted} of {cert.totalModules}{" "}
+                    modules completed)
                   </div>
-                  <div>Review for exam</div>
-                  <div>Exam passed</div>
+                  <div>Course completed</div>
                 </div>
               </div>
             </div>

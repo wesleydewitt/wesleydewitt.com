@@ -41,7 +41,7 @@ h6 {
 }
 
 * + p {
-  margin-top: calc(0.5 * var(--base-unit));
+  margin-top: calc(1 * var(--base-unit));
 }
 
 a {
@@ -81,16 +81,9 @@ ol {
 }
 
 .section__heading {
-  /* align-items: center; */
-  color: inherit;
-  /* display: flex; */
-  /* font-family: var(--serif-font-family); */
-  font-size: var(--sans-heading-size);
-  /* font-weight: var(--serif-heading-weight); */
-  /* letter-spacing: 0.05em; */
-  line-height: 1.5;
-  /* position: sticky; */
-  /* top: calc(2 * var(--base-unit)); */
+  font-family: var(--serif-font-family);
+  font-size: var(--serif-heading-size);
+  line-height: 1;
 }
 
 .section__heading svg {

@@ -1,5 +1,15 @@
 .section--certifications p {
-  /* margin: 0; */
+  margin-top: calc(0.5 * var(--base-unit));
+}
+
+.section--certifications .section__content {
+  display: grid;
+  gap: calc(1 * var(--base-unit));
+}
+
+.cert + .cert {
+  border-top: 1px solid var(--gray-line-color);
+  padding-top: var(--base-unit);
 }
 
 .cert__name {

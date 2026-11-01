@@ -23,7 +23,7 @@
 }
 
 .project__image {
-  aspect-ratio: 3/4;
+  aspect-ratio: 1/1;
   background-color: var(--gray-background-color);
   border-radius: 6px;
   /* width: 120px; */
@@ -42,7 +42,7 @@
 
 .project__description {
   color: var(--gray-text-color);
-  margin: 0;
+  margin: calc(0.25 * var(--base-unit)) 0 0;
 }
 
 .project__techs {

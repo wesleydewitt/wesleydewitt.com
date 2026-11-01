@@ -1,14 +1,24 @@
 [
   {
-    "name": "Cisco Certified Network Associate",
-    "description": "It's always good to have multiple irons in the fire, so I'm educating myself toward a Cisco Certified Network Associate certification while also pursuing a career as a web designer. Think of it as a hedge against being completely replaced by LLMs.",
-    "issuer": "Cisco",
-    "studyMaterial": "Official Cert Guide Library CCNA 200-301",
+    "name": "Meta Front-End Developer Professional Certificate",
+    "description": "This is a professional certificate offered by Meta (formerly Facebook) on Coursera. It covers front-end web development, including HTML, CSS, JavaScript, React, and responsive design.",
+    "issuer": "Meta",
+    "studyMaterial": "Coursera",
     "studyMaterialImage": "",
-    "totalChapters": 56,
-    "chaptersCompleted": 1,
-    "studyStarted": true,
-    "reviewStarted": false,
-    "examPassed": false
+    "totalModules": 5,
+    "modulesCompleted": 0,
+    "courseStarted": true,
+    "courseCompleted": false
+  },
+  {
+    "name": "Google UX Design Professional Certificate",
+    "description": "This is a professional certificate offered by Google on Coursera. It covers the fundamentals of UX design, including user research, wireframing, prototyping, and usability testing.",
+    "issuer": "Google",
+    "studyMaterial": "Coursera",
+    "studyMaterialImage": "",
+    "totalModules": 4,
+    "modulesCompleted": 0,
+    "courseStarted": true,
+    "courseCompleted": false
   }
 ]

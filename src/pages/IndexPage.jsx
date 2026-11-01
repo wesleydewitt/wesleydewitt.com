@@ -6,9 +6,8 @@ const IndexPage = () => {
   return (
     <>
       <main className="main main--index-page">
-        <ProjectsSection />
-        <SkillsSection />
         <CertificationsSection />
+        <SkillsSection />
       </main>
     </>
   );
