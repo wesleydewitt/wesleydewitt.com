@@ -1,30 +1,30 @@
 :root {
-  --base-unit: 24px;
-  --page-width: 840px;
+    --base-unit: 24px;
+    --page-width: 840px;
 
-  --serif-font-family: "Heldane Text", serif;
-  --serif-heading-size: 30px;
-  --serif-heading-weight: 700;
+    --serif-font-family: "Heldane Display", serif;
+    --serif-heading-size: 30px;
+    --serif-heading-weight: 700;
 
-  --mono-font-family: "IBM Plex Mono", monospace;
-  --mono-heading-size: 24px;
-  --mono-small-size: 12px;
-  --mono-heading-weight: 500;
+    --mono-font-family: "IBM Plex Mono", monospace;
+    --mono-heading-size: 24px;
+    --mono-small-size: 12px;
+    --mono-heading-weight: 500;
 
-  --sans-font-family: "Inter", sans-serif;
-  --sans-body-weight: 400;
-  --sans-heading-weight: 700;
-  --sans-bold-heading-weight: 800;
-  --sans-section-heading-weight: 400;
-  --sans-body-size: 14px;
-  --sans-small-size: 12px;
-  --sans-heading-size: 18px;
+    --sans-font-family: "Inter", sans-serif;
+    --sans-body-weight: 400;
+    --sans-heading-weight: 700;
+    --sans-bold-heading-weight: 800;
+    --sans-section-heading-weight: 400;
+    --sans-body-size: 14px;
+    --sans-small-size: 12px;
+    --sans-heading-size: 24px;
 
-  --heading-text-color: rgba(0, 0, 0, 1);
-  --body-text-color: rgba(0, 0, 0, 1);
-  --gray-text-color: rgba(0, 0, 0, 0.5);
+    --heading-text-color: rgba(0, 0, 0, 1);
+    --body-text-color: rgba(0, 0, 0, 1);
+    --gray-text-color: rgba(0, 0, 0, 0.5);
 
-  --background-color: rgba(255, 255, 255, 1);
-  --gray-line-color: rgba(3, 3, 3, 0.1);
-  --gray-background-color: #eee;
+    --background-color: rgba(255, 255, 255, 1);
+    --gray-line-color: rgba(3, 3, 3, 0.1);
+    --gray-background-color: #eee;
 }

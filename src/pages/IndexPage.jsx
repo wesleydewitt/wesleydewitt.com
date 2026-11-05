@@ -3,14 +3,15 @@ import ProjectsSection from "../components/index-sections/ProjectsSection";
 import SkillsSection from "../components/index-sections/SkillsSection";
 
 const IndexPage = () => {
-  return (
-    <>
-      <main className="main main--index-page">
-        <CertificationsSection />
-        <SkillsSection />
-      </main>
-    </>
-  );
+    return (
+        <>
+            <main className="main main--index-page">
+                <ProjectsSection />
+                <CertificationsSection />
+                <SkillsSection />
+            </main>
+        </>
+    );
 };
 
 export default IndexPage;

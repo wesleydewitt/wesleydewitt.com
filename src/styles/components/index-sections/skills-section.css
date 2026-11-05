@@ -10,13 +10,13 @@
 }
 
 .section--skills p {
-  color: var(--gray-text-color);
+  /* color: var(--gray-text-color); */
   margin: 0;
 }
 
 .skill h4 {
-  color: inherit;
-  font-weight: inherit;
+  /* color: inherit; */
+  /* font-weight: inherit; */
 }
 
 .skill h5 {

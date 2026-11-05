@@ -13,8 +13,8 @@
 }
 
 .cert__name {
-  color: inherit;
-  font-weight: inherit;
+  /* color: inherit; */
+  /* font-weight: inherit; */
 }
 
 .cert__description {
