@@ -1,1 +1,1 @@
-Designer and front-end developer from Muncie, Indiana. Born in '95 to a family that instilled love, commitment, and freedom of thought. Jack of all, master of some. Always in pursuit of beauty and meaning. Always on the way to something better.
+CCNA student from Muncie, Indiana. Born in '95 to a family that instilled love, commitment, and freedom of thought. Jack of all, master of some. Always in pursuit of beauty and meaning. Always on the way to something better.

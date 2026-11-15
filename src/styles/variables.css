@@ -1,9 +1,9 @@
 :root {
     --base-unit: 24px;
-    --page-width: 840px;
+    --page-width: 720px;
 
     --serif-font-family: "Heldane Display", serif;
-    --serif-heading-size: 30px;
+    --serif-heading-size: 24px;
     --serif-heading-weight: 700;
 
     --mono-font-family: "IBM Plex Mono", monospace;
@@ -12,13 +12,13 @@
     --mono-heading-weight: 500;
 
     --sans-font-family: "Inter", sans-serif;
-    --sans-body-weight: 400;
-    --sans-heading-weight: 700;
+    --sans-body-weight: 300;
+    --sans-heading-weight: 500;
     --sans-bold-heading-weight: 800;
     --sans-section-heading-weight: 400;
     --sans-body-size: 14px;
     --sans-small-size: 12px;
-    --sans-heading-size: 24px;
+    --sans-heading-size: 20px;
 
     --heading-text-color: rgba(0, 0, 0, 1);
     --body-text-color: rgba(0, 0, 0, 1);
