@@ -14,7 +14,7 @@ const Header = ({ isIndexPage }) => {
                 <Link to="/">Wesley De Witt</Link>
             </h1>
 
-            <div className="header__selfie">
+            {/* <div className="header__selfie">
                 <img src={selfie} alt="Wesley De Witt" />
             </div>
 
@@ -54,31 +54,9 @@ const Header = ({ isIndexPage }) => {
                         </Link>
                     </div>
 
-                    <div className="header__availability-block">
-                        <h2 className="availability">
-                            <div className="availability__indicator"></div>
-                            Available for hire
-                        </h2>
-
-                        <div className="availability-block__content">
-                            <p>
-                                I'm seeking a role as a Network Support
-                                Technician, Data Center Technician, or Help Desk
-                                Technician. I have previous IT experience, and I
-                                am a Cisco Certified Network Associate.
-                            </p>
-
-                            <Link className="header__availability-block__download-link">
-                                Resume/CV &darr;
-                            </Link>
-
-                            <Link className="header__availability-block__download-link">
-                                Cover Letter &darr;
-                            </Link>
-                        </div>
-                    </div>
+                    
                 </>
-            ) : null}
+            ) : null} */}
         </header>
     );
 };

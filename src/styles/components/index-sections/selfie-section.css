@@ -1,0 +1,12 @@
+.section--selfie {
+    border: 1px solid var(--gray-line-color);
+    border-radius: 6px;
+    grid-area: selfie;
+    overflow: hidden;
+}
+
+.section--selfie img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}

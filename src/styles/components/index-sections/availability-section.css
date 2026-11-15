@@ -1,0 +1,54 @@
+.section--availability {
+    border: 1px solid var(--gray-line-color);
+    border-radius: 6px;
+    grid-area: avail;
+    /* margin-top: calc(1 * var(--base-unit)); */
+    padding: calc(1 * var(--base-unit)) calc(1 * var(--base-unit))
+        calc(1 * var(--base-unit));
+}
+
+.availability-block__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--base-unit);
+}
+
+.section--availability p {
+    grid-column: 1/-1;
+    /* margin: 0; */
+}
+
+.availability__indicator {
+    align-items: center;
+    /* background-color: rgb(0, 200, 0); */
+    border: 1px solid var(--gray-line-color);
+    border-radius: 19px;
+    /* color: white; */
+    display: flex;
+    gap: calc(0.333 * var(--base-unit));
+    margin-bottom: var(--base-unit);
+    padding: calc(0.25 * var(--base-unit)) calc(0.5 * var(--base-unit))
+        calc(0.25 * var(--base-unit));
+    text-align: center;
+    width: fit-content;
+
+    /* display: none; */
+}
+
+.availability__indicator__icon {
+    background-color: rgb(0, 200, 0);
+    border-radius: 7px;
+    height: 14px;
+    width: 14px;
+}
+
+.section--availability__download-link {
+    /* background-color: rgb(0, 102, 255); */
+    border: 1px solid var(--gray-line-color);
+    border-radius: 19px;
+    /* color: rgb(255, 255, 255); */
+    /* display: block; */
+    padding: calc(0.25 * var(--base-unit)) calc(0.5 * var(--base-unit))
+        calc(0.25 * var(--base-unit));
+    text-align: center;
+}

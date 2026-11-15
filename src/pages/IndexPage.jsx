@@ -1,18 +1,18 @@
-import CertificationsSection from "../components/index-sections/CertificationsSection";
-import ProjectsSection from "../components/index-sections/ProjectsSection";
-import SkillsSection from "../components/index-sections/SkillsSection";
-import PostsSection from "../components/index-sections/PostsSection";
+import Header from "../components/Header";
+import AboutSection from "../components/index-sections/AboutSection";
+import AvailabilitySection from "../components/index-sections/AvailabilitySection";
+import LinksSection from "../components/index-sections/LinksSection";
+import SelfieSection from "../components/index-sections/SelfieSection";
 
 const IndexPage = () => {
     return (
-        <>
-            <main className="main main--index-page">
-                {/* <ProjectsSection /> */}
-                <CertificationsSection />
-                <SkillsSection />
-                <PostsSection />
-            </main>
-        </>
+        <div className="page page--index">
+            <Header />
+            <SelfieSection />
+            <AboutSection />
+            <LinksSection />
+            <AvailabilitySection />
+        </div>
     );
 };
 

@@ -1,0 +1,6 @@
+.section--links {
+    display: grid;
+    gap: 0 calc(0.5 * var(--base-unit));
+    grid-area: links;
+    grid-template-columns: auto 1fr;
+}
