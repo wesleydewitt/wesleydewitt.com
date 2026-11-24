@@ -1,1 +1,9 @@
-CCNA student from Muncie, Indiana. Born in '95 to a family that instilled love, commitment, and freedom of thought. Jack of all, master of some. Always in pursuit of beauty and meaning. Always on the way to something better.
+### 👋 Hi, I'm Wes
+
+I'm currently studying to become a Cisco Certified Network Associate.
+
+Through study of the CCNA 200-301 Official Cert Guide and extensive use of Packet Tracer, I'm building a skillset targeted toward a career as an Network Operations Center Technician, Network Support Technician, or IT Support Specialist.
+
+On this website I'm posting detailed notes for every Packet Tracer lab that I complete. This will give prospective employers a clear view of my progress toward certification and my skills in designing, configuring, and troubeshooting networks.
+
+Please, feel free to browse my lab notes and get sense of what I have to offer.

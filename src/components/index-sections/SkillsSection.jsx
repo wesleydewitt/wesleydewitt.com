@@ -8,7 +8,7 @@ const SkillsSection = () => {
         <section className="section section--skills">
             <h3 className="section__heading">
                 <ProjectsIcon />
-                Skills
+                Technical Skills
             </h3>
             <div className="section__content">
                 {skills.map((skill) => (

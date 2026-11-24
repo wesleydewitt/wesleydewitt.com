@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { getPostBySlug } from "../lib/posts.js";
 import { formatDate } from "../lib/formatDate.js";
-import "../styles/components/pages/essay-page.css";
+import "../styles/pages/essay-page.css";
 
 const EssayPage = () => {
     const { slug } = useParams();

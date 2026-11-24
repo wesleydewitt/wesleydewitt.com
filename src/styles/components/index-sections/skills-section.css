@@ -1,22 +1,23 @@
 .section--skills .section__content {
-  display: grid;
-  gap: var(--base-unit);
-  /* grid-template-columns: 1fr 1fr; */
+    display: grid;
+    gap: calc(0.5 * var(--base-unit));
+    /* grid-template-columns: 1fr 1fr; */
 }
 
 .skill + .skill {
-  border-top: 1px solid var(--gray-line-color);
-  padding-top: var(--base-unit);
+    /* border-top: 1px solid var(--gray-line-color); */
+    /* padding-top: var(--base-unit); */
 }
 
 .section--skills p {
-  /* color: var(--gray-text-color); */
-  margin: 0;
+    /* color: var(--gray-text-color); */
+    /* font-size: var(--sans-small-size); */
+    margin: 0;
 }
 
 .skill h4 {
-  /* color: inherit; */
-  /* font-weight: inherit; */
+    /* color: inherit; */
+    /* font-weight: inherit; */
 }
 
 .skill h5 {

@@ -1,0 +1,21 @@
+.links {
+    display: flex;
+    gap: 12px;
+    grid-area: links;
+    margin-top: calc(2 * var(--base-unit));
+}
+
+.links__link {
+    background-color: rgba(0, 106, 255, 0.2);
+    border-radius: 12px;
+    color: rgb(0, 106, 255);
+    display: flex;
+    gap: 6px;
+    padding: 0 12px;
+    width: fit-content;
+}
+
+.links__link:hover {
+    background-color: rgb(0, 106, 255);
+    color: white;
+}

@@ -1,10 +1,11 @@
 [
     {
-        "name": "Cisco Certified Network Associate (Expected 2027)",
+        "name": "Cisco Certified Network Associate (In Progress, Expected 2027)",
         "description": "The Cisco Certified Network Associate (CCNA) is an industry-recognized certification that validates foundational knowledge and practical skills in computer networking.",
         "totalChapters": 56,
-        "chaptersCompleted": 2,
+        "chaptersCompleted": 3,
         "studyStarted": true,
+        "reviewStarted": false,
         "examPassed": false
     }
 ]

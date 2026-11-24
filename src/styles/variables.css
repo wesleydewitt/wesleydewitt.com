@@ -1,6 +1,6 @@
 :root {
     --base-unit: 24px;
-    --page-width: 768px;
+    --page-width: 840px;
 
     --serif-font-family: "Heldane Display", serif;
     --serif-heading-size: 24px;
@@ -18,13 +18,13 @@
     --sans-section-heading-weight: 400;
     --sans-body-size: 14px;
     --sans-small-size: 12px;
-    --sans-heading-size: 20px;
+    --sans-heading-size: 18px;
 
     --heading-text-color: rgba(0, 0, 0, 1);
-    --body-text-color: rgba(0, 0, 0, 1);
+    --body-text-color: rgba(96, 96, 96, 1);
     --gray-text-color: rgba(0, 0, 0, 0.5);
 
-    --background-color: rgba(255, 255, 255, 1);
-    --gray-line-color: rgba(3, 3, 3, 0.1);
-    --gray-background-color: #eee;
+    --background-color: #fff;
+    --gray-line-color: #cccccc;
+    --gray-background-color: #ddd;
 }

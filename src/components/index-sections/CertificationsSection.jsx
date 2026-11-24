@@ -7,7 +7,7 @@ const CertificationsSection = () => {
         <section className="section section--certifications">
             <h3 className="section__heading">
                 <CertificationsIcon />
-                Certifications
+                Certification
             </h3>
 
             <div className="section__content">
@@ -15,7 +15,11 @@ const CertificationsSection = () => {
                     let progressFillHeight = "0%";
 
                     if (cert.studyStarted === true) {
-                        progressFillHeight = "50%";
+                        progressFillHeight = "33.333%";
+                    }
+
+                    if (cert.reviewStarted === true) {
+                        progressFillHeight = "66.666%";
                     }
 
                     if (cert.examPassed === true) {
@@ -45,6 +49,7 @@ const CertificationsSection = () => {
                                         Study ({cert.chaptersCompleted} of{" "}
                                         {cert.totalChapters} chapters completed)
                                     </div>
+                                    <div>Review</div>
                                     <div>Exam passed</div>
                                 </div>
                             </div>
